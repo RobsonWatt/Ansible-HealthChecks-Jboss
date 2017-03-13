@@ -1,0 +1,43 @@
+=== Producto: domaincontroller
+
+
+====
+.Checklist domaincontroller
+//[width="100%", cols="^1,^1,4,16", frame="topbot",options="header"]
+[width="100%", cols="^1,4,4", frame="topbot",options="header"]
+|======================
+//| #        
+//| Res 
+//| Aspecto    
+//| Comentario
+| #        
+| Aspecto    
+| Comprobacion
+
+
+| 1
+//| image:w.png[]
+| JVM ServerGroup main-server-group
+| TBD
+
+
+| 2
+//| image:w.png[]
+| DataSources Existentes
+| TBD
+
+
+| 3
+//| image:w.png[]
+| DataSources Test Connection
+| TBD
+
+
+| 4
+//| image:w.png[]
+| Verificacion Estado de Servidores
+| TBD
+
+
+|======================
+====

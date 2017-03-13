@@ -1,0 +1,4 @@
+== Anexo: Checklist de puntos 
+
+
+include::checklists/anexo_infraestructura.adoc[]

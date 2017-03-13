@@ -1,0 +1,1035 @@
+{
+    "plays": [
+        {
+            "play": {
+                "id": "8ed0ac2f-deb5-4151-b5f4-82c7325daeed", 
+                "name": "domaincontroller"
+            }, 
+            "tasks": [
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "_ansible_verbose_override": true, 
+                            "ansible_facts": {
+                                "ansible_all_ipv4_addresses": [
+                                    "10.97.116.13", 
+                                    "192.168.0.69", 
+                                    "192.168.0.70", 
+                                    "192.168.0.71", 
+                                    "192.168.122.1", 
+                                    "10.216.33.64"
+                                ], 
+                                "ansible_all_ipv6_addresses": [
+                                    "fe80::ce3d:82ff:fee9:2c85"
+                                ], 
+                                "ansible_architecture": "x86_64", 
+                                "ansible_bios_date": "02/26/2015", 
+                                "ansible_bios_version": "GNET72WW (2.20 )", 
+                                "ansible_cmdline": {
+                                    "BOOT_IMAGE": "/vmlinuz-4.4.14-200.fc22.x86_64", 
+                                    "LANG": "en_US.UTF-8", 
+                                    "nouveau.blacklist": "1", 
+                                    "nouveau.modeset": "0", 
+                                    "rd.driver.blacklist": "nouveau", 
+                                    "rd.luks.uuid": "luks-a1d3fe02-c86e-45d5-9ee4-c7d7c7dd6d56", 
+                                    "rd.lvm.lv": "fedora_bandurria/root", 
+                                    "ro": true, 
+                                    "root": "/dev/mapper/fedora_bandurria-root"
+                                }, 
+                                "ansible_date_time": {
+                                    "date": "2017-03-13", 
+                                    "day": "13", 
+                                    "epoch": "1489415617", 
+                                    "hour": "11", 
+                                    "iso8601": "2017-03-13T14:33:37Z", 
+                                    "iso8601_basic": "20170313T113337221852", 
+                                    "iso8601_basic_short": "20170313T113337", 
+                                    "iso8601_micro": "2017-03-13T14:33:37.222038Z", 
+                                    "minute": "33", 
+                                    "month": "03", 
+                                    "second": "37", 
+                                    "time": "11:33:37", 
+                                    "tz": "CLST", 
+                                    "tz_offset": "-0300", 
+                                    "weekday": "Monday", 
+                                    "weekday_number": "1", 
+                                    "weeknumber": "11", 
+                                    "year": "2017"
+                                }, 
+                                "ansible_default_ipv4": {
+                                    "address": "10.216.33.64", 
+                                    "alias": "wlp3s0", 
+                                    "broadcast": "10.216.33.255", 
+                                    "gateway": "10.216.33.254", 
+                                    "interface": "wlp3s0", 
+                                    "macaddress": "cc:3d:82:e9:2c:85", 
+                                    "mtu": 1500, 
+                                    "netmask": "255.255.255.0", 
+                                    "network": "10.216.33.0", 
+                                    "type": "ether"
+                                }, 
+                                "ansible_default_ipv6": {}, 
+                                "ansible_devices": {
+                                    "sda": {
+                                        "holders": [], 
+                                        "host": "SATA controller: Intel Corporation 8 Series/C220 Series Chipset Family 6-port SATA Controller 1 [AHCI mode] (rev 04)", 
+                                        "model": "WDC WD10JPVX-08J", 
+                                        "partitions": {
+                                            "sda1": {
+                                                "sectors": "1024000", 
+                                                "sectorsize": 512, 
+                                                "size": "500.00 MB", 
+                                                "start": "2048"
+                                            }, 
+                                            "sda2": {
+                                                "sectors": "1203777536", 
+                                                "sectorsize": 512, 
+                                                "size": "574.01 GB", 
+                                                "start": "1026048"
+                                            }
+                                        }, 
+                                        "removable": "0", 
+                                        "rotational": "1", 
+                                        "sas_address": null, 
+                                        "sas_device_handle": null, 
+                                        "scheduler_mode": "cfq", 
+                                        "sectors": "1953525168", 
+                                        "sectorsize": "512", 
+                                        "size": "931.51 GB", 
+                                        "support_discard": "0", 
+                                        "vendor": "ATA"
+                                    }, 
+                                    "sr0": {
+                                        "holders": [], 
+                                        "host": "SATA controller: Intel Corporation 8 Series/C220 Series Chipset Family 6-port SATA Controller 1 [AHCI mode] (rev 04)", 
+                                        "model": "DVDRAM GUB0N", 
+                                        "partitions": {}, 
+                                        "removable": "1", 
+                                        "rotational": "1", 
+                                        "sas_address": null, 
+                                        "sas_device_handle": null, 
+                                        "scheduler_mode": "cfq", 
+                                        "sectors": "2097151", 
+                                        "sectorsize": "512", 
+                                        "size": "1024.00 MB", 
+                                        "support_discard": "0", 
+                                        "vendor": "HL-DT-ST"
+                                    }
+                                }, 
+                                "ansible_distribution": "Fedora", 
+                                "ansible_distribution_major_version": "22", 
+                                "ansible_distribution_release": "Twenty Two", 
+                                "ansible_distribution_version": "22", 
+                                "ansible_dns": {
+                                    "nameservers": [
+                                        "10.97.120.27", 
+                                        "10.11.5.19", 
+                                        "10.192.20.245", 
+                                        "10.192.206.245"
+                                    ], 
+                                    "search": [
+                                        "redhat.com"
+                                    ]
+                                }, 
+                                "ansible_domain": "", 
+                                "ansible_enp0s25": {
+                                    "active": false, 
+                                    "device": "enp0s25", 
+                                    "ipv4_secondaries": [
+                                        {
+                                            "address": "192.168.0.70", 
+                                            "broadcast": "192.168.0.255", 
+                                            "netmask": "255.255.255.0", 
+                                            "network": "192.168.0.0"
+                                        }, 
+                                        {
+                                            "address": "192.168.0.71", 
+                                            "broadcast": "192.168.0.255", 
+                                            "netmask": "255.255.255.0", 
+                                            "network": "192.168.0.0"
+                                        }
+                                    ], 
+                                    "macaddress": "54:ee:75:52:b2:04", 
+                                    "module": "e1000e", 
+                                    "mtu": 1500, 
+                                    "pciid": "0000:00:19.0", 
+                                    "promisc": false, 
+                                    "type": "ether"
+                                }, 
+                                "ansible_enp0s25_1": {
+                                    "ipv4": {
+                                        "address": "192.168.0.69", 
+                                        "broadcast": "192.168.0.255", 
+                                        "netmask": "255.255.255.0", 
+                                        "network": "192.168.0.0"
+                                    }
+                                }, 
+                                "ansible_enp0s25_2": {
+                                    "ipv4_secondaries": [
+                                        {
+                                            "address": "192.168.0.70", 
+                                            "broadcast": "192.168.0.255", 
+                                            "netmask": "255.255.255.0", 
+                                            "network": "192.168.0.0"
+                                        }
+                                    ]
+                                }, 
+                                "ansible_enp0s25_3": {
+                                    "ipv4_secondaries": [
+                                        {
+                                            "address": "192.168.0.71", 
+                                            "broadcast": "192.168.0.255", 
+                                            "netmask": "255.255.255.0", 
+                                            "network": "192.168.0.0"
+                                        }
+                                    ]
+                                }, 
+                                "ansible_env": {
+                                    "BASH_FUNC_module()": "() {  eval `/usr/bin/modulecmd bash $*`\n}", 
+                                    "BASH_FUNC_scl()": "() {  local CMD=$1;\n if [ \"$CMD\" = \"load\" -o \"$CMD\" = \"unload\" ]; then\n eval \"module $@\";\n else\n /usr/bin/scl \"$@\";\n fi\n}", 
+                                    "HOME": "/root", 
+                                    "LANG": "en_US.UTF-8", 
+                                    "LC_ALL": "en_US.UTF-8", 
+                                    "LC_MESSAGES": "en_US.UTF-8", 
+                                    "LESSOPEN": "|/usr/bin/lesspipe.sh %s", 
+                                    "LOADEDMODULES": "", 
+                                    "LOGNAME": "root", 
+                                    "MAIL": "/var/mail/root", 
+                                    "MODULEPATH": "/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles", 
+                                    "MODULESHOME": "/usr/share/Modules", 
+                                    "NODE_HOME": "/opt/node-v0.10.30-linux-x86", 
+                                    "PATH": "/opt/node-v0.10.30-linux-x86/bin:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin", 
+                                    "PROMPT_COMMAND": "RETRN_VAL=$?;logger -p local6.debug \"$(whoami) [$$]: $(history 1 | sed \"s/^[ ]*[0-9]\\+[ ]*//\" ) [$RETRN_VAL]\"", 
+                                    "PWD": "/root", 
+                                    "PYTHONPATH": "", 
+                                    "QTDIR": "/usr/lib64/qt-3.3", 
+                                    "QTINC": "/usr/lib64/qt-3.3/include", 
+                                    "QTLIB": "/usr/lib64/qt-3.3/lib", 
+                                    "QT_GRAPHICSSYSTEM_CHECKED": "1", 
+                                    "SHELL": "/bin/bash", 
+                                    "SHLVL": "2", 
+                                    "SSH_ASKPASS": "/usr/libexec/openssh/gnome-ssh-askpass", 
+                                    "SSH_CLIENT": "192.168.0.69 38194 22", 
+                                    "SSH_CONNECTION": "192.168.0.69 38194 192.168.0.69 22", 
+                                    "SSH_TTY": "/dev/pts/6", 
+                                    "TERM": "xterm-256color", 
+                                    "USER": "root", 
+                                    "XDG_RUNTIME_DIR": "/run/user/0", 
+                                    "XDG_SESSION_ID": "17", 
+                                    "_": "/usr/bin/python"
+                                }, 
+                                "ansible_fips": false, 
+                                "ansible_form_factor": "Notebook", 
+                                "ansible_fqdn": "bandurria", 
+                                "ansible_gather_subset": [
+                                    "hardware", 
+                                    "network", 
+                                    "virtual"
+                                ], 
+                                "ansible_hostname": "bandurria", 
+                                "ansible_interfaces": [
+                                    "enp0s25_3", 
+                                    "enp0s25_2", 
+                                    "enp0s25_1", 
+                                    "lo", 
+                                    "tun0", 
+                                    "enp0s25", 
+                                    "wlp3s0", 
+                                    "virbr0-nic", 
+                                    "virbr0"
+                                ], 
+                                "ansible_kernel": "4.4.14-200.fc22.x86_64", 
+                                "ansible_lo": {
+                                    "active": true, 
+                                    "device": "lo", 
+                                    "ipv4": {
+                                        "address": "127.0.0.1", 
+                                        "broadcast": "host", 
+                                        "netmask": "255.0.0.0", 
+                                        "network": "127.0.0.0"
+                                    }, 
+                                    "ipv6": [
+                                        {
+                                            "address": "::1", 
+                                            "prefix": "128", 
+                                            "scope": "host"
+                                        }
+                                    ], 
+                                    "mtu": 65536, 
+                                    "promisc": false, 
+                                    "type": "loopback"
+                                }, 
+                                "ansible_lsb": {
+                                    "codename": "TwentyTwo", 
+                                    "description": "Fedora release 22 (Twenty Two)", 
+                                    "id": "Fedora", 
+                                    "major_release": "22", 
+                                    "release": "22"
+                                }, 
+                                "ansible_lvm": {
+                                    "lvs": {
+                                        "home": {
+                                            "size_g": "500.00", 
+                                            "vg": "fedora_bandurria"
+                                        }, 
+                                        "root": {
+                                            "size_g": "50.00", 
+                                            "vg": "fedora_bandurria"
+                                        }, 
+                                        "swap": {
+                                            "size_g": "4.00", 
+                                            "vg": "fedora_bandurria"
+                                        }, 
+                                        "var": {
+                                            "size_g": "20.00", 
+                                            "vg": "fedora_bandurria"
+                                        }
+                                    }, 
+                                    "vgs": {
+                                        "fedora_bandurria": {
+                                            "free_g": "0.00", 
+                                            "num_lvs": "4", 
+                                            "num_pvs": "1", 
+                                            "size_g": "574.00"
+                                        }
+                                    }
+                                }, 
+                                "ansible_machine": "x86_64", 
+                                "ansible_machine_id": "2e7762c023ec40fab31f200f8b02d7d6", 
+                                "ansible_memfree_mb": 1022, 
+                                "ansible_memory_mb": {
+                                    "nocache": {
+                                        "free": 6378, 
+                                        "used": 9299
+                                    }, 
+                                    "real": {
+                                        "free": 1022, 
+                                        "total": 15677, 
+                                        "used": 14655
+                                    }, 
+                                    "swap": {
+                                        "cached": 0, 
+                                        "free": 4091, 
+                                        "total": 4091, 
+                                        "used": 0
+                                    }
+                                }, 
+                                "ansible_memtotal_mb": 15677, 
+                                "ansible_mounts": [
+                                    {
+                                        "device": "/dev/mapper/fedora_bandurria-root", 
+                                        "fstype": "ext4", 
+                                        "mount": "/", 
+                                        "options": "rw,relatime,data=ordered", 
+                                        "size_available": 41814945792, 
+                                        "size_total": 52710469632, 
+                                        "uuid": "b296b54c-4665-4c66-b191-3ec637180e8c"
+                                    }, 
+                                    {
+                                        "device": "/dev/sda1", 
+                                        "fstype": "ext4", 
+                                        "mount": "/boot", 
+                                        "options": "rw,relatime,stripe=4,data=ordered", 
+                                        "size_available": 296519680, 
+                                        "size_total": 499355648, 
+                                        "uuid": "10dcc421-c380-4506-8477-d9761c3fa776"
+                                    }, 
+                                    {
+                                        "device": "/dev/mapper/fedora_bandurria-var", 
+                                        "fstype": "ext4", 
+                                        "mount": "/var", 
+                                        "options": "rw,relatime,data=ordered", 
+                                        "size_available": 9610977280, 
+                                        "size_total": 21003628544, 
+                                        "uuid": "a76b6d80-dd0d-45da-9923-5b1b75bf41c2"
+                                    }, 
+                                    {
+                                        "device": "/dev/mapper/fedora_bandurria-home", 
+                                        "fstype": "ext4", 
+                                        "mount": "/home", 
+                                        "options": "rw,relatime,data=ordered", 
+                                        "size_available": 286294646784, 
+                                        "size_total": 528312885248, 
+                                        "uuid": "883c59eb-fc66-4993-8efd-f6b264b10c3d"
+                                    }
+                                ], 
+                                "ansible_nodename": "bandurria", 
+                                "ansible_os_family": "RedHat", 
+                                "ansible_pkg_mgr": "pacman", 
+                                "ansible_processor": [
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz"
+                                ], 
+                                "ansible_processor_cores": 4, 
+                                "ansible_processor_count": 1, 
+                                "ansible_processor_threads_per_core": 2, 
+                                "ansible_processor_vcpus": 8, 
+                                "ansible_product_name": "20BHA0YJCL", 
+                                "ansible_product_serial": "R90G3SX8", 
+                                "ansible_product_uuid": "7BAF9081-543E-11CB-AFA5-F69CF3D22643", 
+                                "ansible_product_version": "ThinkPad W540", 
+                                "ansible_python": {
+                                    "executable": "/usr/bin/python", 
+                                    "has_sslcontext": true, 
+                                    "type": "CPython", 
+                                    "version": {
+                                        "major": 2, 
+                                        "micro": 10, 
+                                        "minor": 7, 
+                                        "releaselevel": "final", 
+                                        "serial": 0
+                                    }, 
+                                    "version_info": [
+                                        2, 
+                                        7, 
+                                        10, 
+                                        "final", 
+                                        0
+                                    ]
+                                }, 
+                                "ansible_python_version": "2.7.10", 
+                                "ansible_selinux": {
+                                    "status": "disabled"
+                                }, 
+                                "ansible_service_mgr": "systemd", 
+                                "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEtrx1TY4KoLaR6dprToiaLIW9Uo8LyCUxGkRVqYabhPXYwCqDGthFOS6AQSR/4HERwR8nqja41f/iB/pIuiTHg=", 
+                                "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIJ8jIM2sozWBt68+fqz6UPBMkxFqo+2xfFq55wfr/GYB", 
+                                "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDI5cNLym1lQM2Li/fGA9UPjmNX1o8ixThirLupAiAZ0zSKt3CXpVyk7hmvOfhDQmRphx7b1LLps6FstkKJp6Bsk4QUFkNTHEDKWAi66it3g4S8Qv7pBNq0WyGOvMqwbDBoPEAhj21jwBqynP0XYlg4NBCalr3BN4tPDN+B6WVNNrFB7xURdUIILyEB5P25IX/1JCB8cNXUcIPklGOWYS33Q6p65pduE0vodT6Zv+PpnjAnyZ1omwq49I92ZKw9HHMYpDWRdpFMtYmt02Z8epdEug6xfufma9tN7Bq2+qyGt+Uio3IOzWTzgN5M+D1nil7RyOkpK2Yq4SvOMjbu09j5", 
+                                "ansible_swapfree_mb": 4091, 
+                                "ansible_swaptotal_mb": 4091, 
+                                "ansible_system": "Linux", 
+                                "ansible_system_capabilities": [
+                                    "cap_chown", 
+                                    "cap_dac_override", 
+                                    "cap_dac_read_search", 
+                                    "cap_fowner", 
+                                    "cap_fsetid", 
+                                    "cap_kill", 
+                                    "cap_setgid", 
+                                    "cap_setuid", 
+                                    "cap_setpcap", 
+                                    "cap_linux_immutable", 
+                                    "cap_net_bind_service", 
+                                    "cap_net_broadcast", 
+                                    "cap_net_admin", 
+                                    "cap_net_raw", 
+                                    "cap_ipc_lock", 
+                                    "cap_ipc_owner", 
+                                    "cap_sys_module", 
+                                    "cap_sys_rawio", 
+                                    "cap_sys_chroot", 
+                                    "cap_sys_ptrace", 
+                                    "cap_sys_pacct", 
+                                    "cap_sys_admin", 
+                                    "cap_sys_boot", 
+                                    "cap_sys_nice", 
+                                    "cap_sys_resource", 
+                                    "cap_sys_time", 
+                                    "cap_sys_tty_config", 
+                                    "cap_mknod", 
+                                    "cap_lease", 
+                                    "cap_audit_write", 
+                                    "cap_audit_control", 
+                                    "cap_setfcap", 
+                                    "cap_mac_override", 
+                                    "cap_mac_admin", 
+                                    "cap_syslog", 
+                                    "cap_wake_alarm", 
+                                    "cap_block_suspend", 
+                                    "37+ep"
+                                ], 
+                                "ansible_system_capabilities_enforced": "True", 
+                                "ansible_system_vendor": "LENOVO", 
+                                "ansible_tun0": {
+                                    "active": true, 
+                                    "device": "tun0", 
+                                    "ipv4": {
+                                        "address": "10.97.116.13", 
+                                        "broadcast": "10.97.119.255", 
+                                        "netmask": "255.255.252.0", 
+                                        "network": "10.97.116.0"
+                                    }, 
+                                    "mtu": 1360, 
+                                    "promisc": false
+                                }, 
+                                "ansible_uptime_seconds": 267010, 
+                                "ansible_user_dir": "/root", 
+                                "ansible_user_gecos": "root", 
+                                "ansible_user_gid": 0, 
+                                "ansible_user_id": "root", 
+                                "ansible_user_shell": "/bin/bash", 
+                                "ansible_user_uid": 0, 
+                                "ansible_userspace_architecture": "x86_64", 
+                                "ansible_userspace_bits": "64", 
+                                "ansible_virbr0": {
+                                    "active": false, 
+                                    "device": "virbr0", 
+                                    "id": "8000.52540057af8a", 
+                                    "interfaces": [
+                                        "virbr0-nic"
+                                    ], 
+                                    "ipv4": {
+                                        "address": "192.168.122.1", 
+                                        "broadcast": "192.168.122.255", 
+                                        "netmask": "255.255.255.0", 
+                                        "network": "192.168.122.0"
+                                    }, 
+                                    "macaddress": "52:54:00:57:af:8a", 
+                                    "mtu": 1500, 
+                                    "promisc": false, 
+                                    "stp": true, 
+                                    "type": "bridge"
+                                }, 
+                                "ansible_virbr0_nic": {
+                                    "active": false, 
+                                    "device": "virbr0-nic", 
+                                    "macaddress": "52:54:00:57:af:8a", 
+                                    "mtu": 1500, 
+                                    "promisc": true, 
+                                    "type": "ether"
+                                }, 
+                                "ansible_virtualization_role": "host", 
+                                "ansible_virtualization_type": "kvm", 
+                                "ansible_wlp3s0": {
+                                    "active": true, 
+                                    "device": "wlp3s0", 
+                                    "ipv4": {
+                                        "address": "10.216.33.64", 
+                                        "broadcast": "10.216.33.255", 
+                                        "netmask": "255.255.255.0", 
+                                        "network": "10.216.33.0"
+                                    }, 
+                                    "ipv6": [
+                                        {
+                                            "address": "fe80::ce3d:82ff:fee9:2c85", 
+                                            "prefix": "64", 
+                                            "scope": "link"
+                                        }
+                                    ], 
+                                    "macaddress": "cc:3d:82:e9:2c:85", 
+                                    "module": "iwlwifi", 
+                                    "mtu": 1500, 
+                                    "pciid": "0000:03:00.0", 
+                                    "promisc": false, 
+                                    "type": "ether"
+                                }, 
+                                "module_setup": true
+                            }, 
+                            "changed": false, 
+                            "invocation": {
+                                "module_args": {
+                                    "fact_path": "/etc/ansible/facts.d", 
+                                    "filter": "*", 
+                                    "gather_subset": [
+                                        "all"
+                                    ]
+                                }, 
+                                "module_name": "setup"
+                            }
+                        }
+                    }, 
+                    "task": {
+                        "id": "1f2e5171-7f9c-4b27-a3f5-644f4f37ac4a", 
+                        "name": ""
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "././jboss-cli.sh", 
+                                "--controller=192.168.0.69:9999", 
+                                "-c", 
+                                "--command=/server-group=main-server-group/jvm=default:read-resource"
+                            ], 
+                            "delta": "0:00:02.529447", 
+                            "end": "2017-03-13 11:33:40.783379", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "././jboss-cli.sh --controller=192.168.0.69:9999 -c --command=\"/server-group=main-server-group/jvm=default:read-resource\"", 
+                                    "_uses_shell": false, 
+                                    "chdir": "/opt/EAP-Ansible-POC/domainController/bin/", 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 11:33:38.253932", 
+                            "stderr": "", 
+                            "stdout": "{\n    \"outcome\" => \"success\",\n    \"result\" => {\n        \"agent-lib\" => undefined,\n        \"agent-path\" => undefined,\n        \"env-classpath-ignored\" => undefined,\n        \"environment-variables\" => undefined,\n        \"heap-size\" => \"1000m\",\n        \"java-agent\" => undefined,\n        \"java-home\" => undefined,\n        \"jvm-options\" => undefined,\n        \"max-heap-size\" => \"1000m\",\n        \"max-permgen-size\" => \"256m\",\n        \"permgen-size\" => undefined,\n        \"stack-size\" => undefined,\n        \"type\" => undefined\n    }\n}", 
+                            "stdout_lines": [
+                                "{", 
+                                "    \"outcome\" => \"success\",", 
+                                "    \"result\" => {", 
+                                "        \"agent-lib\" => undefined,", 
+                                "        \"agent-path\" => undefined,", 
+                                "        \"env-classpath-ignored\" => undefined,", 
+                                "        \"environment-variables\" => undefined,", 
+                                "        \"heap-size\" => \"1000m\",", 
+                                "        \"java-agent\" => undefined,", 
+                                "        \"java-home\" => undefined,", 
+                                "        \"jvm-options\" => undefined,", 
+                                "        \"max-heap-size\" => \"1000m\",", 
+                                "        \"max-permgen-size\" => \"256m\",", 
+                                "        \"permgen-size\" => undefined,", 
+                                "        \"stack-size\" => undefined,", 
+                                "        \"type\" => undefined", 
+                                "    }", 
+                                "}"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "bd02f5a7-9157-4fd7-8d2a-c089841f50ee", 
+                        "name": "JVM ServerGroup main-server-group"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "datasources_list.sh"
+                                }, 
+                                "module_name": "script"
+                            }, 
+                            "rc": 0, 
+                            "stderr": "", 
+                            "stdout": "Profiles a revisar:  default\r\nObteniendo datasources para Profile  default\r\norg.jboss.as.cli.CliInitializationException: Failed to connect to the controller\r\n\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:299)\r\n\tat org.jboss.as.cli.impl.CliLauncher.main(CliLauncher.java:265)\r\n\tat org.jboss.as.cli.CommandLineMain.main(CommandLineMain.java:45)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.jboss.modules.Module.run(Module.java:312)\r\n\tat org.jboss.modules.Main.main(Main.java:473)\r\nCaused by: org.jboss.as.cli.CommandLineException: The controller is not available at 192.168.0.69:9999\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1057)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:887)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:863)\r\n\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:297)\r\n\t... 8 more\r\nCaused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1035)\r\n\t... 11 more\r\nCaused by: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out\r\n\tat org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:135)\r\n\tat org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)\r\n\tat org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)\r\n\tat org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:208)\r\n\tat org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:169)\r\n\tat org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:129)\r\n\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:123)\r\n\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)\r\n\t... 13 more\r\nExampleDS\r\n", 
+                            "stdout_lines": [
+                                "Profiles a revisar:  default", 
+                                "Obteniendo datasources para Profile  default", 
+                                "org.jboss.as.cli.CliInitializationException: Failed to connect to the controller", 
+                                "\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:299)", 
+                                "\tat org.jboss.as.cli.impl.CliLauncher.main(CliLauncher.java:265)", 
+                                "\tat org.jboss.as.cli.CommandLineMain.main(CommandLineMain.java:45)", 
+                                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)", 
+                                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                                "\tat java.lang.reflect.Method.invoke(Method.java:498)", 
+                                "\tat org.jboss.modules.Module.run(Module.java:312)", 
+                                "\tat org.jboss.modules.Main.main(Main.java:473)", 
+                                "Caused by: org.jboss.as.cli.CommandLineException: The controller is not available at 192.168.0.69:9999", 
+                                "\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1057)", 
+                                "\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:887)", 
+                                "\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:863)", 
+                                "\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:297)", 
+                                "\t... 8 more", 
+                                "Caused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)", 
+                                "\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1035)", 
+                                "\t... 11 more", 
+                                "Caused by: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out", 
+                                "\tat org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:135)", 
+                                "\tat org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)", 
+                                "\tat org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)", 
+                                "\tat org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:208)", 
+                                "\tat org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:169)", 
+                                "\tat org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:129)", 
+                                "\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:123)", 
+                                "\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)", 
+                                "\t... 13 more", 
+                                "ExampleDS"
+                            ]
+                        }
+                    }, 
+                    "task": {
+                        "id": "a8ac1172-6cee-4519-8acc-7c46618b7509", 
+                        "name": "DataSources Existentes"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "_ansible_verbose_always": true, 
+                            "output.stdout_lines": [
+                                "Profiles a revisar:  default", 
+                                "Obteniendo datasources para Profile  default", 
+                                "org.jboss.as.cli.CliInitializationException: Failed to connect to the controller", 
+                                "\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:299)", 
+                                "\tat org.jboss.as.cli.impl.CliLauncher.main(CliLauncher.java:265)", 
+                                "\tat org.jboss.as.cli.CommandLineMain.main(CommandLineMain.java:45)", 
+                                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)", 
+                                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                                "\tat java.lang.reflect.Method.invoke(Method.java:498)", 
+                                "\tat org.jboss.modules.Module.run(Module.java:312)", 
+                                "\tat org.jboss.modules.Main.main(Main.java:473)", 
+                                "Caused by: org.jboss.as.cli.CommandLineException: The controller is not available at 192.168.0.69:9999", 
+                                "\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1057)", 
+                                "\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:887)", 
+                                "\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:863)", 
+                                "\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:297)", 
+                                "\t... 8 more", 
+                                "Caused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)", 
+                                "\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1035)", 
+                                "\t... 11 more", 
+                                "Caused by: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out", 
+                                "\tat org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:135)", 
+                                "\tat org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)", 
+                                "\tat org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)", 
+                                "\tat org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:208)", 
+                                "\tat org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:169)", 
+                                "\tat org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:129)", 
+                                "\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:123)", 
+                                "\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)", 
+                                "\t... 13 more", 
+                                "ExampleDS"
+                            ]
+                        }
+                    }, 
+                    "task": {
+                        "id": "7b44bb20-b706-4e54-9028-28d843541975", 
+                        "name": ""
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "_ansible_verbose_always": true, 
+                            "output.stdout": "Profiles a revisar:  default\r\nObteniendo datasources para Profile  default\r\norg.jboss.as.cli.CliInitializationException: Failed to connect to the controller\r\n\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:299)\r\n\tat org.jboss.as.cli.impl.CliLauncher.main(CliLauncher.java:265)\r\n\tat org.jboss.as.cli.CommandLineMain.main(CommandLineMain.java:45)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.jboss.modules.Module.run(Module.java:312)\r\n\tat org.jboss.modules.Main.main(Main.java:473)\r\nCaused by: org.jboss.as.cli.CommandLineException: The controller is not available at 192.168.0.69:9999\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1057)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:887)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:863)\r\n\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:297)\r\n\t... 8 more\r\nCaused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1035)\r\n\t... 11 more\r\nCaused by: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out\r\n\tat org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:135)\r\n\tat org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)\r\n\tat org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)\r\n\tat org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:208)\r\n\tat org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:169)\r\n\tat org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:129)\r\n\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:123)\r\n\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)\r\n\t... 13 more\r\nExampleDS\r\n"
+                        }
+                    }, 
+                    "task": {
+                        "id": "074e5a1b-8a44-4ffc-8eae-ec4eeb921f47", 
+                        "name": ""
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "_ansible_verbose_always": true, 
+                            "output.stderr": ""
+                        }
+                    }, 
+                    "task": {
+                        "id": "8c43d717-669e-465e-bc73-347722da30c9", 
+                        "name": ""
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "datasources_test_connection.sh"
+                                }, 
+                                "module_name": "script"
+                            }, 
+                            "rc": 0, 
+                            "stderr": "", 
+                            "stdout": "Profiles a revisar:  default\r\nObteniendo datasources para Profile  default\r\nTest Connection Host hostController1, Servidor server-one, Datasource ExampleDS\r\n/host=hostController1/server=server-one/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\norg.jboss.as.cli.CliInitializationException: Failed to connect to the controller\r\n\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:299)\r\n\tat org.jboss.as.cli.impl.CliLauncher.main(CliLauncher.java:265)\r\n\tat org.jboss.as.cli.CommandLineMain.main(CommandLineMain.java:45)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.jboss.modules.Module.run(Module.java:312)\r\n\tat org.jboss.modules.Main.main(Main.java:473)\r\nCaused by: org.jboss.as.cli.CommandLineException: The controller is not available at 192.168.0.69:9999\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1057)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:887)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:863)\r\n\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:297)\r\n\t... 8 more\r\nCaused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1035)\r\n\t... 11 more\r\nCaused by: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out\r\n\tat org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:135)\r\n\tat org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)\r\n\tat org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)\r\n\tat org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:208)\r\n\tat org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:169)\r\n\tat org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:129)\r\n\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:123)\r\n\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)\r\n\t... 13 more\r\n\r\nTest Connection Host hostController1, Servidor server-two, Datasource ExampleDS\r\n/host=hostController1/server=server-two/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\n{\r\n    \"outcome\" => \"success\",\r\n    \"result\" => [true]\r\n}\r\nTest Connection Host hostController2, Servidor server-one, Datasource ExampleDS\r\n/host=hostController2/server=server-one/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\n{\r\n    \"outcome\" => \"success\",\r\n    \"result\" => [true]\r\n}\r\nTest Connection Host hostController2, Servidor server-two, Datasource ExampleDS\r\n/host=hostController2/server=server-two/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\n{\r\n    \"outcome\" => \"success\",\r\n    \"result\" => [true]\r\n}\r\nTest Connection Host master, Servidor , Datasource ExampleDS\r\n/host=master/server=/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\n{\r\n    \"outcome\" => \"failed\",\r\n    \"failure-description\" => \"JBAS014883: No resource definition is registered for address [\r\n    (\\\"subsystem\\\" => \\\"datasources\\\"),\r\n    (\\\"data-source\\\" => \\\"ExampleDS\\\")\r\n]\",\r\n    \"rolled-back\" => true\r\n}\r\n", 
+                            "stdout_lines": [
+                                "Profiles a revisar:  default", 
+                                "Obteniendo datasources para Profile  default", 
+                                "Test Connection Host hostController1, Servidor server-one, Datasource ExampleDS", 
+                                "/host=hostController1/server=server-one/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
+                                "org.jboss.as.cli.CliInitializationException: Failed to connect to the controller", 
+                                "\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:299)", 
+                                "\tat org.jboss.as.cli.impl.CliLauncher.main(CliLauncher.java:265)", 
+                                "\tat org.jboss.as.cli.CommandLineMain.main(CommandLineMain.java:45)", 
+                                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)", 
+                                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                                "\tat java.lang.reflect.Method.invoke(Method.java:498)", 
+                                "\tat org.jboss.modules.Module.run(Module.java:312)", 
+                                "\tat org.jboss.modules.Main.main(Main.java:473)", 
+                                "Caused by: org.jboss.as.cli.CommandLineException: The controller is not available at 192.168.0.69:9999", 
+                                "\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1057)", 
+                                "\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:887)", 
+                                "\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:863)", 
+                                "\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:297)", 
+                                "\t... 8 more", 
+                                "Caused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)", 
+                                "\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1035)", 
+                                "\t... 11 more", 
+                                "Caused by: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out", 
+                                "\tat org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:135)", 
+                                "\tat org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)", 
+                                "\tat org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)", 
+                                "\tat org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:208)", 
+                                "\tat org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:169)", 
+                                "\tat org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:129)", 
+                                "\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:123)", 
+                                "\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)", 
+                                "\t... 13 more", 
+                                "", 
+                                "Test Connection Host hostController1, Servidor server-two, Datasource ExampleDS", 
+                                "/host=hostController1/server=server-two/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
+                                "{", 
+                                "    \"outcome\" => \"success\",", 
+                                "    \"result\" => [true]", 
+                                "}", 
+                                "Test Connection Host hostController2, Servidor server-one, Datasource ExampleDS", 
+                                "/host=hostController2/server=server-one/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
+                                "{", 
+                                "    \"outcome\" => \"success\",", 
+                                "    \"result\" => [true]", 
+                                "}", 
+                                "Test Connection Host hostController2, Servidor server-two, Datasource ExampleDS", 
+                                "/host=hostController2/server=server-two/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
+                                "{", 
+                                "    \"outcome\" => \"success\",", 
+                                "    \"result\" => [true]", 
+                                "}", 
+                                "Test Connection Host master, Servidor , Datasource ExampleDS", 
+                                "/host=master/server=/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
+                                "{", 
+                                "    \"outcome\" => \"failed\",", 
+                                "    \"failure-description\" => \"JBAS014883: No resource definition is registered for address [", 
+                                "    (\\\"subsystem\\\" => \\\"datasources\\\"),", 
+                                "    (\\\"data-source\\\" => \\\"ExampleDS\\\")", 
+                                "]\",", 
+                                "    \"rolled-back\" => true", 
+                                "}"
+                            ]
+                        }
+                    }, 
+                    "task": {
+                        "id": "a0f2291f-4b9d-45ff-8ea2-100ef1807f1c", 
+                        "name": "DataSources Test Connection"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "_ansible_verbose_always": true, 
+                            "output.stdout_lines": [
+                                "Profiles a revisar:  default", 
+                                "Obteniendo datasources para Profile  default", 
+                                "Test Connection Host hostController1, Servidor server-one, Datasource ExampleDS", 
+                                "/host=hostController1/server=server-one/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
+                                "org.jboss.as.cli.CliInitializationException: Failed to connect to the controller", 
+                                "\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:299)", 
+                                "\tat org.jboss.as.cli.impl.CliLauncher.main(CliLauncher.java:265)", 
+                                "\tat org.jboss.as.cli.CommandLineMain.main(CommandLineMain.java:45)", 
+                                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
+                                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)", 
+                                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
+                                "\tat java.lang.reflect.Method.invoke(Method.java:498)", 
+                                "\tat org.jboss.modules.Module.run(Module.java:312)", 
+                                "\tat org.jboss.modules.Main.main(Main.java:473)", 
+                                "Caused by: org.jboss.as.cli.CommandLineException: The controller is not available at 192.168.0.69:9999", 
+                                "\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1057)", 
+                                "\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:887)", 
+                                "\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:863)", 
+                                "\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:297)", 
+                                "\t... 8 more", 
+                                "Caused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)", 
+                                "\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1035)", 
+                                "\t... 11 more", 
+                                "Caused by: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out", 
+                                "\tat org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:135)", 
+                                "\tat org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)", 
+                                "\tat org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)", 
+                                "\tat org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:208)", 
+                                "\tat org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:169)", 
+                                "\tat org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:129)", 
+                                "\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:123)", 
+                                "\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)", 
+                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)", 
+                                "\t... 13 more", 
+                                "", 
+                                "Test Connection Host hostController1, Servidor server-two, Datasource ExampleDS", 
+                                "/host=hostController1/server=server-two/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
+                                "{", 
+                                "    \"outcome\" => \"success\",", 
+                                "    \"result\" => [true]", 
+                                "}", 
+                                "Test Connection Host hostController2, Servidor server-one, Datasource ExampleDS", 
+                                "/host=hostController2/server=server-one/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
+                                "{", 
+                                "    \"outcome\" => \"success\",", 
+                                "    \"result\" => [true]", 
+                                "}", 
+                                "Test Connection Host hostController2, Servidor server-two, Datasource ExampleDS", 
+                                "/host=hostController2/server=server-two/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
+                                "{", 
+                                "    \"outcome\" => \"success\",", 
+                                "    \"result\" => [true]", 
+                                "}", 
+                                "Test Connection Host master, Servidor , Datasource ExampleDS", 
+                                "/host=master/server=/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
+                                "{", 
+                                "    \"outcome\" => \"failed\",", 
+                                "    \"failure-description\" => \"JBAS014883: No resource definition is registered for address [", 
+                                "    (\\\"subsystem\\\" => \\\"datasources\\\"),", 
+                                "    (\\\"data-source\\\" => \\\"ExampleDS\\\")", 
+                                "]\",", 
+                                "    \"rolled-back\" => true", 
+                                "}"
+                            ]
+                        }
+                    }, 
+                    "task": {
+                        "id": "a329b00a-9b45-44ab-b8f2-52da867612b4", 
+                        "name": ""
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "_ansible_verbose_always": true, 
+                            "output.stdout": "Profiles a revisar:  default\r\nObteniendo datasources para Profile  default\r\nTest Connection Host hostController1, Servidor server-one, Datasource ExampleDS\r\n/host=hostController1/server=server-one/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\norg.jboss.as.cli.CliInitializationException: Failed to connect to the controller\r\n\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:299)\r\n\tat org.jboss.as.cli.impl.CliLauncher.main(CliLauncher.java:265)\r\n\tat org.jboss.as.cli.CommandLineMain.main(CommandLineMain.java:45)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.jboss.modules.Module.run(Module.java:312)\r\n\tat org.jboss.modules.Main.main(Main.java:473)\r\nCaused by: org.jboss.as.cli.CommandLineException: The controller is not available at 192.168.0.69:9999\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1057)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:887)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:863)\r\n\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:297)\r\n\t... 8 more\r\nCaused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1035)\r\n\t... 11 more\r\nCaused by: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out\r\n\tat org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:135)\r\n\tat org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)\r\n\tat org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)\r\n\tat org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:208)\r\n\tat org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:169)\r\n\tat org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:129)\r\n\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:123)\r\n\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)\r\n\t... 13 more\r\n\r\nTest Connection Host hostController1, Servidor server-two, Datasource ExampleDS\r\n/host=hostController1/server=server-two/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\n{\r\n    \"outcome\" => \"success\",\r\n    \"result\" => [true]\r\n}\r\nTest Connection Host hostController2, Servidor server-one, Datasource ExampleDS\r\n/host=hostController2/server=server-one/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\n{\r\n    \"outcome\" => \"success\",\r\n    \"result\" => [true]\r\n}\r\nTest Connection Host hostController2, Servidor server-two, Datasource ExampleDS\r\n/host=hostController2/server=server-two/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\n{\r\n    \"outcome\" => \"success\",\r\n    \"result\" => [true]\r\n}\r\nTest Connection Host master, Servidor , Datasource ExampleDS\r\n/host=master/server=/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\n{\r\n    \"outcome\" => \"failed\",\r\n    \"failure-description\" => \"JBAS014883: No resource definition is registered for address [\r\n    (\\\"subsystem\\\" => \\\"datasources\\\"),\r\n    (\\\"data-source\\\" => \\\"ExampleDS\\\")\r\n]\",\r\n    \"rolled-back\" => true\r\n}\r\n"
+                        }
+                    }, 
+                    "task": {
+                        "id": "9098da7f-8a9d-4356-a285-76b512832797", 
+                        "name": ""
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "_ansible_verbose_always": true, 
+                            "output.stderr": ""
+                        }
+                    }, 
+                    "task": {
+                        "id": "7ccb3a99-e6f7-4157-a2fe-aa1a569798b0", 
+                        "name": ""
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "server_status.sh"
+                                }, 
+                                "module_name": "script"
+                            }, 
+                            "rc": 0, 
+                            "stderr": "", 
+                            "stdout": "HOSTS a revisar:  hostController1 hostController2 master\r\nServidor server-one - Host hostController1\r\n{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }\r\nServidor server-two - Host hostController1\r\n{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }\r\nServidor server-one - Host hostController2\r\n{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }\r\nServidor server-two - Host hostController2\r\n{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }\r\n", 
+                            "stdout_lines": [
+                                "HOSTS a revisar:  hostController1 hostController2 master", 
+                                "Servidor server-one - Host hostController1", 
+                                "{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }", 
+                                "Servidor server-two - Host hostController1", 
+                                "{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }", 
+                                "Servidor server-one - Host hostController2", 
+                                "{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }", 
+                                "Servidor server-two - Host hostController2", 
+                                "{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }"
+                            ]
+                        }
+                    }, 
+                    "task": {
+                        "id": "7a46de7c-2b8f-41ed-a7bf-4e6bd319bdef", 
+                        "name": "Verificacion Estado de Servidores"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "_ansible_verbose_always": true, 
+                            "output.stdout_lines": [
+                                "HOSTS a revisar:  hostController1 hostController2 master", 
+                                "Servidor server-one - Host hostController1", 
+                                "{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }", 
+                                "Servidor server-two - Host hostController1", 
+                                "{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }", 
+                                "Servidor server-one - Host hostController2", 
+                                "{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }", 
+                                "Servidor server-two - Host hostController2", 
+                                "{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }"
+                            ]
+                        }
+                    }, 
+                    "task": {
+                        "id": "542d6b4a-f1f7-4f1b-a10b-921956dbce03", 
+                        "name": ""
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "_ansible_verbose_always": true, 
+                            "output.stdout": "HOSTS a revisar:  hostController1 hostController2 master\r\nServidor server-one - Host hostController1\r\n{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }\r\nServidor server-two - Host hostController1\r\n{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }\r\nServidor server-one - Host hostController2\r\n{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }\r\nServidor server-two - Host hostController2\r\n{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }\r\n"
+                        }
+                    }, 
+                    "task": {
+                        "id": "2731f895-af5c-4308-a585-7011456e4e01", 
+                        "name": ""
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "_ansible_verbose_always": true, 
+                            "output.stderr": ""
+                        }
+                    }, 
+                    "task": {
+                        "id": "5791ada2-f461-4f7c-a4b9-93ba932c95b4", 
+                        "name": ""
+                    }
+                }
+            ]
+        }
+    ], 
+    "stats": {
+        "192.168.0.69": {
+            "changed": 4, 
+            "failures": 0, 
+            "ok": 14, 
+            "skipped": 0, 
+            "unreachable": 0
+        }
+    }
+}

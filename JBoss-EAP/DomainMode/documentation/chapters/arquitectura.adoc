@@ -1,0 +1,7 @@
+== Arquitectura de despliegue
+====
+En este apartado se describe la arquitectura actual del cliente
+====
+[.text-center]
+.Plataforma Middleware {ambiente}
+image::Plataforma.png[pdfwidth=80%,align=center]

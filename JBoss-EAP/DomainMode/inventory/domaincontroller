@@ -1,0 +1,8 @@
+[domaincontroller]
+# Ip del Domain Controller
+192.168.0.69 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=poc
+
+# definicion de variables que se utilizarán
+[domaincontroller:vars]
+jboss_eap_admin_user=admin
+jboss_eap_admin_password=Redhat123_

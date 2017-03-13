@@ -1,0 +1,68 @@
+---
+# This playbook
+
+- hosts: infraestructura
+  remote_user: root
+  vars:
+    only_check: True
+    jboss_service: jboss-eap
+    jboss_eap_version: 6.4
+
+  vars_files:
+    - variables/EAP-{{jboss_eap_version}}.yml
+
+  tasks:
+    - name: Particionamiento de discos
+      ignore_errors: "{{only_check}}"
+      command: df -h
+      register: output
+
+    - name: Cores del Servidor
+      ignore_errors: "{{only_check}}"
+      command: lscpu
+      register: output
+
+    - name: RAM del Servidor
+      ignore_errors: "{{only_check}}"
+      command: free -m
+      register: output
+
+    - name: Ulimits
+      ignore_errors: "{{only_check}}"
+      command: bash -c 'ulimit -aHS'
+      register: output
+
+    - name: Reglas IPTABLES
+      ignore_errors: "{{only_check}}"
+      command: bash -c 'iptables -S'
+      register: output
+
+    - name: "Interfaces de red: ifconfig"
+      command: bash -c 'ifconfig'
+      register: output
+      ignore_errors: "{{only_check}}"
+
+    - name: Java Version
+      command: java -version
+      register: output
+      ignore_errors: "{{only_check}}"
+
+    - name: Existencia Usuario Jboss
+      ignore_errors: "{{only_check}}"
+      command: id {{jboss_eap_user}}
+      register: output
+
+    - name: "Parche Jboss EAP existente Host1"
+      command: chdir={{jboss_eap_hc1_home_path}}/bin/ ./jboss-cli.sh --command="patch info"
+      register: output
+      ignore_errors: "{{only_check}}"
+
+    - name: "Parche Jboss EAP existente Host2"
+      command: chdir={{jboss_eap_hc2_home_path}}/bin/ ./jboss-cli.sh --command="patch info"
+      register: output
+      ignore_errors: "{{only_check}}"
+
+    - name: "Verificacion funcionamiento servicio JBoss"
+      shell: ps -fea | grep "Server:" | grep -v grep | awk -F " " '{print $2 " "  $9}'
+      register: output
+      ignore_errors: "{{only_check}}"

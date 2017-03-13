@@ -1,0 +1,590 @@
+=== Grupo: infraestructura
+
+ 
+==== TASK: Particionamiento de discos
+.192.168.0.70
+[source,bash]
+----
+$ df -h
+Filesystem                         Size  Used Avail Use% Mounted on
+devtmpfs                           7.7G     0  7.7G   0% /dev
+tmpfs                              7.7G  258M  7.5G   4% /dev/shm
+tmpfs                              7.7G  1.7M  7.7G   1% /run
+tmpfs                              7.7G     0  7.7G   0% /sys/fs/cgroup
+/dev/mapper/fedora_bandurria-root   50G  7.7G   39G  17% /
+tmpfs                              7.7G   45M  7.7G   1% /tmp
+/dev/sda1                          477M  165M  283M  37% /boot
+/dev/mapper/fedora_bandurria-var    20G  9.6G  9.0G  52% /var
+/dev/mapper/fedora_bandurria-home  493G  201G  267G  43% /home
+tmpfs                              1.6G   12K  1.6G   1% /run/user/42
+tmpfs                              1.6G   56K  1.6G   1% /run/user/1000
+tmpfs                              1.6G     0  1.6G   0% /run/user/0
+----
+
+ 
+.192.168.0.71
+[source,bash]
+----
+$ df -h
+Filesystem                         Size  Used Avail Use% Mounted on
+devtmpfs                           7.7G     0  7.7G   0% /dev
+tmpfs                              7.7G  258M  7.5G   4% /dev/shm
+tmpfs                              7.7G  1.7M  7.7G   1% /run
+tmpfs                              7.7G     0  7.7G   0% /sys/fs/cgroup
+/dev/mapper/fedora_bandurria-root   50G  7.7G   39G  17% /
+tmpfs                              7.7G   45M  7.7G   1% /tmp
+/dev/sda1                          477M  165M  283M  37% /boot
+/dev/mapper/fedora_bandurria-var    20G  9.6G  9.0G  52% /var
+/dev/mapper/fedora_bandurria-home  493G  201G  267G  43% /home
+tmpfs                              1.6G   12K  1.6G   1% /run/user/42
+tmpfs                              1.6G   56K  1.6G   1% /run/user/1000
+tmpfs                              1.6G     0  1.6G   0% /run/user/0
+----
+
+ 
+==== TASK: Cores del Servidor
+.192.168.0.70
+[source,bash]
+----
+$ lscpu
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                8
+On-line CPU(s) list:   0-7
+Thread(s) per core:    2
+Core(s) per socket:    4
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 60
+Model name:            Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz
+Stepping:              3
+CPU MHz:               1345.101
+CPU max MHz:           3900.0000
+CPU min MHz:           800.0000
+BogoMIPS:              5786.69
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              8192K
+NUMA node0 CPU(s):     0-7
+----
+
+ 
+.192.168.0.71
+[source,bash]
+----
+$ lscpu
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                8
+On-line CPU(s) list:   0-7
+Thread(s) per core:    2
+Core(s) per socket:    4
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 60
+Model name:            Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz
+Stepping:              3
+CPU MHz:               1299.902
+CPU max MHz:           3900.0000
+CPU min MHz:           800.0000
+BogoMIPS:              5786.69
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              8192K
+NUMA node0 CPU(s):     0-7
+----
+
+ 
+==== TASK: RAM del Servidor
+.192.168.0.70
+[source,bash]
+----
+$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:          15677        8639         971         720        6066        5992
+Swap:          4091           0        4091
+----
+
+ 
+.192.168.0.71
+[source,bash]
+----
+$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:          15677        8638         972         720        6066        5993
+Swap:          4091           0        4091
+----
+
+ 
+==== TASK: Ulimits
+.192.168.0.70
+[source,bash]
+----
+$ bash -c 'ulimit -aHS'
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 62622
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1024
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 62622
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+----
+
+ 
+.192.168.0.71
+[source,bash]
+----
+$ bash -c 'ulimit -aHS'
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 62622
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1024
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 62622
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+----
+
+ 
+==== TASK: Reglas IPTABLES
+.192.168.0.70
+[source,bash]
+----
+$ bash -c 'iptables -S'
+-P INPUT ACCEPT
+-P FORWARD ACCEPT
+-P OUTPUT ACCEPT
+-N FORWARD_IN_ZONES
+-N FORWARD_IN_ZONES_SOURCE
+-N FORWARD_OUT_ZONES
+-N FORWARD_OUT_ZONES_SOURCE
+-N FORWARD_direct
+-N FWDI_FedoraWorkstation
+-N FWDI_FedoraWorkstation_allow
+-N FWDI_FedoraWorkstation_deny
+-N FWDI_FedoraWorkstation_log
+-N FWDO_FedoraWorkstation
+-N FWDO_FedoraWorkstation_allow
+-N FWDO_FedoraWorkstation_deny
+-N FWDO_FedoraWorkstation_log
+-N INPUT_ZONES
+-N INPUT_ZONES_SOURCE
+-N INPUT_direct
+-N IN_FedoraWorkstation
+-N IN_FedoraWorkstation_allow
+-N IN_FedoraWorkstation_deny
+-N IN_FedoraWorkstation_log
+-N OUTPUT_direct
+-A INPUT -i virbr0 -p udp -m udp --dport 53 -j ACCEPT
+-A INPUT -i virbr0 -p tcp -m tcp --dport 53 -j ACCEPT
+-A INPUT -i virbr0 -p udp -m udp --dport 67 -j ACCEPT
+-A INPUT -i virbr0 -p tcp -m tcp --dport 67 -j ACCEPT
+-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -j INPUT_direct
+-A INPUT -j INPUT_ZONES_SOURCE
+-A INPUT -j INPUT_ZONES
+-A INPUT -p icmp -j ACCEPT
+-A INPUT -m conntrack --ctstate INVALID -j DROP
+-A INPUT -j REJECT --reject-with icmp-host-prohibited
+-A FORWARD -d 192.168.122.0/24 -o virbr0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -s 192.168.122.0/24 -i virbr0 -j ACCEPT
+-A FORWARD -i virbr0 -o virbr0 -j ACCEPT
+-A FORWARD -o virbr0 -j REJECT --reject-with icmp-port-unreachable
+-A FORWARD -i virbr0 -j REJECT --reject-with icmp-port-unreachable
+-A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -i lo -j ACCEPT
+-A FORWARD -j FORWARD_direct
+-A FORWARD -j FORWARD_IN_ZONES_SOURCE
+-A FORWARD -j FORWARD_IN_ZONES
+-A FORWARD -j FORWARD_OUT_ZONES_SOURCE
+-A FORWARD -j FORWARD_OUT_ZONES
+-A FORWARD -p icmp -j ACCEPT
+-A FORWARD -m conntrack --ctstate INVALID -j DROP
+-A FORWARD -j REJECT --reject-with icmp-host-prohibited
+-A OUTPUT -o virbr0 -p udp -m udp --dport 68 -j ACCEPT
+-A OUTPUT -j OUTPUT_direct
+-A FORWARD_IN_ZONES -i tun0 -g FWDI_FedoraWorkstation
+-A FORWARD_IN_ZONES -i wlp3s0 -g FWDI_FedoraWorkstation
+-A FORWARD_IN_ZONES -g FWDI_FedoraWorkstation
+-A FORWARD_OUT_ZONES -o tun0 -g FWDO_FedoraWorkstation
+-A FORWARD_OUT_ZONES -o wlp3s0 -g FWDO_FedoraWorkstation
+-A FORWARD_OUT_ZONES -g FWDO_FedoraWorkstation
+-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_log
+-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_deny
+-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_allow
+-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_log
+-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_deny
+-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_allow
+-A INPUT_ZONES -i tun0 -g IN_FedoraWorkstation
+-A INPUT_ZONES -i wlp3s0 -g IN_FedoraWorkstation
+-A INPUT_ZONES -g IN_FedoraWorkstation
+-A IN_FedoraWorkstation -j IN_FedoraWorkstation_log
+-A IN_FedoraWorkstation -j IN_FedoraWorkstation_deny
+-A IN_FedoraWorkstation -j IN_FedoraWorkstation_allow
+-A IN_FedoraWorkstation_allow -d 224.0.0.251/32 -p udp -m udp --dport 5353 -m conntrack --ctstate NEW -j ACCEPT
+-A IN_FedoraWorkstation_allow -p udp -m udp --dport 137 -m conntrack --ctstate NEW -j ACCEPT
+-A IN_FedoraWorkstation_allow -p udp -m udp --dport 138 -m conntrack --ctstate NEW -j ACCEPT
+-A IN_FedoraWorkstation_allow -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT
+-A IN_FedoraWorkstation_allow -p udp -m udp --dport 1025:65535 -m conntrack --ctstate NEW -j ACCEPT
+-A IN_FedoraWorkstation_allow -p tcp -m tcp --dport 1025:65535 -m conntrack --ctstate NEW -j ACCEPT
+----
+
+ 
+.192.168.0.71
+[source,bash]
+----
+$ bash -c 'iptables -S'
+-P INPUT ACCEPT
+-P FORWARD ACCEPT
+-P OUTPUT ACCEPT
+-N FORWARD_IN_ZONES
+-N FORWARD_IN_ZONES_SOURCE
+-N FORWARD_OUT_ZONES
+-N FORWARD_OUT_ZONES_SOURCE
+-N FORWARD_direct
+-N FWDI_FedoraWorkstation
+-N FWDI_FedoraWorkstation_allow
+-N FWDI_FedoraWorkstation_deny
+-N FWDI_FedoraWorkstation_log
+-N FWDO_FedoraWorkstation
+-N FWDO_FedoraWorkstation_allow
+-N FWDO_FedoraWorkstation_deny
+-N FWDO_FedoraWorkstation_log
+-N INPUT_ZONES
+-N INPUT_ZONES_SOURCE
+-N INPUT_direct
+-N IN_FedoraWorkstation
+-N IN_FedoraWorkstation_allow
+-N IN_FedoraWorkstation_deny
+-N IN_FedoraWorkstation_log
+-N OUTPUT_direct
+-A INPUT -i virbr0 -p udp -m udp --dport 53 -j ACCEPT
+-A INPUT -i virbr0 -p tcp -m tcp --dport 53 -j ACCEPT
+-A INPUT -i virbr0 -p udp -m udp --dport 67 -j ACCEPT
+-A INPUT -i virbr0 -p tcp -m tcp --dport 67 -j ACCEPT
+-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -j INPUT_direct
+-A INPUT -j INPUT_ZONES_SOURCE
+-A INPUT -j INPUT_ZONES
+-A INPUT -p icmp -j ACCEPT
+-A INPUT -m conntrack --ctstate INVALID -j DROP
+-A INPUT -j REJECT --reject-with icmp-host-prohibited
+-A FORWARD -d 192.168.122.0/24 -o virbr0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -s 192.168.122.0/24 -i virbr0 -j ACCEPT
+-A FORWARD -i virbr0 -o virbr0 -j ACCEPT
+-A FORWARD -o virbr0 -j REJECT --reject-with icmp-port-unreachable
+-A FORWARD -i virbr0 -j REJECT --reject-with icmp-port-unreachable
+-A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -i lo -j ACCEPT
+-A FORWARD -j FORWARD_direct
+-A FORWARD -j FORWARD_IN_ZONES_SOURCE
+-A FORWARD -j FORWARD_IN_ZONES
+-A FORWARD -j FORWARD_OUT_ZONES_SOURCE
+-A FORWARD -j FORWARD_OUT_ZONES
+-A FORWARD -p icmp -j ACCEPT
+-A FORWARD -m conntrack --ctstate INVALID -j DROP
+-A FORWARD -j REJECT --reject-with icmp-host-prohibited
+-A OUTPUT -o virbr0 -p udp -m udp --dport 68 -j ACCEPT
+-A OUTPUT -j OUTPUT_direct
+-A FORWARD_IN_ZONES -i tun0 -g FWDI_FedoraWorkstation
+-A FORWARD_IN_ZONES -i wlp3s0 -g FWDI_FedoraWorkstation
+-A FORWARD_IN_ZONES -g FWDI_FedoraWorkstation
+-A FORWARD_OUT_ZONES -o tun0 -g FWDO_FedoraWorkstation
+-A FORWARD_OUT_ZONES -o wlp3s0 -g FWDO_FedoraWorkstation
+-A FORWARD_OUT_ZONES -g FWDO_FedoraWorkstation
+-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_log
+-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_deny
+-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_allow
+-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_log
+-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_deny
+-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_allow
+-A INPUT_ZONES -i tun0 -g IN_FedoraWorkstation
+-A INPUT_ZONES -i wlp3s0 -g IN_FedoraWorkstation
+-A INPUT_ZONES -g IN_FedoraWorkstation
+-A IN_FedoraWorkstation -j IN_FedoraWorkstation_log
+-A IN_FedoraWorkstation -j IN_FedoraWorkstation_deny
+-A IN_FedoraWorkstation -j IN_FedoraWorkstation_allow
+-A IN_FedoraWorkstation_allow -d 224.0.0.251/32 -p udp -m udp --dport 5353 -m conntrack --ctstate NEW -j ACCEPT
+-A IN_FedoraWorkstation_allow -p udp -m udp --dport 137 -m conntrack --ctstate NEW -j ACCEPT
+-A IN_FedoraWorkstation_allow -p udp -m udp --dport 138 -m conntrack --ctstate NEW -j ACCEPT
+-A IN_FedoraWorkstation_allow -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT
+-A IN_FedoraWorkstation_allow -p udp -m udp --dport 1025:65535 -m conntrack --ctstate NEW -j ACCEPT
+-A IN_FedoraWorkstation_allow -p tcp -m tcp --dport 1025:65535 -m conntrack --ctstate NEW -j ACCEPT
+----
+
+ 
+==== TASK: Interfaces de red: ifconfig
+.192.168.0.70
+[source,bash]
+----
+$ bash -c 'ifconfig'
+enp0s25: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 20  memory 0xb4a00000-b4a20000  
+
+enp0s25:1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.0.69  netmask 255.255.255.0  broadcast 192.168.0.255
+        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)
+        device interrupt 20  memory 0xb4a00000-b4a20000  
+
+enp0s25:2: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.0.70  netmask 255.255.255.0  broadcast 192.168.0.255
+        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)
+        device interrupt 20  memory 0xb4a00000-b4a20000  
+
+enp0s25:3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.0.71  netmask 255.255.255.0  broadcast 192.168.0.255
+        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)
+        device interrupt 20  memory 0xb4a00000-b4a20000  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1  (Local Loopback)
+        RX packets 99491  bytes 12905172 (12.3 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 99491  bytes 12905172 (12.3 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1360
+        inet 10.97.116.13  netmask 255.255.252.0  destination 10.97.116.13
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 100  (UNSPEC)
+        RX packets 8040  bytes 3230500 (3.0 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 8357  bytes 513516 (501.4 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:57:af:8a  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp3s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.216.33.64  netmask 255.255.255.0  broadcast 10.216.33.255
+        inet6 fe80::ce3d:82ff:fee9:2c85  prefixlen 64  scopeid 0x20<link>
+        ether cc:3d:82:e9:2c:85  txqueuelen 1000  (Ethernet)
+        RX packets 1590303  bytes 1516883005 (1.4 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 714443  bytes 111188659 (106.0 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+----
+
+ 
+.192.168.0.71
+[source,bash]
+----
+$ bash -c 'ifconfig'
+enp0s25: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 20  memory 0xb4a00000-b4a20000  
+
+enp0s25:1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.0.69  netmask 255.255.255.0  broadcast 192.168.0.255
+        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)
+        device interrupt 20  memory 0xb4a00000-b4a20000  
+
+enp0s25:2: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.0.70  netmask 255.255.255.0  broadcast 192.168.0.255
+        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)
+        device interrupt 20  memory 0xb4a00000-b4a20000  
+
+enp0s25:3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.0.71  netmask 255.255.255.0  broadcast 192.168.0.255
+        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)
+        device interrupt 20  memory 0xb4a00000-b4a20000  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1  (Local Loopback)
+        RX packets 99491  bytes 12905172 (12.3 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 99491  bytes 12905172 (12.3 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1360
+        inet 10.97.116.13  netmask 255.255.252.0  destination 10.97.116.13
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 100  (UNSPEC)
+        RX packets 8040  bytes 3230500 (3.0 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 8357  bytes 513516 (501.4 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:57:af:8a  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp3s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.216.33.64  netmask 255.255.255.0  broadcast 10.216.33.255
+        inet6 fe80::ce3d:82ff:fee9:2c85  prefixlen 64  scopeid 0x20<link>
+        ether cc:3d:82:e9:2c:85  txqueuelen 1000  (Ethernet)
+        RX packets 1590303  bytes 1516883005 (1.4 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 714443  bytes 111188659 (106.0 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+----
+
+ 
+==== TASK: Java Version
+.192.168.0.70
+[source,bash]
+----
+$ java -version
+openjdk version "1.8.0_91"
+OpenJDK Runtime Environment (build 1.8.0_91-b14)
+OpenJDK 64-Bit Server VM (build 25.91-b14, mixed mode)
+----
+
+ 
+.192.168.0.71
+[source,bash]
+----
+$ java -version
+openjdk version "1.8.0_91"
+OpenJDK Runtime Environment (build 1.8.0_91-b14)
+OpenJDK 64-Bit Server VM (build 25.91-b14, mixed mode)
+----
+
+ 
+==== TASK: Existencia Usuario Jboss
+.192.168.0.70
+[source,bash]
+----
+$ id jboss
+id: jboss: no such user
+----
+
+ 
+.192.168.0.71
+[source,bash]
+----
+$ id jboss
+id: jboss: no such user
+----
+
+ 
+==== TASK: Parche Jboss EAP existente Host1
+.192.168.0.70
+[source,bash]
+----
+$ ./jboss-cli.sh --command="patch info"
+{
+    "outcome" : "success",
+    "result" : {
+        "cumulative-patch-id" : "base",
+        "patches" : []
+    }
+}
+----
+
+ 
+.192.168.0.71
+[source,bash]
+----
+$ ./jboss-cli.sh --command="patch info"
+{
+    "outcome" : "success",
+    "result" : {
+        "cumulative-patch-id" : "base",
+        "patches" : []
+    }
+}
+----
+
+ 
+==== TASK: Parche Jboss EAP existente Host2
+.192.168.0.70
+[source,bash]
+----
+$ ./jboss-cli.sh --command="patch info"
+{
+    "outcome" : "success",
+    "result" : {
+        "cumulative-patch-id" : "base",
+        "patches" : []
+    }
+}
+----
+
+ 
+.192.168.0.71
+[source,bash]
+----
+$ ./jboss-cli.sh --command="patch info"
+{
+    "outcome" : "success",
+    "result" : {
+        "cumulative-patch-id" : "base",
+        "patches" : []
+    }
+}
+----
+
+ 
+==== TASK: Verificacion funcionamiento servicio JBoss
+.192.168.0.70
+[source,bash]
+----
+$ ps -fea | grep "Server:" | grep -v grep | awk -F " " '{print $2 " "  $9}'
+7946 -D[Server:server-one]
+8004 -D[Server:server-two]
+9328 -D[Server:server-one]
+9385 -D[Server:server-two]
+----
+
+ 
+.192.168.0.71
+[source,bash]
+----
+$ ps -fea | grep "Server:" | grep -v grep | awk -F " " '{print $2 " "  $9}'
+7946 -D[Server:server-one]
+8004 -D[Server:server-two]
+9328 -D[Server:server-one]
+9385 -D[Server:server-two]
+----
+
+ 

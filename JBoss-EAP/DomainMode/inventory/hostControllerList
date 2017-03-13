@@ -1,0 +1,10 @@
+[infraestructura]
+# lista de ip para los hosts controllers
+192.168.0.70 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=poc
+192.168.0.71 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=poc
+
+
+# definicion de variables que se utilizarán
+[infraestructura:vars]
+jboss_eap_admin_user=admin
+jboss_eap_admin_password=Redhat123_

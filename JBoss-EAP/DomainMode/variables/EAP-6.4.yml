@@ -1,0 +1,10 @@
+# Here are variables related to the standalone JBoss installation
+
+#eap base variables
+jboss_eap_dc_home_path: /opt/EAP-Ansible-POC/domainController
+jboss_eap_hc1_home_path: /opt/EAP-Ansible-POC/hostController1
+jboss_eap_hc2_home_path: /opt/EAP-Ansible-POC/hostController2
+install_folder: domainController
+#jboss_eap_last_patch: jboss-eap-6.4.6-patch.zip
+jboss_eap_user: jboss
+#jboss_eap_admin_password: jbossAdmin.1 esto va en host

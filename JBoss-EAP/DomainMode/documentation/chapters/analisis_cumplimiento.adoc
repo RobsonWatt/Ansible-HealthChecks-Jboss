@@ -1,0 +1,14 @@
+== Análisis del cumplimiento
+====
+En este apartado se entregará un análisis simple del resultado del cumplimiento
+====
+
+=== Conclusión
+====
+En este apartado se entregará una conclusión simple del resultado del cumplimiento]
+====
+
+=== Puntos de mejoras por capa y nodo
+====
+En caso de requerir se entregará en este apartado se entregará un listado de puntos de mejora
+====

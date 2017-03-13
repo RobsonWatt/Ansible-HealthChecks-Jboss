@@ -1,0 +1,158 @@
+=== Producto: eap
+
+
+====
+.Checklist eap
+[width="100%", cols="^1,^1,4,16", frame="topbot",options="header"]
+|======================
+| #
+| Res
+| Aspecto
+| Comentario
+
+| 1
+| image:n.png[]
+| Usuario JBOSS
+|  Se verifica que el usuario JBOSS exista en el sistema operativo
+
+| 2
+| image:s.png[]
+| Disco Asignado
+|  Se verifica que el disco donde está instalado el OPT sea una LVM
+
+| 3
+| image:s.png[]
+| Cantidad Cores
+|  Se verifica que tenga minimo 2 cores
+
+| 4
+| image:s.png[]
+| Cantidad Ram
+|  Se verifica que tenga minimo 4 GBs de RAM
+
+| 5
+| image:s.png[]
+| Ulimits
+|  Se verifica que el parametros ----- tenga un mínimo de ------ para el usuario JBOSS
+
+| 6
+| image:s.png[]
+| Reglas IPTABLES
+|  Se verifica que esté aceptando peticiones solo para los puertos de JBOSS
+
+| 7
+| image:s.png[]
+| chkconfig iptables
+|  Se verifica que el servicio esté activo para los niveles 3, 4 y 5
+
+| 8
+| image:s.png[]
+| Interfaces de red: ifconfig
+|  Se comprueba que exista una IP asignada
+
+| 9
+| image:s.png[]
+| Java Version
+| Se verifica que la versión de java sea 1.7 o 1.8
+
+| 10
+| image:s.png[]
+| Installed JDK
+|  Se verifica que la instalación de java sea un JDK
+
+| 11
+| image:s.png[]
+| Installed JDK devel
+|  Se verifica que la instalación java tenga los paquetes de desarrollo
+
+| 12
+| image:s.png[]
+| Verificando Carpeta del product en /opt/jboss-eap-6.4
+|  Se verifica que el producto esté instalado en /opt
+
+| 13
+| image:s.png[]
+| chkconfig
+|  Se verifica que el servicio esté activo para los niveles 3, 4 y 5
+
+| 14
+| image:s.png[]
+| Parametros JVM: Xms
+|  Se verifica una asignación del parámetro acorde a la RAM del servidor
+
+| 15
+| image:s.png[]
+| Parametros JVM: Xmx
+|  Se verifica una asignación del parámetro acorde a la RAM del servidor
+
+| 16
+| image:s.png[]
+| Parametros JVM: XX:MaxPermSize
+|  Se verifica una asignación del parámetro acorde a la RAM del servidor
+
+| 17
+| image:s.png[]
+| ps -fea \|  grep jboss
+|  Se verifica que el proceso pertenezca al usuario JBOSS
+
+| 18
+| image:s.png[]
+| Parametros binding IP: jboss.bind.address.management
+|  Se verifica que el parámetro contenga la IP asignada
+
+| 19
+| image:s.png[]
+| Parametros binding IP: jboss.bind.address
+|  Se verifica que el parámetro contenga la IP asignada
+
+| 20
+| image:s.png[]
+| HA: JGroups
+|  Se verifica la configuración para determinar el modo de clusterización
+
+| 21
+| image:s.png[]
+| Modcluster
+|  Se verifica la configuración para determinar el modo de clusterización
+
+| 22
+| image:s.png[]
+| Standard Socket Binding
+|  Se verifica la configuración para hacer pareo con IP TABLES
+
+| 23
+| image:s.png[]
+| LOG Rotate [[/subsystem=logging:read-resource(recursive=true)]]
+|  Se verifica que exista una rotación de logs controlada
+
+| 24
+| image:s.png[]
+| Modules EXTRAS
+|  Se verifica la inclusión de módulos extas
+
+| 25
+| image:s.png[]
+| Datasources
+|  Se verifica la configuración de datasources agregados a la plataforma
+
+| 26
+| image:s.png[]
+| Colas JMS
+|  Se verifica la configuración para determinar el modo de clusterización de las colas JMS
+
+| 27
+| image:s.png[]
+| Despliegues
+|  Se verifican los despliegues realizados
+
+| 28
+| image:s.png[]
+| Revisando system-properties
+|  Se verifica la configuración de las propiedades de sistema
+
+| 29
+| image:s.png[]
+| Informacion de parches
+|  Se verifica que los parches esté al día con los publicados en el portal de clientes
+|======================
+====

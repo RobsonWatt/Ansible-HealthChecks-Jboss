@@ -1,0 +1,60 @@
+---
+# This playbook
+
+- hosts: domaincontroller
+  remote_user: root
+  vars:
+    only_check: True
+    java_version: 1.8.0_91
+    install_folder: EAP6
+    jboss_service: jboss-eap
+    jboss_eap_version: 6.4
+
+  vars_files:
+    - variables/EAP-{{jboss_eap_version}}.yml
+
+  tasks:
+    - name: "JVM ServerGroup main-server-group"
+      command: chdir={{jboss_eap_dc_home_path}}/bin/ ././jboss-cli.sh --controller={{ansible_enp0s25_1.ipv4.address}}:9999 -c  --command="/server-group=main-server-group/jvm=default:read-resource"
+      register: output
+      ignore_errors: "{{only_check}}"
+
+
+    - name: "DataSources Existentes"
+      script: datasources_list.sh
+      register: output
+    - debug: var=output.stdout_lines
+    - debug: var=output.stdout
+    - debug: var=output.stderr
+
+    - name: "DataSources Test Connection"
+      script: datasources_test_connection.sh
+      register: output
+    - debug: var=output.stdout_lines
+    - debug: var=output.stdout
+    - debug: var=output.stderr
+
+    - name: "Verificacion Estado de Servidores"
+      script: server_status.sh
+      register: output
+    - debug: var=output.stdout_lines
+    - debug: var=output.stdout
+    - debug: var=output.stderr
+
+####################
+## Otros Ejemplos ##
+####################
+#    - name: "Configuracion Modcluster"
+#      command: chdir={{jboss_eap_dc_home_path}}/bin/ ././jboss-cli.sh --controller={{ansible_eth1.ipv4.address}}:9999 -c  --command="/profile=full/subsystem=modcluster:read-resource(recursive=true)"
+#      register: output
+#      ignore_errors: "{{only_check}}"
+#
+#    - name: "Configuracion socket-binding-group"
+#      command: chdir={{jboss_eap_dc_home_path}}/bin/ ././jboss-cli.sh --controller={{ansible_eth1.ipv4.address}}:9999 -c  --command="/socket-binding-group=full-sockets/socket-binding=modcluster:read-resource(recursive=true)"
+#      register: output
+#      ignore_errors: "{{only_check}}"
+#
+#    - name: "Conector AJP"
+#      command: chdir={{jboss_eap_dc_home_path}}/bin/ ././jboss-cli.sh --controller={{ansible_eth1.ipv4.address}}:9999 -c  --command="/profile=full/subsystem=web/connector=ajp:read-resource(recursive=true)"
+#      register: output
+#      ignore_errors: "{{only_check}}"
