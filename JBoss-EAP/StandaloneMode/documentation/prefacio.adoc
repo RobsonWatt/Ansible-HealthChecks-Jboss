@@ -1,0 +1,34 @@
+== Prefacio
+=== Confidencialidad, Copyright y responsabilidad
+
+Este es un documento de orientación al cliente entre Red Hat(C), Inc. y {customer}.
+Copyright 2017  Red Hat, Inc. Todos los derechos reservados. Ninguna parte
+de la obra amparada por el derecho de autor en este documento puede ser reproducida
+ o utilizada de ninguna forma ni por ningún medio-gráfico, electrónico o mecánico,
+ incluyendo el fotocopiado, grabación o sistemas de almacenamiento y recuperación
+ de información, sin permiso por escrito de Red Hat con excepción de lo que se
+  requiere para compartir esta información según lo previsto con las partes
+  confidenciales antes mencionados.
+
+=== Acerca de este documento
+El objetivo de este documento es el de informar los resultados de la ejecución de la certificación de la plataforma instalada en el ambiente de {ambiente}.
+
+
+=== Audiencia
+Este documento está dirijido para los administradores de sistemas, arquitectos y desarrolladores de {customer}
+
+
+=== Terminología
+
+.Tabla de términos
+[cols=2,cols="1,5",options=header]
+|===
+<|Término <|Definición
+
+|LVS | Linux Virtual Server
+|EWS | Enterprise Web Server
+|EAP | Enterprise Application Platform
+|JON | JBoss Operations Network
+|QA  | Quality assurance
+
+|===

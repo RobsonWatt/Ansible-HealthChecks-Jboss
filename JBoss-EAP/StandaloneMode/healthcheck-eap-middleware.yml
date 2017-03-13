@@ -1,0 +1,163 @@
+---
+# This playbook
+
+- hosts: servidores
+  remote_user: root
+  vars:
+    only_check: True
+    java_version: 1.8.0_91
+    install_folder: EAP6
+    jboss_service: jboss-eap
+    jboss_eap_version: 6.4
+    jboss_conf_jvm_file: "{{jboss_eap_home_path}}/bin/standalone.conf"
+
+  vars_files:
+    - variables/EAP-{{jboss_eap_version}}.yml
+
+  tasks:
+    - name: Usuario JBOSS
+      ignore_errors: "{{only_check}}"
+      command: id jboss
+      register: output
+
+    - name: Disco Asignado
+      ignore_errors: "{{only_check}}"
+      command: df -h
+      register: output
+
+    - name: Cantidad Cores
+      ignore_errors: "{{only_check}}"
+      command: lscpu
+      register: output
+
+    - name: Cantidad Ram
+      ignore_errors: "{{only_check}}"
+      command: free
+      register: output
+
+    - name: Ulimits
+      ignore_errors: "{{only_check}}"
+      command: bash -c 'ulimit -aHS'
+      register: output
+
+    - name: Reglas IPTABLES
+      ignore_errors: "{{only_check}}"
+      command: bash -c 'iptables -S'
+      register: output
+
+    - name: "chkconfig iptables"
+      command: bash -c 'chkconfig --list | grep iptables'
+      register: output
+      ignore_errors: "{{only_check}}"
+
+    - name: "Interfaces de red: ifconfig"
+      command: bash -c 'ifconfig'
+      register: output
+      ignore_errors: "{{only_check}}"
+
+    - name: Java Version
+      command: java -version
+      register: output
+      ignore_errors: "{{only_check}}"
+
+#    - name: Installed JDK
+#      command: yum info java-{{java_version}}-openjdk
+#      register: output
+#      ignore_errors: "{{only_check}}"
+
+#    - name: Installed JDK devel
+#      command: yum info java-{{java_version}}-openjdk-devel
+#      register: output
+#      ignore_errors: "{{only_check}}"
+
+#    - name: "Verificando Carpeta del producto en /opt/{{install_folder}}"
+#      command: bash -c 'ls -la /opt | grep {{install_folder}}'
+#      register: output
+#      ignore_errors: "{{only_check}}"
+
+    - name: "chkconfig"
+      command: bash -c 'chkconfig --list | grep {{jboss_service}}'
+      register: output
+      ignore_errors: "{{only_check}}"
+
+    - name: "Parametros JVM: Xms "
+      command: bash -c 'cat {{jboss_conf_jvm_file}} |grep Xms'
+      register: output
+      ignore_errors: "{{only_check}}"
+
+    - name: "Parametros JVM: Xmx "
+      command: bash -c 'cat {{jboss_conf_jvm_file}} |grep Xmx'
+      register: output
+      ignore_errors: "{{only_check}}"
+
+    - name: "Parametros JVM: XX:MaxPermSize "
+      command: bash -c 'cat {{jboss_conf_jvm_file}} |grep XX:MaxPermSize'
+      register: output
+      ignore_errors: "{{only_check}}"
+
+    - name: "ps -fea | grep jboss"
+      command: bash -c 'ps -fea|grep jboss'
+      register: output
+      ignore_errors: "{{only_check}}"
+
+    - name: "Parametros binding IP: jboss.bind.address.management "
+      command: bash -c 'cat {{jboss_conf_jvm_file}} |grep jboss.bind.address.management='
+      register: output
+      ignore_errors: "{{only_check}}"
+
+
+    - name: "Parametros binding IP: jboss.bind.address "
+      command: bash -c 'cat {{jboss_conf_jvm_file}} |grep jboss.bind.address='
+      register: output
+      ignore_errors: "{{only_check}}"
+#    - name: "HA: JGroups"
+#      command: chdir={{jboss_eap_home_path}}/bin/ ././jboss-cli.sh --controller={{ansible_enp0s25_1.ipv4.address}}:9999 -c  --command="/subsystem=jgroups:read-resource(recursive=true)"
+#      register: output
+#      ignore_errors: "{{only_check}}"
+
+#    - name: "Modcluster"
+#      command: chdir={{jboss_eap_home_path}}/bin/ ././jboss-cli.sh --controller={{ansible_enp0s25_1.ipv4.address}}:9999 -c  --command="/subsystem=modcluster:read-resource(recursive=true)"
+#      register: output
+#      ignore_errors: "{{only_check}}"
+
+    - name: "Standard Socket Binding"
+      command: chdir={{jboss_eap_home_path}}/bin/ ././jboss-cli.sh --controller={{ansible_enp0s25_1.ipv4.address}}:9999 -c  --command="/socket-binding-group=standard-sockets:read-resource(recursive=true)"
+      register: output
+      ignore_errors: "{{only_check}}"
+
+    - name: "LOG Rotate [[/subsystem=logging:read-resource(recursive=true)]]"
+      command: chdir={{jboss_eap_home_path}}/bin/ ././jboss-cli.sh --controller={{ansible_enp0s25_1.ipv4.address}}:9999 -c  --command="/subsystem=logging:read-resource(recursive=true)"
+      register: output
+      ignore_errors: "{{only_check}}"
+
+    - name: "Modules EXTRAS"
+      command: find {{jboss_eap_home_path}}/modules -mindepth 2 -maxdepth 3 -type d
+      register: output
+      ignore_errors: "{{only_check}}"
+
+    - name: "Datasources"
+      command: chdir={{jboss_eap_home_path}}/bin/ ././jboss-cli.sh --controller={{ansible_enp0s25_1.ipv4.address}}:9999 -c  --command="/subsystem=datasources:read-children-names(child-type=data-source)/subsystem=datasources:read-children-names(child-type=data-source)"
+      register: output
+      ignore_errors: "{{only_check}}"
+
+    - name: "Colas JMS"
+      command: chdir={{jboss_eap_home_path}}/bin/ ././jboss-cli.sh --controller={{ansible_enp0s25_1.ipv4.address}}:9999 -c  --command="/subsystem=messaging:read-resource(recursive=true)"
+      register: output
+      ignore_errors: "{{only_check}}"
+
+
+    - name: "Despliegues"
+      command: chdir={{jboss_eap_home_path}}/bin/ ././jboss-cli.sh --controller={{ansible_enp0s25_1.ipv4.address}}:9999 -c  --command="deployment-info"
+      register: output
+      ignore_errors: "{{only_check}}"
+
+
+    - name: "Revisando system-properties"
+      command: chdir={{jboss_eap_home_path}}/bin/ ././jboss-cli.sh --controller={{ansible_enp0s25_1.ipv4.address}}:9999 -c  --command="/core-service=platform-mbean/type=runtime:read-attribute(name=system-properties)"
+      register: output
+      ignore_errors: "{{only_check}}"
+
+    - name: "Informacion de parches"
+      command: chdir={{jboss_eap_home_path}}/bin/ ././jboss-cli.sh --controller={{ansible_enp0s25_1.ipv4.address}}:9999 -c  --command="patch info"
+      register: output
+      ignore_errors: "{{only_check}}"

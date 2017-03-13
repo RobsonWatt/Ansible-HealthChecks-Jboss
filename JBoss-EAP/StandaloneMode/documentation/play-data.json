@@ -1,0 +1,2010 @@
+{
+    "plays": [
+        {
+            "play": {
+                "id": "37623331-c0dd-4950-bfe7-94d3f41fec1f", 
+                "name": "servidores"
+            }, 
+            "tasks": [
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "_ansible_verbose_override": true, 
+                            "ansible_facts": {
+                                "ansible_all_ipv4_addresses": [
+                                    "10.97.116.13", 
+                                    "192.168.0.69", 
+                                    "192.168.0.70", 
+                                    "192.168.0.71", 
+                                    "192.168.122.1", 
+                                    "10.216.33.64"
+                                ], 
+                                "ansible_all_ipv6_addresses": [
+                                    "fe80::ce3d:82ff:fee9:2c85"
+                                ], 
+                                "ansible_architecture": "x86_64", 
+                                "ansible_bios_date": "02/26/2015", 
+                                "ansible_bios_version": "GNET72WW (2.20 )", 
+                                "ansible_cmdline": {
+                                    "BOOT_IMAGE": "/vmlinuz-4.4.14-200.fc22.x86_64", 
+                                    "LANG": "en_US.UTF-8", 
+                                    "nouveau.blacklist": "1", 
+                                    "nouveau.modeset": "0", 
+                                    "rd.driver.blacklist": "nouveau", 
+                                    "rd.luks.uuid": "luks-a1d3fe02-c86e-45d5-9ee4-c7d7c7dd6d56", 
+                                    "rd.lvm.lv": "fedora_bandurria/root", 
+                                    "ro": true, 
+                                    "root": "/dev/mapper/fedora_bandurria-root"
+                                }, 
+                                "ansible_date_time": {
+                                    "date": "2017-03-13", 
+                                    "day": "13", 
+                                    "epoch": "1489433799", 
+                                    "hour": "16", 
+                                    "iso8601": "2017-03-13T19:36:39Z", 
+                                    "iso8601_basic": "20170313T163639783435", 
+                                    "iso8601_basic_short": "20170313T163639", 
+                                    "iso8601_micro": "2017-03-13T19:36:39.783671Z", 
+                                    "minute": "36", 
+                                    "month": "03", 
+                                    "second": "39", 
+                                    "time": "16:36:39", 
+                                    "tz": "CLST", 
+                                    "tz_offset": "-0300", 
+                                    "weekday": "Monday", 
+                                    "weekday_number": "1", 
+                                    "weeknumber": "11", 
+                                    "year": "2017"
+                                }, 
+                                "ansible_default_ipv4": {
+                                    "address": "10.216.33.64", 
+                                    "alias": "wlp3s0", 
+                                    "broadcast": "10.216.33.255", 
+                                    "gateway": "10.216.33.254", 
+                                    "interface": "wlp3s0", 
+                                    "macaddress": "cc:3d:82:e9:2c:85", 
+                                    "mtu": 1500, 
+                                    "netmask": "255.255.255.0", 
+                                    "network": "10.216.33.0", 
+                                    "type": "ether"
+                                }, 
+                                "ansible_default_ipv6": {}, 
+                                "ansible_devices": {
+                                    "sda": {
+                                        "holders": [], 
+                                        "host": "SATA controller: Intel Corporation 8 Series/C220 Series Chipset Family 6-port SATA Controller 1 [AHCI mode] (rev 04)", 
+                                        "model": "WDC WD10JPVX-08J", 
+                                        "partitions": {
+                                            "sda1": {
+                                                "sectors": "1024000", 
+                                                "sectorsize": 512, 
+                                                "size": "500.00 MB", 
+                                                "start": "2048"
+                                            }, 
+                                            "sda2": {
+                                                "sectors": "1203777536", 
+                                                "sectorsize": 512, 
+                                                "size": "574.01 GB", 
+                                                "start": "1026048"
+                                            }
+                                        }, 
+                                        "removable": "0", 
+                                        "rotational": "1", 
+                                        "sas_address": null, 
+                                        "sas_device_handle": null, 
+                                        "scheduler_mode": "cfq", 
+                                        "sectors": "1953525168", 
+                                        "sectorsize": "512", 
+                                        "size": "931.51 GB", 
+                                        "support_discard": "0", 
+                                        "vendor": "ATA"
+                                    }, 
+                                    "sr0": {
+                                        "holders": [], 
+                                        "host": "SATA controller: Intel Corporation 8 Series/C220 Series Chipset Family 6-port SATA Controller 1 [AHCI mode] (rev 04)", 
+                                        "model": "DVDRAM GUB0N", 
+                                        "partitions": {}, 
+                                        "removable": "1", 
+                                        "rotational": "1", 
+                                        "sas_address": null, 
+                                        "sas_device_handle": null, 
+                                        "scheduler_mode": "cfq", 
+                                        "sectors": "2097151", 
+                                        "sectorsize": "512", 
+                                        "size": "1024.00 MB", 
+                                        "support_discard": "0", 
+                                        "vendor": "HL-DT-ST"
+                                    }
+                                }, 
+                                "ansible_distribution": "Fedora", 
+                                "ansible_distribution_major_version": "22", 
+                                "ansible_distribution_release": "Twenty Two", 
+                                "ansible_distribution_version": "22", 
+                                "ansible_dns": {
+                                    "nameservers": [
+                                        "10.97.120.27", 
+                                        "10.11.5.19", 
+                                        "10.192.20.245", 
+                                        "10.192.206.245"
+                                    ], 
+                                    "search": [
+                                        "redhat.com"
+                                    ]
+                                }, 
+                                "ansible_domain": "", 
+                                "ansible_enp0s25": {
+                                    "active": false, 
+                                    "device": "enp0s25", 
+                                    "ipv4_secondaries": [
+                                        {
+                                            "address": "192.168.0.70", 
+                                            "broadcast": "192.168.0.255", 
+                                            "netmask": "255.255.255.0", 
+                                            "network": "192.168.0.0"
+                                        }, 
+                                        {
+                                            "address": "192.168.0.71", 
+                                            "broadcast": "192.168.0.255", 
+                                            "netmask": "255.255.255.0", 
+                                            "network": "192.168.0.0"
+                                        }
+                                    ], 
+                                    "macaddress": "54:ee:75:52:b2:04", 
+                                    "module": "e1000e", 
+                                    "mtu": 1500, 
+                                    "pciid": "0000:00:19.0", 
+                                    "promisc": false, 
+                                    "type": "ether"
+                                }, 
+                                "ansible_enp0s25_1": {
+                                    "ipv4": {
+                                        "address": "192.168.0.69", 
+                                        "broadcast": "192.168.0.255", 
+                                        "netmask": "255.255.255.0", 
+                                        "network": "192.168.0.0"
+                                    }
+                                }, 
+                                "ansible_enp0s25_2": {
+                                    "ipv4_secondaries": [
+                                        {
+                                            "address": "192.168.0.70", 
+                                            "broadcast": "192.168.0.255", 
+                                            "netmask": "255.255.255.0", 
+                                            "network": "192.168.0.0"
+                                        }
+                                    ]
+                                }, 
+                                "ansible_enp0s25_3": {
+                                    "ipv4_secondaries": [
+                                        {
+                                            "address": "192.168.0.71", 
+                                            "broadcast": "192.168.0.255", 
+                                            "netmask": "255.255.255.0", 
+                                            "network": "192.168.0.0"
+                                        }
+                                    ]
+                                }, 
+                                "ansible_env": {
+                                    "BASH_FUNC_module()": "() {  eval `/usr/bin/modulecmd bash $*`\n}", 
+                                    "BASH_FUNC_scl()": "() {  local CMD=$1;\n if [ \"$CMD\" = \"load\" -o \"$CMD\" = \"unload\" ]; then\n eval \"module $@\";\n else\n /usr/bin/scl \"$@\";\n fi\n}", 
+                                    "HOME": "/root", 
+                                    "LANG": "en_US.UTF-8", 
+                                    "LC_ALL": "en_US.UTF-8", 
+                                    "LC_MESSAGES": "en_US.UTF-8", 
+                                    "LESSOPEN": "|/usr/bin/lesspipe.sh %s", 
+                                    "LOADEDMODULES": "", 
+                                    "LOGNAME": "root", 
+                                    "MAIL": "/var/mail/root", 
+                                    "MODULEPATH": "/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles", 
+                                    "MODULESHOME": "/usr/share/Modules", 
+                                    "NODE_HOME": "/opt/node-v0.10.30-linux-x86", 
+                                    "PATH": "/opt/node-v0.10.30-linux-x86/bin:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin", 
+                                    "PROMPT_COMMAND": "RETRN_VAL=$?;logger -p local6.debug \"$(whoami) [$$]: $(history 1 | sed \"s/^[ ]*[0-9]\\+[ ]*//\" ) [$RETRN_VAL]\"", 
+                                    "PWD": "/root", 
+                                    "PYTHONPATH": "", 
+                                    "QTDIR": "/usr/lib64/qt-3.3", 
+                                    "QTINC": "/usr/lib64/qt-3.3/include", 
+                                    "QTLIB": "/usr/lib64/qt-3.3/lib", 
+                                    "QT_GRAPHICSSYSTEM_CHECKED": "1", 
+                                    "SHELL": "/bin/bash", 
+                                    "SHLVL": "2", 
+                                    "SSH_ASKPASS": "/usr/libexec/openssh/gnome-ssh-askpass", 
+                                    "SSH_CLIENT": "192.168.0.69 42320 22", 
+                                    "SSH_CONNECTION": "192.168.0.69 42320 192.168.0.69 22", 
+                                    "SSH_TTY": "/dev/pts/6", 
+                                    "TERM": "xterm-256color", 
+                                    "USER": "root", 
+                                    "XDG_RUNTIME_DIR": "/run/user/0", 
+                                    "XDG_SESSION_ID": "28", 
+                                    "_": "/usr/bin/python"
+                                }, 
+                                "ansible_fips": false, 
+                                "ansible_form_factor": "Notebook", 
+                                "ansible_fqdn": "bandurria", 
+                                "ansible_gather_subset": [
+                                    "hardware", 
+                                    "network", 
+                                    "virtual"
+                                ], 
+                                "ansible_hostname": "bandurria", 
+                                "ansible_interfaces": [
+                                    "enp0s25_3", 
+                                    "enp0s25_2", 
+                                    "enp0s25_1", 
+                                    "lo", 
+                                    "tun0", 
+                                    "enp0s25", 
+                                    "wlp3s0", 
+                                    "virbr0-nic", 
+                                    "virbr0"
+                                ], 
+                                "ansible_kernel": "4.4.14-200.fc22.x86_64", 
+                                "ansible_lo": {
+                                    "active": true, 
+                                    "device": "lo", 
+                                    "ipv4": {
+                                        "address": "127.0.0.1", 
+                                        "broadcast": "host", 
+                                        "netmask": "255.0.0.0", 
+                                        "network": "127.0.0.0"
+                                    }, 
+                                    "ipv6": [
+                                        {
+                                            "address": "::1", 
+                                            "prefix": "128", 
+                                            "scope": "host"
+                                        }
+                                    ], 
+                                    "mtu": 65536, 
+                                    "promisc": false, 
+                                    "type": "loopback"
+                                }, 
+                                "ansible_lsb": {
+                                    "codename": "TwentyTwo", 
+                                    "description": "Fedora release 22 (Twenty Two)", 
+                                    "id": "Fedora", 
+                                    "major_release": "22", 
+                                    "release": "22"
+                                }, 
+                                "ansible_lvm": {
+                                    "lvs": {
+                                        "home": {
+                                            "size_g": "500.00", 
+                                            "vg": "fedora_bandurria"
+                                        }, 
+                                        "root": {
+                                            "size_g": "50.00", 
+                                            "vg": "fedora_bandurria"
+                                        }, 
+                                        "swap": {
+                                            "size_g": "4.00", 
+                                            "vg": "fedora_bandurria"
+                                        }, 
+                                        "var": {
+                                            "size_g": "20.00", 
+                                            "vg": "fedora_bandurria"
+                                        }
+                                    }, 
+                                    "vgs": {
+                                        "fedora_bandurria": {
+                                            "free_g": "0.00", 
+                                            "num_lvs": "4", 
+                                            "num_pvs": "1", 
+                                            "size_g": "574.00"
+                                        }
+                                    }
+                                }, 
+                                "ansible_machine": "x86_64", 
+                                "ansible_machine_id": "2e7762c023ec40fab31f200f8b02d7d6", 
+                                "ansible_memfree_mb": 3211, 
+                                "ansible_memory_mb": {
+                                    "nocache": {
+                                        "free": 7809, 
+                                        "used": 7868
+                                    }, 
+                                    "real": {
+                                        "free": 3211, 
+                                        "total": 15677, 
+                                        "used": 12466
+                                    }, 
+                                    "swap": {
+                                        "cached": 0, 
+                                        "free": 4091, 
+                                        "total": 4091, 
+                                        "used": 0
+                                    }
+                                }, 
+                                "ansible_memtotal_mb": 15677, 
+                                "ansible_mounts": [
+                                    {
+                                        "device": "/dev/mapper/fedora_bandurria-root", 
+                                        "fstype": "ext4", 
+                                        "mount": "/", 
+                                        "options": "rw,relatime,data=ordered", 
+                                        "size_available": 41814941696, 
+                                        "size_total": 52710469632, 
+                                        "uuid": "b296b54c-4665-4c66-b191-3ec637180e8c"
+                                    }, 
+                                    {
+                                        "device": "/dev/sda1", 
+                                        "fstype": "ext4", 
+                                        "mount": "/boot", 
+                                        "options": "rw,relatime,stripe=4,data=ordered", 
+                                        "size_available": 296519680, 
+                                        "size_total": 499355648, 
+                                        "uuid": "10dcc421-c380-4506-8477-d9761c3fa776"
+                                    }, 
+                                    {
+                                        "device": "/dev/mapper/fedora_bandurria-var", 
+                                        "fstype": "ext4", 
+                                        "mount": "/var", 
+                                        "options": "rw,relatime,data=ordered", 
+                                        "size_available": 9600655360, 
+                                        "size_total": 21003628544, 
+                                        "uuid": "a76b6d80-dd0d-45da-9923-5b1b75bf41c2"
+                                    }, 
+                                    {
+                                        "device": "/dev/mapper/fedora_bandurria-home", 
+                                        "fstype": "ext4", 
+                                        "mount": "/home", 
+                                        "options": "rw,relatime,data=ordered", 
+                                        "size_available": 286110748672, 
+                                        "size_total": 528312885248, 
+                                        "uuid": "883c59eb-fc66-4993-8efd-f6b264b10c3d"
+                                    }
+                                ], 
+                                "ansible_nodename": "bandurria", 
+                                "ansible_os_family": "RedHat", 
+                                "ansible_pkg_mgr": "pacman", 
+                                "ansible_processor": [
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz"
+                                ], 
+                                "ansible_processor_cores": 4, 
+                                "ansible_processor_count": 1, 
+                                "ansible_processor_threads_per_core": 2, 
+                                "ansible_processor_vcpus": 8, 
+                                "ansible_product_name": "20BHA0YJCL", 
+                                "ansible_product_serial": "R90G3SX8", 
+                                "ansible_product_uuid": "7BAF9081-543E-11CB-AFA5-F69CF3D22643", 
+                                "ansible_product_version": "ThinkPad W540", 
+                                "ansible_python": {
+                                    "executable": "/usr/bin/python", 
+                                    "has_sslcontext": true, 
+                                    "type": "CPython", 
+                                    "version": {
+                                        "major": 2, 
+                                        "micro": 10, 
+                                        "minor": 7, 
+                                        "releaselevel": "final", 
+                                        "serial": 0
+                                    }, 
+                                    "version_info": [
+                                        2, 
+                                        7, 
+                                        10, 
+                                        "final", 
+                                        0
+                                    ]
+                                }, 
+                                "ansible_python_version": "2.7.10", 
+                                "ansible_selinux": {
+                                    "status": "disabled"
+                                }, 
+                                "ansible_service_mgr": "systemd", 
+                                "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEtrx1TY4KoLaR6dprToiaLIW9Uo8LyCUxGkRVqYabhPXYwCqDGthFOS6AQSR/4HERwR8nqja41f/iB/pIuiTHg=", 
+                                "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIJ8jIM2sozWBt68+fqz6UPBMkxFqo+2xfFq55wfr/GYB", 
+                                "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDI5cNLym1lQM2Li/fGA9UPjmNX1o8ixThirLupAiAZ0zSKt3CXpVyk7hmvOfhDQmRphx7b1LLps6FstkKJp6Bsk4QUFkNTHEDKWAi66it3g4S8Qv7pBNq0WyGOvMqwbDBoPEAhj21jwBqynP0XYlg4NBCalr3BN4tPDN+B6WVNNrFB7xURdUIILyEB5P25IX/1JCB8cNXUcIPklGOWYS33Q6p65pduE0vodT6Zv+PpnjAnyZ1omwq49I92ZKw9HHMYpDWRdpFMtYmt02Z8epdEug6xfufma9tN7Bq2+qyGt+Uio3IOzWTzgN5M+D1nil7RyOkpK2Yq4SvOMjbu09j5", 
+                                "ansible_swapfree_mb": 4091, 
+                                "ansible_swaptotal_mb": 4091, 
+                                "ansible_system": "Linux", 
+                                "ansible_system_capabilities": [
+                                    "cap_chown", 
+                                    "cap_dac_override", 
+                                    "cap_dac_read_search", 
+                                    "cap_fowner", 
+                                    "cap_fsetid", 
+                                    "cap_kill", 
+                                    "cap_setgid", 
+                                    "cap_setuid", 
+                                    "cap_setpcap", 
+                                    "cap_linux_immutable", 
+                                    "cap_net_bind_service", 
+                                    "cap_net_broadcast", 
+                                    "cap_net_admin", 
+                                    "cap_net_raw", 
+                                    "cap_ipc_lock", 
+                                    "cap_ipc_owner", 
+                                    "cap_sys_module", 
+                                    "cap_sys_rawio", 
+                                    "cap_sys_chroot", 
+                                    "cap_sys_ptrace", 
+                                    "cap_sys_pacct", 
+                                    "cap_sys_admin", 
+                                    "cap_sys_boot", 
+                                    "cap_sys_nice", 
+                                    "cap_sys_resource", 
+                                    "cap_sys_time", 
+                                    "cap_sys_tty_config", 
+                                    "cap_mknod", 
+                                    "cap_lease", 
+                                    "cap_audit_write", 
+                                    "cap_audit_control", 
+                                    "cap_setfcap", 
+                                    "cap_mac_override", 
+                                    "cap_mac_admin", 
+                                    "cap_syslog", 
+                                    "cap_wake_alarm", 
+                                    "cap_block_suspend", 
+                                    "37+ep"
+                                ], 
+                                "ansible_system_capabilities_enforced": "True", 
+                                "ansible_system_vendor": "LENOVO", 
+                                "ansible_tun0": {
+                                    "active": true, 
+                                    "device": "tun0", 
+                                    "ipv4": {
+                                        "address": "10.97.116.13", 
+                                        "broadcast": "10.97.119.255", 
+                                        "netmask": "255.255.252.0", 
+                                        "network": "10.97.116.0"
+                                    }, 
+                                    "mtu": 1360, 
+                                    "promisc": false
+                                }, 
+                                "ansible_uptime_seconds": 285193, 
+                                "ansible_user_dir": "/root", 
+                                "ansible_user_gecos": "root", 
+                                "ansible_user_gid": 0, 
+                                "ansible_user_id": "root", 
+                                "ansible_user_shell": "/bin/bash", 
+                                "ansible_user_uid": 0, 
+                                "ansible_userspace_architecture": "x86_64", 
+                                "ansible_userspace_bits": "64", 
+                                "ansible_virbr0": {
+                                    "active": false, 
+                                    "device": "virbr0", 
+                                    "id": "8000.52540057af8a", 
+                                    "interfaces": [
+                                        "virbr0-nic"
+                                    ], 
+                                    "ipv4": {
+                                        "address": "192.168.122.1", 
+                                        "broadcast": "192.168.122.255", 
+                                        "netmask": "255.255.255.0", 
+                                        "network": "192.168.122.0"
+                                    }, 
+                                    "macaddress": "52:54:00:57:af:8a", 
+                                    "mtu": 1500, 
+                                    "promisc": false, 
+                                    "stp": true, 
+                                    "type": "bridge"
+                                }, 
+                                "ansible_virbr0_nic": {
+                                    "active": false, 
+                                    "device": "virbr0-nic", 
+                                    "macaddress": "52:54:00:57:af:8a", 
+                                    "mtu": 1500, 
+                                    "promisc": true, 
+                                    "type": "ether"
+                                }, 
+                                "ansible_virtualization_role": "host", 
+                                "ansible_virtualization_type": "kvm", 
+                                "ansible_wlp3s0": {
+                                    "active": true, 
+                                    "device": "wlp3s0", 
+                                    "ipv4": {
+                                        "address": "10.216.33.64", 
+                                        "broadcast": "10.216.33.255", 
+                                        "netmask": "255.255.255.0", 
+                                        "network": "10.216.33.0"
+                                    }, 
+                                    "ipv6": [
+                                        {
+                                            "address": "fe80::ce3d:82ff:fee9:2c85", 
+                                            "prefix": "64", 
+                                            "scope": "link"
+                                        }
+                                    ], 
+                                    "macaddress": "cc:3d:82:e9:2c:85", 
+                                    "module": "iwlwifi", 
+                                    "mtu": 1500, 
+                                    "pciid": "0000:03:00.0", 
+                                    "promisc": false, 
+                                    "type": "ether"
+                                }, 
+                                "module_setup": true
+                            }, 
+                            "changed": false, 
+                            "invocation": {
+                                "module_args": {
+                                    "fact_path": "/etc/ansible/facts.d", 
+                                    "filter": "*", 
+                                    "gather_subset": [
+                                        "all"
+                                    ]
+                                }, 
+                                "module_name": "setup"
+                            }
+                        }
+                    }, 
+                    "task": {
+                        "id": "7d45dc6e-3ffb-4966-b787-2b937af53584", 
+                        "name": ""
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "id", 
+                                "jboss"
+                            ], 
+                            "delta": "0:00:00.006063", 
+                            "end": "2017-03-13 16:36:40.778243", 
+                            "failed": true, 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "id jboss", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 1, 
+                            "start": "2017-03-13 16:36:40.772180", 
+                            "stderr": "id: jboss: no such user", 
+                            "stdout": "", 
+                            "stdout_lines": [], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "d5827c53-67bd-43ac-bf46-0444b37558e2", 
+                        "name": "Usuario JBOSS"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "df", 
+                                "-h"
+                            ], 
+                            "delta": "0:00:00.004708", 
+                            "end": "2017-03-13 16:36:41.548906", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "df -h", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:36:41.544198", 
+                            "stderr": "", 
+                            "stdout": "Filesystem                         Size  Used Avail Use% Mounted on\ndevtmpfs                           7.7G     0  7.7G   0% /dev\ntmpfs                              7.7G  283M  7.4G   4% /dev/shm\ntmpfs                              7.7G  1.6M  7.7G   1% /run\ntmpfs                              7.7G     0  7.7G   0% /sys/fs/cgroup\n/dev/mapper/fedora_bandurria-root   50G  7.7G   39G  17% /\ntmpfs                              7.7G   78M  7.6G   1% /tmp\n/dev/sda1                          477M  165M  283M  37% /boot\n/dev/mapper/fedora_bandurria-var    20G  9.7G  9.0G  52% /var\n/dev/mapper/fedora_bandurria-home  493G  201G  267G  43% /home\ntmpfs                              1.6G   12K  1.6G   1% /run/user/42\ntmpfs                              1.6G   60K  1.6G   1% /run/user/1000\ntmpfs                              1.6G     0  1.6G   0% /run/user/0", 
+                            "stdout_lines": [
+                                "Filesystem                         Size  Used Avail Use% Mounted on", 
+                                "devtmpfs                           7.7G     0  7.7G   0% /dev", 
+                                "tmpfs                              7.7G  283M  7.4G   4% /dev/shm", 
+                                "tmpfs                              7.7G  1.6M  7.7G   1% /run", 
+                                "tmpfs                              7.7G     0  7.7G   0% /sys/fs/cgroup", 
+                                "/dev/mapper/fedora_bandurria-root   50G  7.7G   39G  17% /", 
+                                "tmpfs                              7.7G   78M  7.6G   1% /tmp", 
+                                "/dev/sda1                          477M  165M  283M  37% /boot", 
+                                "/dev/mapper/fedora_bandurria-var    20G  9.7G  9.0G  52% /var", 
+                                "/dev/mapper/fedora_bandurria-home  493G  201G  267G  43% /home", 
+                                "tmpfs                              1.6G   12K  1.6G   1% /run/user/42", 
+                                "tmpfs                              1.6G   60K  1.6G   1% /run/user/1000", 
+                                "tmpfs                              1.6G     0  1.6G   0% /run/user/0"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "dcb06dce-a4c0-45f8-9b43-10c9f1c71caf", 
+                        "name": "Disco Asignado"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "lscpu"
+                            ], 
+                            "delta": "0:00:00.008810", 
+                            "end": "2017-03-13 16:36:42.331615", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "lscpu", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:36:42.322805", 
+                            "stderr": "", 
+                            "stdout": "Architecture:          x86_64\nCPU op-mode(s):        32-bit, 64-bit\nByte Order:            Little Endian\nCPU(s):                8\nOn-line CPU(s) list:   0-7\nThread(s) per core:    2\nCore(s) per socket:    4\nSocket(s):             1\nNUMA node(s):          1\nVendor ID:             GenuineIntel\nCPU family:            6\nModel:                 60\nModel name:            Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz\nStepping:              3\nCPU MHz:               1550.027\nCPU max MHz:           3900.0000\nCPU min MHz:           800.0000\nBogoMIPS:              5786.69\nVirtualization:        VT-x\nL1d cache:             32K\nL1i cache:             32K\nL2 cache:              256K\nL3 cache:              8192K\nNUMA node0 CPU(s):     0-7", 
+                            "stdout_lines": [
+                                "Architecture:          x86_64", 
+                                "CPU op-mode(s):        32-bit, 64-bit", 
+                                "Byte Order:            Little Endian", 
+                                "CPU(s):                8", 
+                                "On-line CPU(s) list:   0-7", 
+                                "Thread(s) per core:    2", 
+                                "Core(s) per socket:    4", 
+                                "Socket(s):             1", 
+                                "NUMA node(s):          1", 
+                                "Vendor ID:             GenuineIntel", 
+                                "CPU family:            6", 
+                                "Model:                 60", 
+                                "Model name:            Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                "Stepping:              3", 
+                                "CPU MHz:               1550.027", 
+                                "CPU max MHz:           3900.0000", 
+                                "CPU min MHz:           800.0000", 
+                                "BogoMIPS:              5786.69", 
+                                "Virtualization:        VT-x", 
+                                "L1d cache:             32K", 
+                                "L1i cache:             32K", 
+                                "L2 cache:              256K", 
+                                "L3 cache:              8192K", 
+                                "NUMA node0 CPU(s):     0-7"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "cae6e578-95b7-4b0e-adfe-f69809909e78", 
+                        "name": "Cantidad Cores"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "free"
+                            ], 
+                            "delta": "0:00:00.009977", 
+                            "end": "2017-03-13 16:36:43.111991", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "free", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:36:43.102014", 
+                            "stderr": "", 
+                            "stdout": "              total        used        free      shared  buff/cache   available\nMem:       16053936     7229620     3296000      915924     5528316     7579224\nSwap:       4190204         932     4189272", 
+                            "stdout_lines": [
+                                "              total        used        free      shared  buff/cache   available", 
+                                "Mem:       16053936     7229620     3296000      915924     5528316     7579224", 
+                                "Swap:       4190204         932     4189272"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "4edd23a6-1d43-47c4-aa41-75e8fa6193f2", 
+                        "name": "Cantidad Ram"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "ulimit -aHS"
+                            ], 
+                            "delta": "0:00:00.008323", 
+                            "end": "2017-03-13 16:36:43.907852", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'ulimit -aHS'", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:36:43.899529", 
+                            "stderr": "", 
+                            "stdout": "core file size          (blocks, -c) 0\ndata seg size           (kbytes, -d) unlimited\nscheduling priority             (-e) 0\nfile size               (blocks, -f) unlimited\npending signals                 (-i) 62622\nmax locked memory       (kbytes, -l) 64\nmax memory size         (kbytes, -m) unlimited\nopen files                      (-n) 1024\npipe size            (512 bytes, -p) 8\nPOSIX message queues     (bytes, -q) 819200\nreal-time priority              (-r) 0\nstack size              (kbytes, -s) 8192\ncpu time               (seconds, -t) unlimited\nmax user processes              (-u) 62622\nvirtual memory          (kbytes, -v) unlimited\nfile locks                      (-x) unlimited", 
+                            "stdout_lines": [
+                                "core file size          (blocks, -c) 0", 
+                                "data seg size           (kbytes, -d) unlimited", 
+                                "scheduling priority             (-e) 0", 
+                                "file size               (blocks, -f) unlimited", 
+                                "pending signals                 (-i) 62622", 
+                                "max locked memory       (kbytes, -l) 64", 
+                                "max memory size         (kbytes, -m) unlimited", 
+                                "open files                      (-n) 1024", 
+                                "pipe size            (512 bytes, -p) 8", 
+                                "POSIX message queues     (bytes, -q) 819200", 
+                                "real-time priority              (-r) 0", 
+                                "stack size              (kbytes, -s) 8192", 
+                                "cpu time               (seconds, -t) unlimited", 
+                                "max user processes              (-u) 62622", 
+                                "virtual memory          (kbytes, -v) unlimited", 
+                                "file locks                      (-x) unlimited"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "03cf53a6-9951-487c-9d62-4fdbd8dd33cb", 
+                        "name": "Ulimits"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "iptables -S"
+                            ], 
+                            "delta": "0:00:00.008244", 
+                            "end": "2017-03-13 16:36:44.618761", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'iptables -S'", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:36:44.610517", 
+                            "stderr": "", 
+                            "stdout": "-P INPUT ACCEPT\n-P FORWARD ACCEPT\n-P OUTPUT ACCEPT\n-N FORWARD_IN_ZONES\n-N FORWARD_IN_ZONES_SOURCE\n-N FORWARD_OUT_ZONES\n-N FORWARD_OUT_ZONES_SOURCE\n-N FORWARD_direct\n-N FWDI_FedoraWorkstation\n-N FWDI_FedoraWorkstation_allow\n-N FWDI_FedoraWorkstation_deny\n-N FWDI_FedoraWorkstation_log\n-N FWDO_FedoraWorkstation\n-N FWDO_FedoraWorkstation_allow\n-N FWDO_FedoraWorkstation_deny\n-N FWDO_FedoraWorkstation_log\n-N INPUT_ZONES\n-N INPUT_ZONES_SOURCE\n-N INPUT_direct\n-N IN_FedoraWorkstation\n-N IN_FedoraWorkstation_allow\n-N IN_FedoraWorkstation_deny\n-N IN_FedoraWorkstation_log\n-N OUTPUT_direct\n-A INPUT -i virbr0 -p udp -m udp --dport 53 -j ACCEPT\n-A INPUT -i virbr0 -p tcp -m tcp --dport 53 -j ACCEPT\n-A INPUT -i virbr0 -p udp -m udp --dport 67 -j ACCEPT\n-A INPUT -i virbr0 -p tcp -m tcp --dport 67 -j ACCEPT\n-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT\n-A INPUT -i lo -j ACCEPT\n-A INPUT -j INPUT_direct\n-A INPUT -j INPUT_ZONES_SOURCE\n-A INPUT -j INPUT_ZONES\n-A INPUT -p icmp -j ACCEPT\n-A INPUT -m conntrack --ctstate INVALID -j DROP\n-A INPUT -j REJECT --reject-with icmp-host-prohibited\n-A FORWARD -d 192.168.122.0/24 -o virbr0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT\n-A FORWARD -s 192.168.122.0/24 -i virbr0 -j ACCEPT\n-A FORWARD -i virbr0 -o virbr0 -j ACCEPT\n-A FORWARD -o virbr0 -j REJECT --reject-with icmp-port-unreachable\n-A FORWARD -i virbr0 -j REJECT --reject-with icmp-port-unreachable\n-A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT\n-A FORWARD -i lo -j ACCEPT\n-A FORWARD -j FORWARD_direct\n-A FORWARD -j FORWARD_IN_ZONES_SOURCE\n-A FORWARD -j FORWARD_IN_ZONES\n-A FORWARD -j FORWARD_OUT_ZONES_SOURCE\n-A FORWARD -j FORWARD_OUT_ZONES\n-A FORWARD -p icmp -j ACCEPT\n-A FORWARD -m conntrack --ctstate INVALID -j DROP\n-A FORWARD -j REJECT --reject-with icmp-host-prohibited\n-A OUTPUT -o virbr0 -p udp -m udp --dport 68 -j ACCEPT\n-A OUTPUT -j OUTPUT_direct\n-A FORWARD_IN_ZONES -i tun0 -g FWDI_FedoraWorkstation\n-A FORWARD_IN_ZONES -i wlp3s0 -g FWDI_FedoraWorkstation\n-A FORWARD_IN_ZONES -g FWDI_FedoraWorkstation\n-A FORWARD_OUT_ZONES -o tun0 -g FWDO_FedoraWorkstation\n-A FORWARD_OUT_ZONES -o wlp3s0 -g FWDO_FedoraWorkstation\n-A FORWARD_OUT_ZONES -g FWDO_FedoraWorkstation\n-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_log\n-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_deny\n-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_allow\n-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_log\n-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_deny\n-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_allow\n-A INPUT_ZONES -i tun0 -g IN_FedoraWorkstation\n-A INPUT_ZONES -i wlp3s0 -g IN_FedoraWorkstation\n-A INPUT_ZONES -g IN_FedoraWorkstation\n-A IN_FedoraWorkstation -j IN_FedoraWorkstation_log\n-A IN_FedoraWorkstation -j IN_FedoraWorkstation_deny\n-A IN_FedoraWorkstation -j IN_FedoraWorkstation_allow\n-A IN_FedoraWorkstation_allow -d 224.0.0.251/32 -p udp -m udp --dport 5353 -m conntrack --ctstate NEW -j ACCEPT\n-A IN_FedoraWorkstation_allow -p udp -m udp --dport 137 -m conntrack --ctstate NEW -j ACCEPT\n-A IN_FedoraWorkstation_allow -p udp -m udp --dport 138 -m conntrack --ctstate NEW -j ACCEPT\n-A IN_FedoraWorkstation_allow -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT\n-A IN_FedoraWorkstation_allow -p udp -m udp --dport 1025:65535 -m conntrack --ctstate NEW -j ACCEPT\n-A IN_FedoraWorkstation_allow -p tcp -m tcp --dport 1025:65535 -m conntrack --ctstate NEW -j ACCEPT", 
+                            "stdout_lines": [
+                                "-P INPUT ACCEPT", 
+                                "-P FORWARD ACCEPT", 
+                                "-P OUTPUT ACCEPT", 
+                                "-N FORWARD_IN_ZONES", 
+                                "-N FORWARD_IN_ZONES_SOURCE", 
+                                "-N FORWARD_OUT_ZONES", 
+                                "-N FORWARD_OUT_ZONES_SOURCE", 
+                                "-N FORWARD_direct", 
+                                "-N FWDI_FedoraWorkstation", 
+                                "-N FWDI_FedoraWorkstation_allow", 
+                                "-N FWDI_FedoraWorkstation_deny", 
+                                "-N FWDI_FedoraWorkstation_log", 
+                                "-N FWDO_FedoraWorkstation", 
+                                "-N FWDO_FedoraWorkstation_allow", 
+                                "-N FWDO_FedoraWorkstation_deny", 
+                                "-N FWDO_FedoraWorkstation_log", 
+                                "-N INPUT_ZONES", 
+                                "-N INPUT_ZONES_SOURCE", 
+                                "-N INPUT_direct", 
+                                "-N IN_FedoraWorkstation", 
+                                "-N IN_FedoraWorkstation_allow", 
+                                "-N IN_FedoraWorkstation_deny", 
+                                "-N IN_FedoraWorkstation_log", 
+                                "-N OUTPUT_direct", 
+                                "-A INPUT -i virbr0 -p udp -m udp --dport 53 -j ACCEPT", 
+                                "-A INPUT -i virbr0 -p tcp -m tcp --dport 53 -j ACCEPT", 
+                                "-A INPUT -i virbr0 -p udp -m udp --dport 67 -j ACCEPT", 
+                                "-A INPUT -i virbr0 -p tcp -m tcp --dport 67 -j ACCEPT", 
+                                "-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT", 
+                                "-A INPUT -i lo -j ACCEPT", 
+                                "-A INPUT -j INPUT_direct", 
+                                "-A INPUT -j INPUT_ZONES_SOURCE", 
+                                "-A INPUT -j INPUT_ZONES", 
+                                "-A INPUT -p icmp -j ACCEPT", 
+                                "-A INPUT -m conntrack --ctstate INVALID -j DROP", 
+                                "-A INPUT -j REJECT --reject-with icmp-host-prohibited", 
+                                "-A FORWARD -d 192.168.122.0/24 -o virbr0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT", 
+                                "-A FORWARD -s 192.168.122.0/24 -i virbr0 -j ACCEPT", 
+                                "-A FORWARD -i virbr0 -o virbr0 -j ACCEPT", 
+                                "-A FORWARD -o virbr0 -j REJECT --reject-with icmp-port-unreachable", 
+                                "-A FORWARD -i virbr0 -j REJECT --reject-with icmp-port-unreachable", 
+                                "-A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT", 
+                                "-A FORWARD -i lo -j ACCEPT", 
+                                "-A FORWARD -j FORWARD_direct", 
+                                "-A FORWARD -j FORWARD_IN_ZONES_SOURCE", 
+                                "-A FORWARD -j FORWARD_IN_ZONES", 
+                                "-A FORWARD -j FORWARD_OUT_ZONES_SOURCE", 
+                                "-A FORWARD -j FORWARD_OUT_ZONES", 
+                                "-A FORWARD -p icmp -j ACCEPT", 
+                                "-A FORWARD -m conntrack --ctstate INVALID -j DROP", 
+                                "-A FORWARD -j REJECT --reject-with icmp-host-prohibited", 
+                                "-A OUTPUT -o virbr0 -p udp -m udp --dport 68 -j ACCEPT", 
+                                "-A OUTPUT -j OUTPUT_direct", 
+                                "-A FORWARD_IN_ZONES -i tun0 -g FWDI_FedoraWorkstation", 
+                                "-A FORWARD_IN_ZONES -i wlp3s0 -g FWDI_FedoraWorkstation", 
+                                "-A FORWARD_IN_ZONES -g FWDI_FedoraWorkstation", 
+                                "-A FORWARD_OUT_ZONES -o tun0 -g FWDO_FedoraWorkstation", 
+                                "-A FORWARD_OUT_ZONES -o wlp3s0 -g FWDO_FedoraWorkstation", 
+                                "-A FORWARD_OUT_ZONES -g FWDO_FedoraWorkstation", 
+                                "-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_log", 
+                                "-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_deny", 
+                                "-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_allow", 
+                                "-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_log", 
+                                "-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_deny", 
+                                "-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_allow", 
+                                "-A INPUT_ZONES -i tun0 -g IN_FedoraWorkstation", 
+                                "-A INPUT_ZONES -i wlp3s0 -g IN_FedoraWorkstation", 
+                                "-A INPUT_ZONES -g IN_FedoraWorkstation", 
+                                "-A IN_FedoraWorkstation -j IN_FedoraWorkstation_log", 
+                                "-A IN_FedoraWorkstation -j IN_FedoraWorkstation_deny", 
+                                "-A IN_FedoraWorkstation -j IN_FedoraWorkstation_allow", 
+                                "-A IN_FedoraWorkstation_allow -d 224.0.0.251/32 -p udp -m udp --dport 5353 -m conntrack --ctstate NEW -j ACCEPT", 
+                                "-A IN_FedoraWorkstation_allow -p udp -m udp --dport 137 -m conntrack --ctstate NEW -j ACCEPT", 
+                                "-A IN_FedoraWorkstation_allow -p udp -m udp --dport 138 -m conntrack --ctstate NEW -j ACCEPT", 
+                                "-A IN_FedoraWorkstation_allow -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT", 
+                                "-A IN_FedoraWorkstation_allow -p udp -m udp --dport 1025:65535 -m conntrack --ctstate NEW -j ACCEPT", 
+                                "-A IN_FedoraWorkstation_allow -p tcp -m tcp --dport 1025:65535 -m conntrack --ctstate NEW -j ACCEPT"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "a62e0c5a-ec3c-4159-9dc3-cd633fa7e96e", 
+                        "name": "Reglas IPTABLES"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "chkconfig --list | grep iptables"
+                            ], 
+                            "delta": "0:00:00.014506", 
+                            "end": "2017-03-13 16:36:45.388390", 
+                            "failed": true, 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'chkconfig --list | grep iptables'", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 1, 
+                            "start": "2017-03-13 16:36:45.373884", 
+                            "stderr": "\nNote: This output shows SysV services only and does not include native\n      systemd services. SysV configuration data might be overridden by native\n      systemd configuration.\n\n      If you want to list systemd services use 'systemctl list-unit-files'.\n      To see services enabled on particular target use\n      'systemctl list-dependencies [target]'.", 
+                            "stdout": "", 
+                            "stdout_lines": [], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "51e74d83-223f-4354-b5e7-94e710c21635", 
+                        "name": "chkconfig iptables"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "ifconfig"
+                            ], 
+                            "delta": "0:00:00.007275", 
+                            "end": "2017-03-13 16:36:46.201510", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'ifconfig'", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:36:46.194235", 
+                            "stderr": "", 
+                            "stdout": "enp0s25: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500\n        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)\n        RX packets 0  bytes 0 (0.0 B)\n        RX errors 0  dropped 0  overruns 0  frame 0\n        TX packets 0  bytes 0 (0.0 B)\n        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0\n        device interrupt 20  memory 0xb4a00000-b4a20000  \n\nenp0s25:1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500\n        inet 192.168.0.69  netmask 255.255.255.0  broadcast 192.168.0.255\n        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)\n        device interrupt 20  memory 0xb4a00000-b4a20000  \n\nenp0s25:2: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500\n        inet 192.168.0.70  netmask 255.255.255.0  broadcast 192.168.0.255\n        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)\n        device interrupt 20  memory 0xb4a00000-b4a20000  \n\nenp0s25:3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500\n        inet 192.168.0.71  netmask 255.255.255.0  broadcast 192.168.0.255\n        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)\n        device interrupt 20  memory 0xb4a00000-b4a20000  \n\nlo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536\n        inet 127.0.0.1  netmask 255.0.0.0\n        inet6 ::1  prefixlen 128  scopeid 0x10<host>\n        loop  txqueuelen 1  (Local Loopback)\n        RX packets 168307  bytes 26084141 (24.8 MiB)\n        RX errors 0  dropped 0  overruns 0  frame 0\n        TX packets 168307  bytes 26084141 (24.8 MiB)\n        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0\n\ntun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1360\n        inet 10.97.116.13  netmask 255.255.252.0  destination 10.97.116.13\n        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 100  (UNSPEC)\n        RX packets 19220  bytes 9768122 (9.3 MiB)\n        RX errors 0  dropped 0  overruns 0  frame 0\n        TX packets 19906  bytes 1551354 (1.4 MiB)\n        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0\n\nvirbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500\n        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255\n        ether 52:54:00:57:af:8a  txqueuelen 1000  (Ethernet)\n        RX packets 0  bytes 0 (0.0 B)\n        RX errors 0  dropped 0  overruns 0  frame 0\n        TX packets 0  bytes 0 (0.0 B)\n        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0\n\nwlp3s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500\n        inet 10.216.33.64  netmask 255.255.255.0  broadcast 10.216.33.255\n        inet6 fe80::ce3d:82ff:fee9:2c85  prefixlen 64  scopeid 0x20<link>\n        ether cc:3d:82:e9:2c:85  txqueuelen 1000  (Ethernet)\n        RX packets 2315970  bytes 1693171630 (1.5 GiB)\n        RX errors 0  dropped 0  overruns 0  frame 0\n        TX packets 1213407  bytes 271035352 (258.4 MiB)\n        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0", 
+                            "stdout_lines": [
+                                "enp0s25: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500", 
+                                "        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)", 
+                                "        RX packets 0  bytes 0 (0.0 B)", 
+                                "        RX errors 0  dropped 0  overruns 0  frame 0", 
+                                "        TX packets 0  bytes 0 (0.0 B)", 
+                                "        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0", 
+                                "        device interrupt 20  memory 0xb4a00000-b4a20000  ", 
+                                "", 
+                                "enp0s25:1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500", 
+                                "        inet 192.168.0.69  netmask 255.255.255.0  broadcast 192.168.0.255", 
+                                "        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)", 
+                                "        device interrupt 20  memory 0xb4a00000-b4a20000  ", 
+                                "", 
+                                "enp0s25:2: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500", 
+                                "        inet 192.168.0.70  netmask 255.255.255.0  broadcast 192.168.0.255", 
+                                "        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)", 
+                                "        device interrupt 20  memory 0xb4a00000-b4a20000  ", 
+                                "", 
+                                "enp0s25:3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500", 
+                                "        inet 192.168.0.71  netmask 255.255.255.0  broadcast 192.168.0.255", 
+                                "        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)", 
+                                "        device interrupt 20  memory 0xb4a00000-b4a20000  ", 
+                                "", 
+                                "lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536", 
+                                "        inet 127.0.0.1  netmask 255.0.0.0", 
+                                "        inet6 ::1  prefixlen 128  scopeid 0x10<host>", 
+                                "        loop  txqueuelen 1  (Local Loopback)", 
+                                "        RX packets 168307  bytes 26084141 (24.8 MiB)", 
+                                "        RX errors 0  dropped 0  overruns 0  frame 0", 
+                                "        TX packets 168307  bytes 26084141 (24.8 MiB)", 
+                                "        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0", 
+                                "", 
+                                "tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1360", 
+                                "        inet 10.97.116.13  netmask 255.255.252.0  destination 10.97.116.13", 
+                                "        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 100  (UNSPEC)", 
+                                "        RX packets 19220  bytes 9768122 (9.3 MiB)", 
+                                "        RX errors 0  dropped 0  overruns 0  frame 0", 
+                                "        TX packets 19906  bytes 1551354 (1.4 MiB)", 
+                                "        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0", 
+                                "", 
+                                "virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500", 
+                                "        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255", 
+                                "        ether 52:54:00:57:af:8a  txqueuelen 1000  (Ethernet)", 
+                                "        RX packets 0  bytes 0 (0.0 B)", 
+                                "        RX errors 0  dropped 0  overruns 0  frame 0", 
+                                "        TX packets 0  bytes 0 (0.0 B)", 
+                                "        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0", 
+                                "", 
+                                "wlp3s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500", 
+                                "        inet 10.216.33.64  netmask 255.255.255.0  broadcast 10.216.33.255", 
+                                "        inet6 fe80::ce3d:82ff:fee9:2c85  prefixlen 64  scopeid 0x20<link>", 
+                                "        ether cc:3d:82:e9:2c:85  txqueuelen 1000  (Ethernet)", 
+                                "        RX packets 2315970  bytes 1693171630 (1.5 GiB)", 
+                                "        RX errors 0  dropped 0  overruns 0  frame 0", 
+                                "        TX packets 1213407  bytes 271035352 (258.4 MiB)", 
+                                "        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "bb453bb2-1121-4dfe-9dd3-b99ad91d3f21", 
+                        "name": "Interfaces de red: ifconfig"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "java", 
+                                "-version"
+                            ], 
+                            "delta": "0:00:00.204440", 
+                            "end": "2017-03-13 16:36:47.242650", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "java -version", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:36:47.038210", 
+                            "stderr": "openjdk version \"1.8.0_91\"\nOpenJDK Runtime Environment (build 1.8.0_91-b14)\nOpenJDK 64-Bit Server VM (build 25.91-b14, mixed mode)", 
+                            "stdout": "", 
+                            "stdout_lines": [], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "74bb3e2a-7b3c-4fa0-843c-1667546f143d", 
+                        "name": "Java Version"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "chkconfig --list | grep jboss-eap"
+                            ], 
+                            "delta": "0:00:00.005935", 
+                            "end": "2017-03-13 16:36:48.149240", 
+                            "failed": true, 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'chkconfig --list | grep jboss-eap'", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 1, 
+                            "start": "2017-03-13 16:36:48.143305", 
+                            "stderr": "\nNote: This output shows SysV services only and does not include native\n      systemd services. SysV configuration data might be overridden by native\n      systemd configuration.\n\n      If you want to list systemd services use 'systemctl list-unit-files'.\n      To see services enabled on particular target use\n      'systemctl list-dependencies [target]'.", 
+                            "stdout": "", 
+                            "stdout_lines": [], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "17fec706-3b0b-4de9-ae3b-efb96bd8fc22", 
+                        "name": "chkconfig"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "cat /opt/EAP-Ansible-POC/standalone/bin/standalone.conf |grep Xms"
+                            ], 
+                            "delta": "0:00:00.011041", 
+                            "end": "2017-03-13 16:36:49.023876", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'cat /opt/EAP-Ansible-POC/standalone/bin/standalone.conf |grep Xms'", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:36:49.012835", 
+                            "stderr": "", 
+                            "stdout": "   JAVA_OPTS=\"-Xms1303m -Xmx1303m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true\"", 
+                            "stdout_lines": [
+                                "   JAVA_OPTS=\"-Xms1303m -Xmx1303m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true\""
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "905dee25-d0c2-4ce1-a076-f0e4b35e7bdf", 
+                        "name": "Parametros JVM: Xms "
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "cat /opt/EAP-Ansible-POC/standalone/bin/standalone.conf |grep Xmx"
+                            ], 
+                            "delta": "0:00:00.009283", 
+                            "end": "2017-03-13 16:36:49.962919", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'cat /opt/EAP-Ansible-POC/standalone/bin/standalone.conf |grep Xmx'", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:36:49.953636", 
+                            "stderr": "", 
+                            "stdout": "   JAVA_OPTS=\"-Xms1303m -Xmx1303m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true\"", 
+                            "stdout_lines": [
+                                "   JAVA_OPTS=\"-Xms1303m -Xmx1303m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true\""
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "6865681e-acfc-4ffc-8a9f-e6ac02020394", 
+                        "name": "Parametros JVM: Xmx "
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "cat /opt/EAP-Ansible-POC/standalone/bin/standalone.conf |grep XX:MaxPermSize"
+                            ], 
+                            "delta": "0:00:00.008006", 
+                            "end": "2017-03-13 16:36:50.767857", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'cat /opt/EAP-Ansible-POC/standalone/bin/standalone.conf |grep XX:MaxPermSize'", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:36:50.759851", 
+                            "stderr": "", 
+                            "stdout": "   JAVA_OPTS=\"-Xms1303m -Xmx1303m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true\"", 
+                            "stdout_lines": [
+                                "   JAVA_OPTS=\"-Xms1303m -Xmx1303m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true\""
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "fdd63dff-c9fa-44ce-bbd0-5f8b570ce105", 
+                        "name": "Parametros JVM: XX:MaxPermSize "
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "ps -fea|grep jboss"
+                            ], 
+                            "delta": "0:00:00.024656", 
+                            "end": "2017-03-13 16:36:51.596528", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'ps -fea|grep jboss'", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:36:51.571872", 
+                            "stderr": "", 
+                            "stdout": "rwattcha  5067  1862  0 16:34 pts/2    00:00:00 /bin/sh ./jboss-cli.sh -c controller=192.168.0.69\nrwattcha  5074  5067  2 16:34 pts/2    00:00:02 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/bin/java -Djboss.modules.system.pkgs=com.sun.java.swing -Dlogging.configuration=file:/opt/EAP-Ansible-POC/standalone/bin/jboss-cli-logging.properties -jar /opt/EAP-Ansible-POC/standalone/jboss-modules.jar -mp /opt/EAP-Ansible-POC/standalone/modules org.jboss.as.cli -c controller=192.168.0.69\nroot      7124  7121  0 16:36 pts/6    00:00:00 bash -c ps -fea|grep jboss\nroot      7126  7124  0 16:36 pts/6    00:00:00 grep jboss\nrwattcha 20625 14632  0 10:38 pts/1    00:00:00 /bin/sh /opt/EAP-Ansible-POC/domainController/bin/jboss-cli.sh -c controller=192.168.0.69:9999 --command=/host=hostController1:read-children-names(child-type=server)\nrwattcha 30971 30865  2 16:25 pts/2    00:00:20 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/bin/java -D[Standalone] -server -XX:+UseCompressedOops -verbose:gc -Xloggc:/opt/EAP-Ansible-POC/standalone/standalone/log/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms1303m -Xmx1303m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Djboss.modules.policy-permissions=true -Djboss.bind.address.management=192.168.0.69 -Djboss.bind.address=192.168.0.69 -Dorg.jboss.boot.log.file=/opt/EAP-Ansible-POC/standalone/standalone/log/server.log -Dlogging.configuration=file:/opt/EAP-Ansible-POC/standalone/standalone/configuration/logging.properties -jar /opt/EAP-Ansible-POC/standalone/jboss-modules.jar -mp /opt/EAP-Ansible-POC/standalone/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -Djboss.home.dir=/opt/EAP-Ansible-POC/standalone -Djboss.server.base.dir=/opt/EAP-Ansible-POC/standalone/standalone", 
+                            "stdout_lines": [
+                                "rwattcha  5067  1862  0 16:34 pts/2    00:00:00 /bin/sh ./jboss-cli.sh -c controller=192.168.0.69", 
+                                "rwattcha  5074  5067  2 16:34 pts/2    00:00:02 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/bin/java -Djboss.modules.system.pkgs=com.sun.java.swing -Dlogging.configuration=file:/opt/EAP-Ansible-POC/standalone/bin/jboss-cli-logging.properties -jar /opt/EAP-Ansible-POC/standalone/jboss-modules.jar -mp /opt/EAP-Ansible-POC/standalone/modules org.jboss.as.cli -c controller=192.168.0.69", 
+                                "root      7124  7121  0 16:36 pts/6    00:00:00 bash -c ps -fea|grep jboss", 
+                                "root      7126  7124  0 16:36 pts/6    00:00:00 grep jboss", 
+                                "rwattcha 20625 14632  0 10:38 pts/1    00:00:00 /bin/sh /opt/EAP-Ansible-POC/domainController/bin/jboss-cli.sh -c controller=192.168.0.69:9999 --command=/host=hostController1:read-children-names(child-type=server)", 
+                                "rwattcha 30971 30865  2 16:25 pts/2    00:00:20 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/bin/java -D[Standalone] -server -XX:+UseCompressedOops -verbose:gc -Xloggc:/opt/EAP-Ansible-POC/standalone/standalone/log/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms1303m -Xmx1303m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Djboss.modules.policy-permissions=true -Djboss.bind.address.management=192.168.0.69 -Djboss.bind.address=192.168.0.69 -Dorg.jboss.boot.log.file=/opt/EAP-Ansible-POC/standalone/standalone/log/server.log -Dlogging.configuration=file:/opt/EAP-Ansible-POC/standalone/standalone/configuration/logging.properties -jar /opt/EAP-Ansible-POC/standalone/jboss-modules.jar -mp /opt/EAP-Ansible-POC/standalone/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -Djboss.home.dir=/opt/EAP-Ansible-POC/standalone -Djboss.server.base.dir=/opt/EAP-Ansible-POC/standalone/standalone"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "570abf67-083b-4007-8c81-baafc8c55bae", 
+                        "name": "ps -fea | grep jboss"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "cat /opt/EAP-Ansible-POC/standalone/bin/standalone.conf |grep jboss.bind.address.management="
+                            ], 
+                            "delta": "0:00:00.011565", 
+                            "end": "2017-03-13 16:36:52.397667", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'cat /opt/EAP-Ansible-POC/standalone/bin/standalone.conf |grep jboss.bind.address.management='", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:36:52.386102", 
+                            "stderr": "", 
+                            "stdout": "JAVA_OPTS=\"$JAVA_OPTS -Djboss.bind.address.management=192.168.0.69\"", 
+                            "stdout_lines": [
+                                "JAVA_OPTS=\"$JAVA_OPTS -Djboss.bind.address.management=192.168.0.69\""
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "e250ee07-3fc5-4fc2-a4f0-e5db13839a9e", 
+                        "name": "Parametros binding IP: jboss.bind.address.management "
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "cat /opt/EAP-Ansible-POC/standalone/bin/standalone.conf |grep jboss.bind.address="
+                            ], 
+                            "delta": "0:00:00.013852", 
+                            "end": "2017-03-13 16:36:53.194915", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'cat /opt/EAP-Ansible-POC/standalone/bin/standalone.conf |grep jboss.bind.address='", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:36:53.181063", 
+                            "stderr": "", 
+                            "stdout": "JAVA_OPTS=\"$JAVA_OPTS -Djboss.bind.address=192.168.0.69\"", 
+                            "stdout_lines": [
+                                "JAVA_OPTS=\"$JAVA_OPTS -Djboss.bind.address=192.168.0.69\""
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "70a49612-7962-4eeb-85d9-fbe751247c96", 
+                        "name": "Parametros binding IP: jboss.bind.address "
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "././jboss-cli.sh", 
+                                "--controller=192.168.0.69:9999", 
+                                "-c", 
+                                "--command=/socket-binding-group=standard-sockets:read-resource(recursive=true)"
+                            ], 
+                            "delta": "0:00:02.232025", 
+                            "end": "2017-03-13 16:36:56.212719", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "././jboss-cli.sh --controller=192.168.0.69:9999 -c --command=\"/socket-binding-group=standard-sockets:read-resource(recursive=true)\"", 
+                                    "_uses_shell": false, 
+                                    "chdir": "/opt/EAP-Ansible-POC/standalone/bin/", 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:36:53.980694", 
+                            "stderr": "", 
+                            "stdout": "{\n    \"outcome\" => \"success\",\n    \"result\" => {\n        \"default-interface\" => \"public\",\n        \"name\" => \"standard-sockets\",\n        \"port-offset\" => expression \"${jboss.socket.binding.port-offset:0}\",\n        \"local-destination-outbound-socket-binding\" => undefined,\n        \"remote-destination-outbound-socket-binding\" => {\"mail-smtp\" => {\n            \"fixed-source-port\" => false,\n            \"host\" => \"localhost\",\n            \"port\" => 25,\n            \"source-interface\" => undefined,\n            \"source-port\" => undefined\n        }},\n        \"socket-binding\" => {\n            \"management-native\" => {\n                \"client-mappings\" => undefined,\n                \"fixed-port\" => false,\n                \"interface\" => \"management\",\n                \"multicast-address\" => undefined,\n                \"multicast-port\" => undefined,\n                \"name\" => \"management-native\",\n                \"port\" => expression \"${jboss.management.native.port:9999}\"\n            },\n            \"management-http\" => {\n                \"client-mappings\" => undefined,\n                \"fixed-port\" => false,\n                \"interface\" => \"management\",\n                \"multicast-address\" => undefined,\n                \"multicast-port\" => undefined,\n                \"name\" => \"management-http\",\n                \"port\" => expression \"${jboss.management.http.port:9990}\"\n            },\n            \"management-https\" => {\n                \"client-mappings\" => undefined,\n                \"fixed-port\" => false,\n                \"interface\" => \"management\",\n                \"multicast-address\" => undefined,\n                \"multicast-port\" => undefined,\n                \"name\" => \"management-https\",\n                \"port\" => expression \"${jboss.management.https.port:9443}\"\n            },\n            \"ajp\" => {\n                \"client-mappings\" => undefined,\n                \"fixed-port\" => false,\n                \"interface\" => undefined,\n                \"multicast-address\" => undefined,\n                \"multicast-port\" => undefined,\n                \"name\" => \"ajp\",\n                \"port\" => 8009\n            },\n            \"http\" => {\n                \"client-mappings\" => undefined,\n                \"fixed-port\" => false,\n                \"interface\" => undefined,\n                \"multicast-address\" => undefined,\n                \"multicast-port\" => undefined,\n                \"name\" => \"http\",\n                \"port\" => 8080\n            },\n            \"https\" => {\n                \"client-mappings\" => undefined,\n                \"fixed-port\" => false,\n                \"interface\" => undefined,\n                \"multicast-address\" => undefined,\n                \"multicast-port\" => undefined,\n                \"name\" => \"https\",\n                \"port\" => 8443\n            },\n            \"remoting\" => {\n                \"client-mappings\" => undefined,\n                \"fixed-port\" => false,\n                \"interface\" => undefined,\n                \"multicast-address\" => undefined,\n                \"multicast-port\" => undefined,\n                \"name\" => \"remoting\",\n                \"port\" => 4447\n            },\n            \"txn-recovery-environment\" => {\n                \"client-mappings\" => undefined,\n                \"fixed-port\" => false,\n                \"interface\" => undefined,\n                \"multicast-address\" => undefined,\n                \"multicast-port\" => undefined,\n                \"name\" => \"txn-recovery-environment\",\n                \"port\" => 4712\n            },\n            \"txn-status-manager\" => {\n                \"client-mappings\" => undefined,\n                \"fixed-port\" => false,\n                \"interface\" => undefined,\n                \"multicast-address\" => undefined,\n                \"multicast-port\" => undefined,\n                \"name\" => \"txn-status-manager\",\n                \"port\" => 4713\n            }\n        }\n    }\n}", 
+                            "stdout_lines": [
+                                "{", 
+                                "    \"outcome\" => \"success\",", 
+                                "    \"result\" => {", 
+                                "        \"default-interface\" => \"public\",", 
+                                "        \"name\" => \"standard-sockets\",", 
+                                "        \"port-offset\" => expression \"${jboss.socket.binding.port-offset:0}\",", 
+                                "        \"local-destination-outbound-socket-binding\" => undefined,", 
+                                "        \"remote-destination-outbound-socket-binding\" => {\"mail-smtp\" => {", 
+                                "            \"fixed-source-port\" => false,", 
+                                "            \"host\" => \"localhost\",", 
+                                "            \"port\" => 25,", 
+                                "            \"source-interface\" => undefined,", 
+                                "            \"source-port\" => undefined", 
+                                "        }},", 
+                                "        \"socket-binding\" => {", 
+                                "            \"management-native\" => {", 
+                                "                \"client-mappings\" => undefined,", 
+                                "                \"fixed-port\" => false,", 
+                                "                \"interface\" => \"management\",", 
+                                "                \"multicast-address\" => undefined,", 
+                                "                \"multicast-port\" => undefined,", 
+                                "                \"name\" => \"management-native\",", 
+                                "                \"port\" => expression \"${jboss.management.native.port:9999}\"", 
+                                "            },", 
+                                "            \"management-http\" => {", 
+                                "                \"client-mappings\" => undefined,", 
+                                "                \"fixed-port\" => false,", 
+                                "                \"interface\" => \"management\",", 
+                                "                \"multicast-address\" => undefined,", 
+                                "                \"multicast-port\" => undefined,", 
+                                "                \"name\" => \"management-http\",", 
+                                "                \"port\" => expression \"${jboss.management.http.port:9990}\"", 
+                                "            },", 
+                                "            \"management-https\" => {", 
+                                "                \"client-mappings\" => undefined,", 
+                                "                \"fixed-port\" => false,", 
+                                "                \"interface\" => \"management\",", 
+                                "                \"multicast-address\" => undefined,", 
+                                "                \"multicast-port\" => undefined,", 
+                                "                \"name\" => \"management-https\",", 
+                                "                \"port\" => expression \"${jboss.management.https.port:9443}\"", 
+                                "            },", 
+                                "            \"ajp\" => {", 
+                                "                \"client-mappings\" => undefined,", 
+                                "                \"fixed-port\" => false,", 
+                                "                \"interface\" => undefined,", 
+                                "                \"multicast-address\" => undefined,", 
+                                "                \"multicast-port\" => undefined,", 
+                                "                \"name\" => \"ajp\",", 
+                                "                \"port\" => 8009", 
+                                "            },", 
+                                "            \"http\" => {", 
+                                "                \"client-mappings\" => undefined,", 
+                                "                \"fixed-port\" => false,", 
+                                "                \"interface\" => undefined,", 
+                                "                \"multicast-address\" => undefined,", 
+                                "                \"multicast-port\" => undefined,", 
+                                "                \"name\" => \"http\",", 
+                                "                \"port\" => 8080", 
+                                "            },", 
+                                "            \"https\" => {", 
+                                "                \"client-mappings\" => undefined,", 
+                                "                \"fixed-port\" => false,", 
+                                "                \"interface\" => undefined,", 
+                                "                \"multicast-address\" => undefined,", 
+                                "                \"multicast-port\" => undefined,", 
+                                "                \"name\" => \"https\",", 
+                                "                \"port\" => 8443", 
+                                "            },", 
+                                "            \"remoting\" => {", 
+                                "                \"client-mappings\" => undefined,", 
+                                "                \"fixed-port\" => false,", 
+                                "                \"interface\" => undefined,", 
+                                "                \"multicast-address\" => undefined,", 
+                                "                \"multicast-port\" => undefined,", 
+                                "                \"name\" => \"remoting\",", 
+                                "                \"port\" => 4447", 
+                                "            },", 
+                                "            \"txn-recovery-environment\" => {", 
+                                "                \"client-mappings\" => undefined,", 
+                                "                \"fixed-port\" => false,", 
+                                "                \"interface\" => undefined,", 
+                                "                \"multicast-address\" => undefined,", 
+                                "                \"multicast-port\" => undefined,", 
+                                "                \"name\" => \"txn-recovery-environment\",", 
+                                "                \"port\" => 4712", 
+                                "            },", 
+                                "            \"txn-status-manager\" => {", 
+                                "                \"client-mappings\" => undefined,", 
+                                "                \"fixed-port\" => false,", 
+                                "                \"interface\" => undefined,", 
+                                "                \"multicast-address\" => undefined,", 
+                                "                \"multicast-port\" => undefined,", 
+                                "                \"name\" => \"txn-status-manager\",", 
+                                "                \"port\" => 4713", 
+                                "            }", 
+                                "        }", 
+                                "    }", 
+                                "}"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "9c7c2f2e-7828-4746-88af-c5646faefa9d", 
+                        "name": "Standard Socket Binding"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "././jboss-cli.sh", 
+                                "--controller=192.168.0.69:9999", 
+                                "-c", 
+                                "--command=/subsystem=logging:read-resource(recursive=true)"
+                            ], 
+                            "delta": "0:00:02.005813", 
+                            "end": "2017-03-13 16:36:59.027236", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "././jboss-cli.sh --controller=192.168.0.69:9999 -c --command=\"/subsystem=logging:read-resource(recursive=true)\"", 
+                                    "_uses_shell": false, 
+                                    "chdir": "/opt/EAP-Ansible-POC/standalone/bin/", 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:36:57.021423", 
+                            "stderr": "", 
+                            "stdout": "{\n    \"outcome\" => \"success\",\n    \"result\" => {\n        \"add-logging-api-dependencies\" => true,\n        \"async-handler\" => undefined,\n        \"console-handler\" => {\"CONSOLE\" => {\n            \"autoflush\" => true,\n            \"enabled\" => true,\n            \"encoding\" => undefined,\n            \"filter\" => undefined,\n            \"filter-spec\" => undefined,\n            \"formatter\" => \"%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n\",\n            \"level\" => \"INFO\",\n            \"name\" => \"CONSOLE\",\n            \"named-formatter\" => \"COLOR-PATTERN\",\n            \"target\" => \"System.out\"\n        }},\n        \"custom-formatter\" => undefined,\n        \"custom-handler\" => undefined,\n        \"file-handler\" => undefined,\n        \"log-file\" => undefined,\n        \"logger\" => {\n            \"com.arjuna\" => {\n                \"category\" => \"com.arjuna\",\n                \"filter\" => undefined,\n                \"filter-spec\" => undefined,\n                \"handlers\" => undefined,\n                \"level\" => \"WARN\",\n                \"use-parent-handlers\" => true\n            },\n            \"org.apache.tomcat.util.modeler\" => {\n                \"category\" => \"org.apache.tomcat.util.modeler\",\n                \"filter\" => undefined,\n                \"filter-spec\" => undefined,\n                \"handlers\" => undefined,\n                \"level\" => \"WARN\",\n                \"use-parent-handlers\" => true\n            },\n            \"org.jboss.as.config\" => {\n                \"category\" => \"org.jboss.as.config\",\n                \"filter\" => undefined,\n                \"filter-spec\" => undefined,\n                \"handlers\" => undefined,\n                \"level\" => \"DEBUG\",\n                \"use-parent-handlers\" => true\n            },\n            \"sun.rmi\" => {\n                \"category\" => \"sun.rmi\",\n                \"filter\" => undefined,\n                \"filter-spec\" => undefined,\n                \"handlers\" => undefined,\n                \"level\" => \"WARN\",\n                \"use-parent-handlers\" => true\n            },\n            \"jacorb\" => {\n                \"category\" => \"jacorb\",\n                \"filter\" => undefined,\n                \"filter-spec\" => undefined,\n                \"handlers\" => undefined,\n                \"level\" => \"WARN\",\n                \"use-parent-handlers\" => true\n            },\n            \"jacorb.config\" => {\n                \"category\" => \"jacorb.config\",\n                \"filter\" => undefined,\n                \"filter-spec\" => undefined,\n                \"handlers\" => undefined,\n                \"level\" => \"ERROR\",\n                \"use-parent-handlers\" => true\n            }\n        },\n        \"logging-profile\" => undefined,\n        \"pattern-formatter\" => {\n            \"PATTERN\" => {\n                \"color-map\" => undefined,\n                \"pattern\" => \"%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n\"\n            },\n            \"COLOR-PATTERN\" => {\n                \"color-map\" => undefined,\n                \"pattern\" => \"%K{level}%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n\"\n            }\n        },\n        \"periodic-rotating-file-handler\" => {\"FILE\" => {\n            \"append\" => true,\n            \"autoflush\" => true,\n            \"enabled\" => true,\n            \"encoding\" => undefined,\n            \"file\" => {\n                \"relative-to\" => \"jboss.server.log.dir\",\n                \"path\" => \"server.log\"\n            },\n            \"filter\" => undefined,\n            \"filter-spec\" => undefined,\n            \"formatter\" => \"%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n\",\n            \"level\" => \"ALL\",\n            \"name\" => \"FILE\",\n            \"named-formatter\" => \"PATTERN\",\n            \"suffix\" => \".yyyy-MM-dd\"\n        }},\n        \"periodic-size-rotating-file-handler\" => undefined,\n        \"root-logger\" => {\"ROOT\" => {\n            \"filter\" => undefined,\n            \"filter-spec\" => undefined,\n            \"handlers\" => [\n                \"CONSOLE\",\n                \"FILE\"\n            ],\n            \"level\" => \"INFO\"\n        }},\n        \"size-rotating-file-handler\" => undefined,\n        \"syslog-handler\" => undefined\n    }\n}", 
+                            "stdout_lines": [
+                                "{", 
+                                "    \"outcome\" => \"success\",", 
+                                "    \"result\" => {", 
+                                "        \"add-logging-api-dependencies\" => true,", 
+                                "        \"async-handler\" => undefined,", 
+                                "        \"console-handler\" => {\"CONSOLE\" => {", 
+                                "            \"autoflush\" => true,", 
+                                "            \"enabled\" => true,", 
+                                "            \"encoding\" => undefined,", 
+                                "            \"filter\" => undefined,", 
+                                "            \"filter-spec\" => undefined,", 
+                                "            \"formatter\" => \"%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n\",", 
+                                "            \"level\" => \"INFO\",", 
+                                "            \"name\" => \"CONSOLE\",", 
+                                "            \"named-formatter\" => \"COLOR-PATTERN\",", 
+                                "            \"target\" => \"System.out\"", 
+                                "        }},", 
+                                "        \"custom-formatter\" => undefined,", 
+                                "        \"custom-handler\" => undefined,", 
+                                "        \"file-handler\" => undefined,", 
+                                "        \"log-file\" => undefined,", 
+                                "        \"logger\" => {", 
+                                "            \"com.arjuna\" => {", 
+                                "                \"category\" => \"com.arjuna\",", 
+                                "                \"filter\" => undefined,", 
+                                "                \"filter-spec\" => undefined,", 
+                                "                \"handlers\" => undefined,", 
+                                "                \"level\" => \"WARN\",", 
+                                "                \"use-parent-handlers\" => true", 
+                                "            },", 
+                                "            \"org.apache.tomcat.util.modeler\" => {", 
+                                "                \"category\" => \"org.apache.tomcat.util.modeler\",", 
+                                "                \"filter\" => undefined,", 
+                                "                \"filter-spec\" => undefined,", 
+                                "                \"handlers\" => undefined,", 
+                                "                \"level\" => \"WARN\",", 
+                                "                \"use-parent-handlers\" => true", 
+                                "            },", 
+                                "            \"org.jboss.as.config\" => {", 
+                                "                \"category\" => \"org.jboss.as.config\",", 
+                                "                \"filter\" => undefined,", 
+                                "                \"filter-spec\" => undefined,", 
+                                "                \"handlers\" => undefined,", 
+                                "                \"level\" => \"DEBUG\",", 
+                                "                \"use-parent-handlers\" => true", 
+                                "            },", 
+                                "            \"sun.rmi\" => {", 
+                                "                \"category\" => \"sun.rmi\",", 
+                                "                \"filter\" => undefined,", 
+                                "                \"filter-spec\" => undefined,", 
+                                "                \"handlers\" => undefined,", 
+                                "                \"level\" => \"WARN\",", 
+                                "                \"use-parent-handlers\" => true", 
+                                "            },", 
+                                "            \"jacorb\" => {", 
+                                "                \"category\" => \"jacorb\",", 
+                                "                \"filter\" => undefined,", 
+                                "                \"filter-spec\" => undefined,", 
+                                "                \"handlers\" => undefined,", 
+                                "                \"level\" => \"WARN\",", 
+                                "                \"use-parent-handlers\" => true", 
+                                "            },", 
+                                "            \"jacorb.config\" => {", 
+                                "                \"category\" => \"jacorb.config\",", 
+                                "                \"filter\" => undefined,", 
+                                "                \"filter-spec\" => undefined,", 
+                                "                \"handlers\" => undefined,", 
+                                "                \"level\" => \"ERROR\",", 
+                                "                \"use-parent-handlers\" => true", 
+                                "            }", 
+                                "        },", 
+                                "        \"logging-profile\" => undefined,", 
+                                "        \"pattern-formatter\" => {", 
+                                "            \"PATTERN\" => {", 
+                                "                \"color-map\" => undefined,", 
+                                "                \"pattern\" => \"%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n\"", 
+                                "            },", 
+                                "            \"COLOR-PATTERN\" => {", 
+                                "                \"color-map\" => undefined,", 
+                                "                \"pattern\" => \"%K{level}%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n\"", 
+                                "            }", 
+                                "        },", 
+                                "        \"periodic-rotating-file-handler\" => {\"FILE\" => {", 
+                                "            \"append\" => true,", 
+                                "            \"autoflush\" => true,", 
+                                "            \"enabled\" => true,", 
+                                "            \"encoding\" => undefined,", 
+                                "            \"file\" => {", 
+                                "                \"relative-to\" => \"jboss.server.log.dir\",", 
+                                "                \"path\" => \"server.log\"", 
+                                "            },", 
+                                "            \"filter\" => undefined,", 
+                                "            \"filter-spec\" => undefined,", 
+                                "            \"formatter\" => \"%d{HH:mm:ss,SSS} %-5p [%c] (%t) %s%E%n\",", 
+                                "            \"level\" => \"ALL\",", 
+                                "            \"name\" => \"FILE\",", 
+                                "            \"named-formatter\" => \"PATTERN\",", 
+                                "            \"suffix\" => \".yyyy-MM-dd\"", 
+                                "        }},", 
+                                "        \"periodic-size-rotating-file-handler\" => undefined,", 
+                                "        \"root-logger\" => {\"ROOT\" => {", 
+                                "            \"filter\" => undefined,", 
+                                "            \"filter-spec\" => undefined,", 
+                                "            \"handlers\" => [", 
+                                "                \"CONSOLE\",", 
+                                "                \"FILE\"", 
+                                "            ],", 
+                                "            \"level\" => \"INFO\"", 
+                                "        }},", 
+                                "        \"size-rotating-file-handler\" => undefined,", 
+                                "        \"syslog-handler\" => undefined", 
+                                "    }", 
+                                "}"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "451ac9a4-e5fd-4ae7-9324-02e241a21220", 
+                        "name": "LOG Rotate [[/subsystem=logging:read-resource(recursive=true)]]"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "find", 
+                                "/opt/EAP-Ansible-POC/standalone/modules", 
+                                "-mindepth", 
+                                "2", 
+                                "-maxdepth", 
+                                "3", 
+                                "-type", 
+                                "d"
+                            ], 
+                            "delta": "0:00:00.005650", 
+                            "end": "2017-03-13 16:36:59.893097", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "find /opt/EAP-Ansible-POC/standalone/modules -mindepth 2 -maxdepth 3 -type d", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:36:59.887447", 
+                            "stderr": "", 
+                            "stdout": "/opt/EAP-Ansible-POC/standalone/modules/system/layers\n/opt/EAP-Ansible-POC/standalone/modules/system/layers/base", 
+                            "stdout_lines": [
+                                "/opt/EAP-Ansible-POC/standalone/modules/system/layers", 
+                                "/opt/EAP-Ansible-POC/standalone/modules/system/layers/base"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "10b120ab-2010-4feb-b12f-203b24473b8a", 
+                        "name": "Modules EXTRAS"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "././jboss-cli.sh", 
+                                "--controller=192.168.0.69:9999", 
+                                "-c", 
+                                "--command=/subsystem=datasources:read-children-names(child-type=data-source)/subsystem=datasources:read-children-names(child-type=data-source)"
+                            ], 
+                            "delta": "0:00:02.093540", 
+                            "end": "2017-03-13 16:37:02.718718", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "././jboss-cli.sh --controller=192.168.0.69:9999 -c --command=\"/subsystem=datasources:read-children-names(child-type=data-source)/subsystem=datasources:read-children-names(child-type=data-source)\"", 
+                                    "_uses_shell": false, 
+                                    "chdir": "/opt/EAP-Ansible-POC/standalone/bin/", 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:37:00.625178", 
+                            "stderr": "", 
+                            "stdout": "{\n    \"outcome\" => \"success\",\n    \"result\" => [\"ExampleDS\"]\n}", 
+                            "stdout_lines": [
+                                "{", 
+                                "    \"outcome\" => \"success\",", 
+                                "    \"result\" => [\"ExampleDS\"]", 
+                                "}"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "8b49b2c4-931d-405d-a6c0-d6aa9f03db4c", 
+                        "name": "Datasources"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "././jboss-cli.sh", 
+                                "--controller=192.168.0.69:9999", 
+                                "-c", 
+                                "--command=/subsystem=messaging:read-resource(recursive=true)"
+                            ], 
+                            "delta": "0:00:01.981712", 
+                            "end": "2017-03-13 16:37:05.458963", 
+                            "failed": true, 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "././jboss-cli.sh --controller=192.168.0.69:9999 -c --command=\"/subsystem=messaging:read-resource(recursive=true)\"", 
+                                    "_uses_shell": false, 
+                                    "chdir": "/opt/EAP-Ansible-POC/standalone/bin/", 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 1, 
+                            "start": "2017-03-13 16:37:03.477251", 
+                            "stderr": "", 
+                            "stdout": "Failed to get the list of the operation properties: \"JBAS014883: No resource definition is registered for address [(\"subsystem\" => \"messaging\")]\"", 
+                            "stdout_lines": [
+                                "Failed to get the list of the operation properties: \"JBAS014883: No resource definition is registered for address [(\"subsystem\" => \"messaging\")]\""
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "50345886-316d-411b-ae7f-51bf489994a8", 
+                        "name": "Colas JMS"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "././jboss-cli.sh", 
+                                "--controller=192.168.0.69:9999", 
+                                "-c", 
+                                "--command=deployment-info"
+                            ], 
+                            "delta": "0:00:02.070765", 
+                            "end": "2017-03-13 16:37:08.353023", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "././jboss-cli.sh --controller=192.168.0.69:9999 -c --command=\"deployment-info\"", 
+                                    "_uses_shell": false, 
+                                    "chdir": "/opt/EAP-Ansible-POC/standalone/bin/", 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:37:06.282258", 
+                            "stderr": "", 
+                            "stdout": "", 
+                            "stdout_lines": [], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "8cd5d14f-e144-43bf-93c3-5f4f1079882c", 
+                        "name": "Despliegues"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "././jboss-cli.sh", 
+                                "--controller=192.168.0.69:9999", 
+                                "-c", 
+                                "--command=/core-service=platform-mbean/type=runtime:read-attribute(name=system-properties)"
+                            ], 
+                            "delta": "0:00:02.144093", 
+                            "end": "2017-03-13 16:37:11.293208", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "././jboss-cli.sh --controller=192.168.0.69:9999 -c --command=\"/core-service=platform-mbean/type=runtime:read-attribute(name=system-properties)\"", 
+                                    "_uses_shell": false, 
+                                    "chdir": "/opt/EAP-Ansible-POC/standalone/bin/", 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:37:09.149115", 
+                            "stderr": "", 
+                            "stdout": "{\n    \"outcome\" => \"success\",\n    \"result\" => {\n        \"[Standalone]\" => \"\",\n        \"awt.toolkit\" => \"sun.awt.X11.XToolkit\",\n        \"catalina.home\" => \"/opt/EAP-Ansible-POC/standalone/standalone/tmp\",\n        \"file.encoding\" => \"UTF-8\",\n        \"file.encoding.pkg\" => \"sun.io\",\n        \"file.separator\" => \"/\",\n        \"java.awt.graphicsenv\" => \"sun.awt.X11GraphicsEnvironment\",\n        \"java.awt.headless\" => \"true\",\n        \"java.awt.printerjob\" => \"sun.print.PSPrinterJob\",\n        \"java.class.path\" => \"/opt/EAP-Ansible-POC/standalone/jboss-modules.jar\",\n        \"java.class.version\" => \"52.0\",\n        \"java.endorsed.dirs\" => \"/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/endorsed\",\n        \"java.ext.dirs\" => \"/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/ext:/usr/java/packages/lib/ext\",\n        \"java.home\" => \"/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre\",\n        \"java.io.tmpdir\" => \"/tmp\",\n        \"java.library.path\" => \"/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib\",\n        \"java.naming.factory.url.pkgs\" => \"org.jboss.as.naming.interfaces:org.jboss.ejb.client.naming\",\n        \"java.net.preferIPv4Stack\" => \"true\",\n        \"java.runtime.name\" => \"OpenJDK Runtime Environment\",\n        \"java.runtime.version\" => \"1.8.0_91-b14\",\n        \"java.specification.name\" => \"Java Platform API Specification\",\n        \"java.specification.vendor\" => \"Oracle Corporation\",\n        \"java.specification.version\" => \"1.8\",\n        \"java.util.logging.manager\" => \"org.jboss.logmanager.LogManager\",\n        \"java.vendor\" => \"Oracle Corporation\",\n        \"java.vendor.url\" => \"http://java.oracle.com/\",\n        \"java.vendor.url.bug\" => \"http://bugreport.sun.com/bugreport/\",\n        \"java.version\" => \"1.8.0_91\",\n        \"java.vm.info\" => \"mixed mode\",\n        \"java.vm.name\" => \"OpenJDK 64-Bit Server VM\",\n        \"java.vm.specification.name\" => \"Java Virtual Machine Specification\",\n        \"java.vm.specification.vendor\" => \"Oracle Corporation\",\n        \"java.vm.specification.version\" => \"1.8\",\n        \"java.vm.vendor\" => \"Oracle Corporation\",\n        \"java.vm.version\" => \"25.91-b14\",\n        \"javax.management.builder.initial\" => \"org.jboss.as.jmx.PluggableMBeanServerBuilder\",\n        \"javax.xml.datatype.DatatypeFactory\" => \"__redirected.__DatatypeFactory\",\n        \"javax.xml.parsers.DocumentBuilderFactory\" => \"__redirected.__DocumentBuilderFactory\",\n        \"javax.xml.parsers.SAXParserFactory\" => \"__redirected.__SAXParserFactory\",\n        \"javax.xml.stream.XMLEventFactory\" => \"__redirected.__XMLEventFactory\",\n        \"javax.xml.stream.XMLInputFactory\" => \"__redirected.__XMLInputFactory\",\n        \"javax.xml.stream.XMLOutputFactory\" => \"__redirected.__XMLOutputFactory\",\n        \"javax.xml.transform.TransformerFactory\" => \"__redirected.__TransformerFactory\",\n        \"javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema\" => \"__redirected.__SchemaFactory\",\n        \"javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom\" => \"__redirected.__XPathFactory\",\n        \"jboss.bind.address\" => \"192.168.0.69\",\n        \"jboss.bind.address.management\" => \"192.168.0.69\",\n        \"jboss.home.dir\" => \"/opt/EAP-Ansible-POC/standalone\",\n        \"jboss.host.name\" => \"bandurria\",\n        \"jboss.modules.dir\" => \"/opt/EAP-Ansible-POC/standalone/modules\",\n        \"jboss.modules.policy-permissions\" => \"true\",\n        \"jboss.modules.system.pkgs\" => \"org.jboss.byteman\",\n        \"jboss.node.name\" => \"bandurria\",\n        \"jboss.qualified.host.name\" => \"bandurria\",\n        \"jboss.server.base.dir\" => \"/opt/EAP-Ansible-POC/standalone/standalone\",\n        \"jboss.server.config.dir\" => \"/opt/EAP-Ansible-POC/standalone/standalone/configuration\",\n        \"jboss.server.data.dir\" => \"/opt/EAP-Ansible-POC/standalone/standalone/data\",\n        \"jboss.server.deploy.dir\" => \"/opt/EAP-Ansible-POC/standalone/standalone/data/content\",\n        \"jboss.server.log.dir\" => \"/opt/EAP-Ansible-POC/standalone/standalone/log\",\n        \"jboss.server.name\" => \"bandurria\",\n        \"jboss.server.persist.config\" => \"true\",\n        \"jboss.server.temp.dir\" => \"/opt/EAP-Ansible-POC/standalone/standalone/tmp\",\n        \"line.separator\" => \"\n\",\n        \"logging.configuration\" => \"file:/opt/EAP-Ansible-POC/standalone/standalone/configuration/logging.properties\",\n        \"module.path\" => \"/opt/EAP-Ansible-POC/standalone/modules\",\n        \"org.apache.xml.security.ignoreLineBreaks\" => \"true\",\n        \"org.jboss.boot.log.file\" => \"/opt/EAP-Ansible-POC/standalone/standalone/log/server.log\",\n        \"org.jboss.resolver.warning\" => \"true\",\n        \"org.jboss.security.context.ThreadLocal\" => \"true\",\n        \"org.xml.sax.driver\" => \"__redirected.__XMLReaderFactory\",\n        \"os.arch\" => \"amd64\",\n        \"os.name\" => \"Linux\",\n        \"os.version\" => \"4.4.14-200.fc22.x86_64\",\n        \"path.separator\" => \":\",\n        \"sun.arch.data.model\" => \"64\",\n        \"sun.boot.class.path\" => \"/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/classes\",\n        \"sun.boot.library.path\" => \"/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/amd64\",\n        \"sun.cpu.endian\" => \"little\",\n        \"sun.cpu.isalist\" => \"\",\n        \"sun.desktop\" => \"gnome\",\n        \"sun.io.unicode.encoding\" => \"UnicodeLittle\",\n        \"sun.java.command\" => \"/opt/EAP-Ansible-POC/standalone/jboss-modules.jar -mp /opt/EAP-Ansible-POC/standalone/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -Djboss.home.dir=/opt/EAP-Ansible-POC/standalone -Djboss.server.base.dir=/opt/EAP-Ansible-POC/standalone/standalone\",\n        \"sun.java.launcher\" => \"SUN_STANDARD\",\n        \"sun.jnu.encoding\" => \"UTF-8\",\n        \"sun.management.compiler\" => \"HotSpot 64-Bit Tiered Compilers\",\n        \"sun.nio.ch.bugLevel\" => \"\",\n        \"sun.os.patch.level\" => \"unknown\",\n        \"user.country\" => \"US\",\n        \"user.dir\" => \"/home/rwattcha/opt/EAP-Ansible-POC/standalone/bin\",\n        \"user.home\" => \"/home/rwattcha\",\n        \"user.language\" => \"en\",\n        \"user.name\" => \"rwattcha\",\n        \"user.timezone\" => \"America/Santiago\"\n    }\n}", 
+                            "stdout_lines": [
+                                "{", 
+                                "    \"outcome\" => \"success\",", 
+                                "    \"result\" => {", 
+                                "        \"[Standalone]\" => \"\",", 
+                                "        \"awt.toolkit\" => \"sun.awt.X11.XToolkit\",", 
+                                "        \"catalina.home\" => \"/opt/EAP-Ansible-POC/standalone/standalone/tmp\",", 
+                                "        \"file.encoding\" => \"UTF-8\",", 
+                                "        \"file.encoding.pkg\" => \"sun.io\",", 
+                                "        \"file.separator\" => \"/\",", 
+                                "        \"java.awt.graphicsenv\" => \"sun.awt.X11GraphicsEnvironment\",", 
+                                "        \"java.awt.headless\" => \"true\",", 
+                                "        \"java.awt.printerjob\" => \"sun.print.PSPrinterJob\",", 
+                                "        \"java.class.path\" => \"/opt/EAP-Ansible-POC/standalone/jboss-modules.jar\",", 
+                                "        \"java.class.version\" => \"52.0\",", 
+                                "        \"java.endorsed.dirs\" => \"/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/endorsed\",", 
+                                "        \"java.ext.dirs\" => \"/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/ext:/usr/java/packages/lib/ext\",", 
+                                "        \"java.home\" => \"/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre\",", 
+                                "        \"java.io.tmpdir\" => \"/tmp\",", 
+                                "        \"java.library.path\" => \"/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib\",", 
+                                "        \"java.naming.factory.url.pkgs\" => \"org.jboss.as.naming.interfaces:org.jboss.ejb.client.naming\",", 
+                                "        \"java.net.preferIPv4Stack\" => \"true\",", 
+                                "        \"java.runtime.name\" => \"OpenJDK Runtime Environment\",", 
+                                "        \"java.runtime.version\" => \"1.8.0_91-b14\",", 
+                                "        \"java.specification.name\" => \"Java Platform API Specification\",", 
+                                "        \"java.specification.vendor\" => \"Oracle Corporation\",", 
+                                "        \"java.specification.version\" => \"1.8\",", 
+                                "        \"java.util.logging.manager\" => \"org.jboss.logmanager.LogManager\",", 
+                                "        \"java.vendor\" => \"Oracle Corporation\",", 
+                                "        \"java.vendor.url\" => \"http://java.oracle.com/\",", 
+                                "        \"java.vendor.url.bug\" => \"http://bugreport.sun.com/bugreport/\",", 
+                                "        \"java.version\" => \"1.8.0_91\",", 
+                                "        \"java.vm.info\" => \"mixed mode\",", 
+                                "        \"java.vm.name\" => \"OpenJDK 64-Bit Server VM\",", 
+                                "        \"java.vm.specification.name\" => \"Java Virtual Machine Specification\",", 
+                                "        \"java.vm.specification.vendor\" => \"Oracle Corporation\",", 
+                                "        \"java.vm.specification.version\" => \"1.8\",", 
+                                "        \"java.vm.vendor\" => \"Oracle Corporation\",", 
+                                "        \"java.vm.version\" => \"25.91-b14\",", 
+                                "        \"javax.management.builder.initial\" => \"org.jboss.as.jmx.PluggableMBeanServerBuilder\",", 
+                                "        \"javax.xml.datatype.DatatypeFactory\" => \"__redirected.__DatatypeFactory\",", 
+                                "        \"javax.xml.parsers.DocumentBuilderFactory\" => \"__redirected.__DocumentBuilderFactory\",", 
+                                "        \"javax.xml.parsers.SAXParserFactory\" => \"__redirected.__SAXParserFactory\",", 
+                                "        \"javax.xml.stream.XMLEventFactory\" => \"__redirected.__XMLEventFactory\",", 
+                                "        \"javax.xml.stream.XMLInputFactory\" => \"__redirected.__XMLInputFactory\",", 
+                                "        \"javax.xml.stream.XMLOutputFactory\" => \"__redirected.__XMLOutputFactory\",", 
+                                "        \"javax.xml.transform.TransformerFactory\" => \"__redirected.__TransformerFactory\",", 
+                                "        \"javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema\" => \"__redirected.__SchemaFactory\",", 
+                                "        \"javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom\" => \"__redirected.__XPathFactory\",", 
+                                "        \"jboss.bind.address\" => \"192.168.0.69\",", 
+                                "        \"jboss.bind.address.management\" => \"192.168.0.69\",", 
+                                "        \"jboss.home.dir\" => \"/opt/EAP-Ansible-POC/standalone\",", 
+                                "        \"jboss.host.name\" => \"bandurria\",", 
+                                "        \"jboss.modules.dir\" => \"/opt/EAP-Ansible-POC/standalone/modules\",", 
+                                "        \"jboss.modules.policy-permissions\" => \"true\",", 
+                                "        \"jboss.modules.system.pkgs\" => \"org.jboss.byteman\",", 
+                                "        \"jboss.node.name\" => \"bandurria\",", 
+                                "        \"jboss.qualified.host.name\" => \"bandurria\",", 
+                                "        \"jboss.server.base.dir\" => \"/opt/EAP-Ansible-POC/standalone/standalone\",", 
+                                "        \"jboss.server.config.dir\" => \"/opt/EAP-Ansible-POC/standalone/standalone/configuration\",", 
+                                "        \"jboss.server.data.dir\" => \"/opt/EAP-Ansible-POC/standalone/standalone/data\",", 
+                                "        \"jboss.server.deploy.dir\" => \"/opt/EAP-Ansible-POC/standalone/standalone/data/content\",", 
+                                "        \"jboss.server.log.dir\" => \"/opt/EAP-Ansible-POC/standalone/standalone/log\",", 
+                                "        \"jboss.server.name\" => \"bandurria\",", 
+                                "        \"jboss.server.persist.config\" => \"true\",", 
+                                "        \"jboss.server.temp.dir\" => \"/opt/EAP-Ansible-POC/standalone/standalone/tmp\",", 
+                                "        \"line.separator\" => \"", 
+                                "\",", 
+                                "        \"logging.configuration\" => \"file:/opt/EAP-Ansible-POC/standalone/standalone/configuration/logging.properties\",", 
+                                "        \"module.path\" => \"/opt/EAP-Ansible-POC/standalone/modules\",", 
+                                "        \"org.apache.xml.security.ignoreLineBreaks\" => \"true\",", 
+                                "        \"org.jboss.boot.log.file\" => \"/opt/EAP-Ansible-POC/standalone/standalone/log/server.log\",", 
+                                "        \"org.jboss.resolver.warning\" => \"true\",", 
+                                "        \"org.jboss.security.context.ThreadLocal\" => \"true\",", 
+                                "        \"org.xml.sax.driver\" => \"__redirected.__XMLReaderFactory\",", 
+                                "        \"os.arch\" => \"amd64\",", 
+                                "        \"os.name\" => \"Linux\",", 
+                                "        \"os.version\" => \"4.4.14-200.fc22.x86_64\",", 
+                                "        \"path.separator\" => \":\",", 
+                                "        \"sun.arch.data.model\" => \"64\",", 
+                                "        \"sun.boot.class.path\" => \"/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/classes\",", 
+                                "        \"sun.boot.library.path\" => \"/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-2.b14.fc22.x86_64/jre/lib/amd64\",", 
+                                "        \"sun.cpu.endian\" => \"little\",", 
+                                "        \"sun.cpu.isalist\" => \"\",", 
+                                "        \"sun.desktop\" => \"gnome\",", 
+                                "        \"sun.io.unicode.encoding\" => \"UnicodeLittle\",", 
+                                "        \"sun.java.command\" => \"/opt/EAP-Ansible-POC/standalone/jboss-modules.jar -mp /opt/EAP-Ansible-POC/standalone/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -Djboss.home.dir=/opt/EAP-Ansible-POC/standalone -Djboss.server.base.dir=/opt/EAP-Ansible-POC/standalone/standalone\",", 
+                                "        \"sun.java.launcher\" => \"SUN_STANDARD\",", 
+                                "        \"sun.jnu.encoding\" => \"UTF-8\",", 
+                                "        \"sun.management.compiler\" => \"HotSpot 64-Bit Tiered Compilers\",", 
+                                "        \"sun.nio.ch.bugLevel\" => \"\",", 
+                                "        \"sun.os.patch.level\" => \"unknown\",", 
+                                "        \"user.country\" => \"US\",", 
+                                "        \"user.dir\" => \"/home/rwattcha/opt/EAP-Ansible-POC/standalone/bin\",", 
+                                "        \"user.home\" => \"/home/rwattcha\",", 
+                                "        \"user.language\" => \"en\",", 
+                                "        \"user.name\" => \"rwattcha\",", 
+                                "        \"user.timezone\" => \"America/Santiago\"", 
+                                "    }", 
+                                "}"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "af10775a-4b28-47db-8cd2-7b7c8ed08b00", 
+                        "name": "Revisando system-properties"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.69": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "././jboss-cli.sh", 
+                                "--controller=192.168.0.69:9999", 
+                                "-c", 
+                                "--command=patch info"
+                            ], 
+                            "delta": "0:00:01.936381", 
+                            "end": "2017-03-13 16:37:13.984243", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "././jboss-cli.sh --controller=192.168.0.69:9999 -c --command=\"patch info\"", 
+                                    "_uses_shell": false, 
+                                    "chdir": "/opt/EAP-Ansible-POC/standalone/bin/", 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 16:37:12.047862", 
+                            "stderr": "", 
+                            "stdout": "{\n    \"outcome\" : \"success\",\n    \"result\" : {\n        \"cumulative-patch-id\" : \"base\",\n        \"patches\" : [],\n        \"version\" : \"6.4.0.GA\",\n        \"addon\" : null,\n        \"layer\" : {\"base\" : {\n            \"cumulative-patch-id\" : \"base\",\n            \"patches\" : []\n        }}\n    }\n}", 
+                            "stdout_lines": [
+                                "{", 
+                                "    \"outcome\" : \"success\",", 
+                                "    \"result\" : {", 
+                                "        \"cumulative-patch-id\" : \"base\",", 
+                                "        \"patches\" : [],", 
+                                "        \"version\" : \"6.4.0.GA\",", 
+                                "        \"addon\" : null,", 
+                                "        \"layer\" : {\"base\" : {", 
+                                "            \"cumulative-patch-id\" : \"base\",", 
+                                "            \"patches\" : []", 
+                                "        }}", 
+                                "    }", 
+                                "}"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "da0e3200-e5ee-4485-ae83-b12ed51f4a85", 
+                        "name": "Informacion de parches"
+                    }
+                }
+            ]
+        }
+    ], 
+    "stats": {
+        "192.168.0.69": {
+            "changed": 20, 
+            "failures": 0, 
+            "ok": 25, 
+            "skipped": 0, 
+            "unreachable": 0
+        }
+    }
+}

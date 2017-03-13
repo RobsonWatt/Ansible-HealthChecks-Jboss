@@ -1,0 +1,163 @@
+=== Producto: servidores
+
+
+====
+.Checklist servidores
+//[width="100%", cols="^1,^1,4,16", frame="topbot",options="header"]
+[width="100%", cols="^1,4,4", frame="topbot",options="header"]
+|======================
+//| #        
+//| Res 
+//| Aspecto    
+//| Comentario
+| #        
+| Aspecto    
+| Comprobacion
+
+
+| 1
+//| image:w.png[]
+| Usuario JBOSS
+| TBD
+
+
+| 2
+//| image:w.png[]
+| Disco Asignado
+| TBD
+
+
+| 3
+//| image:w.png[]
+| Cantidad Cores
+| TBD
+
+
+| 4
+//| image:w.png[]
+| Cantidad Ram
+| TBD
+
+
+| 5
+//| image:w.png[]
+| Ulimits
+| TBD
+
+
+| 6
+//| image:w.png[]
+| Reglas IPTABLES
+| TBD
+
+
+| 7
+//| image:w.png[]
+| chkconfig iptables
+| TBD
+
+
+| 8
+//| image:w.png[]
+| Interfaces de red: ifconfig
+| TBD
+
+
+| 9
+//| image:w.png[]
+| Java Version
+| TBD
+
+
+| 10
+//| image:w.png[]
+| chkconfig
+| TBD
+
+
+| 11
+//| image:w.png[]
+| Parametros JVM: Xms 
+| TBD
+
+
+| 12
+//| image:w.png[]
+| Parametros JVM: Xmx 
+| TBD
+
+
+| 13
+//| image:w.png[]
+| Parametros JVM: XX:MaxPermSize 
+| TBD
+
+
+| 14
+//| image:w.png[]
+| ps -fea \| grep jboss
+| TBD
+
+
+| 15
+//| image:w.png[]
+| Parametros binding IP: jboss.bind.address.management 
+| TBD
+
+
+| 16
+//| image:w.png[]
+| Parametros binding IP: jboss.bind.address 
+| TBD
+
+
+| 17
+//| image:w.png[]
+| Standard Socket Binding
+| TBD
+
+
+| 18
+//| image:w.png[]
+| LOG Rotate [[/subsystem=logging:read-resource(recursive=true)]]
+| TBD
+
+
+| 19
+//| image:w.png[]
+| Modules EXTRAS
+| TBD
+
+
+| 20
+//| image:w.png[]
+| Datasources
+| TBD
+
+
+| 21
+//| image:w.png[]
+| Colas JMS
+| TBD
+
+
+| 22
+//| image:w.png[]
+| Despliegues
+| TBD
+
+
+| 23
+//| image:w.png[]
+| Revisando system-properties
+| TBD
+
+
+| 24
+//| image:w.png[]
+| Informacion de parches
+| TBD
+
+
+|======================
+====

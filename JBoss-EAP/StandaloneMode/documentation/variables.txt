@@ -1,0 +1,29 @@
+:subject: HealthCheck Jboss EAP Standalone Mode
+:consultant:  Robson Watt
+:email:  robson@redhat.com
+:description:  Ambiente Productivo
+:doctype: book
+:confidentiality: Confidencial
+:customer:  Customer Name
+:toclevels: 6
+:nolang:
+:numbered:
+:chapter-label:
+:lang: es
+:icons: font
+:pdf-page-size: A4
+:pdf-style: redhat
+:pdf-stylesdir: .
+:revnumber: 1.0.0
+:imagesdir: images
+
+:ambiente: Producción
+
+:toc-title: Tabla de contenidos
+:listing-caption: Servidor de Ejecución
+:appendix-caption:
+:caution-caption: Precaución
+:example-caption: Ejemplo
+:figure-caption: Imagen
+:table-caption: Tabla
+:version-label: Versión

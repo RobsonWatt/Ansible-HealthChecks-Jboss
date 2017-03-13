@@ -1,0 +1,22 @@
+include::variables.txt[]
+= {subject}: preparado para - {customer}
+{consultant} <{email}>
+:toc:
+ifdef::backend-pdf[]
+:title-page-background-image: image:CEE_rojo.png[pdfwidth=8.0in,align=center]
+:pygments-style: tango
+:source-highlighter: pygments
+endif::[]
+
+
+include::versionamiento.adoc[]
+
+include::prefacio.adoc[]
+
+include::chapters/arquitectura.adoc[]
+
+include::chapters/analisis_cumplimiento.adoc[]
+
+include::chapters/tabla_cumplimiento.adoc[]
+
+include::../results/2_anexos_data.adoc[]
