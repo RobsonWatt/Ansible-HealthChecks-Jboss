@@ -114,19 +114,18 @@ resultado --> \<secret value="cG9jLlJlZGhhdDEyMw=="/>
 
 ## Archivos importantes a tener en cuenta
 
-**SCRIPTS**
+1 SCRIPTS
 
-**NOTA:** Para todos los script se debe modificarel path e ip del domain controlle
+**NOTA:** Para todos los script se debe modificarel path e ip del domain controlle  
+**TODO:** Utilizar variables para scripts  
 
-**TODO:** Utilizar variables para scripts
+**datasources_list.sh** --> Entrega el listado completo de datasources del dominio    
 
+**datasources_test_connection.sh** --> Realiza test connection de los datasources de todos los profiles del dominio, o bien sobre los profiles que se deseen revisar.  
 
-**datasources_list.sh** --> Entrega el listado completo de datasources del dominio
+**server_status** --> Revisa el estado de todos los servidores de dominio  
 
-**datasources_test_connection.sh** --> Realiza test connection de los datasources de todos los profiles del dominio, o bien sobre los profiles que se deseen revisar.
-
-**server_status** --> Revisa el estado de todos los servidores de dominio
-
+2. Ficheros YML
 
 **healthcheck-eap-middleware.yml**  
 En este fichero se definen las tareas que se ejecutarán sobre el domain controller y el órden de las mismas
@@ -134,17 +133,16 @@ En este fichero se definen las tareas que se ejecutarán sobre el domain control
 **NOTA:** Reemplazar {{ansible_enp0s25_1.ipv4.address}} por la interfaz de red que corresponda
 
 **healthcheck-eap-middleware.yml**  
-En este fichero se definen las tareas que se ejecutarán sobre el listado de host controllers, principalmente son tareas de infraestructura
-
+En este fichero se definen las tareas que se ejecutarán sobre el listado de host controllers, principalmente son tareas de infraestructura  
 **callback_plugins/json-custom.py**  
 script python que define la ejecución de instrucciones, tareas y result para documentación.
 
+3. Documentación  
 **documentation/healthcheck.adoc**  
-define los capítulos que se agregarán al documento de informe
+define los capítulos que se agregarán al documento de informe  
 
 **documentation/variables.txt**  
-define las variables del documento
-
+define las variables del documento  
 **documentation/chapters/** 
 capítulos del documento. 
 **NOTA:** estos capítulos deben ser editados antes de la generación del documento.
@@ -155,7 +153,7 @@ capítulos del documento.
 
 `$ cd Ansible EAP HealthCheck/DomainMode`  
 `$ ANSIBLE_COW_SELECTION=tux  ansible-playbook -i inventory/domaincontroller healthcheck-eap-middleware.yml`  
-`$# ANSIBLE_COW_SELECTION=tux  ansible-playbook -i inventory/hostControllerList healthcheck-eap-rhel.yml`  
+`$ ANSIBLE_COW_SELECTION=tux  ansible-playbook -i inventory/hostControllerList healthcheck-eap-rhel.yml`  
 
 **NOTA:** la ejecuión de estos archivos generará como salida los ficheros ubicados en results/data
 
