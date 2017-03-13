@@ -5,178 +5,168 @@
 
 1. Crear 3 interfaces de red locales (reemplazar enp0s25 por eth0 o el nombre que corresponda a vuestro ambiente)
 
-sudo ifconfig enp0s25:1 192.168.0.69 netmask 255.255.255.0
-sudo ifconfig enp0s25:2 192.168.0.70 netmask 255.255.255.0
-sudo ifconfig enp0s25:3 192.168.0.71 netmask 255.255.255.0
+`sudo ifconfig enp0s25:1 192.168.0.69 netmask 255.255.255.0`  
+`sudo ifconfig enp0s25:2 192.168.0.70 netmask 255.255.255.0`  
+`sudo ifconfig enp0s25:3 192.168.0.71 netmask 255.255.255.0`  
 
 El resultado debe ser del tipo:
 
 $ ifconfig
-`enp0s25: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
-        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)
-        RX packets 0  bytes 0 (0.0 B)
-        RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 0  bytes 0 (0.0 B)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-        device interrupt 20  memory 0xb4a00000-b4a20000  
+enp0s25: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500  
+        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)  
+        RX packets 0  bytes 0 (0.0 B)  
+        RX errors 0  dropped 0  overruns 0  frame 0  
+        TX packets 0  bytes 0 (0.0 B)  
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0  
+        device interrupt 20  memory 0xb4a00000-b4a20000    
 `
 
-enp0s25:1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
-        inet 192.168.0.69  netmask 255.255.255.0  broadcast 192.168.0.255
-        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)
-        device interrupt 20  memory 0xb4a00000-b4a20000  
+*enp0s25:1*: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500  
+        *inet 192.168.0.69*  netmask 255.255.255.0  broadcast 192.168.0.255  
+        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)  
+        device interrupt 20  memory 0xb4a00000-b4a20000    
 
-enp0s25:2: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
-        inet 192.168.0.70  netmask 255.255.255.0  broadcast 192.168.0.255
-        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)
-        device interrupt 20  memory 0xb4a00000-b4a20000  
+*enp0s25:2*: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500  
+        *inet 192.168.0.70*  netmask 255.255.255.0  broadcast 192.168.0.255  
+        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)  
+        device interrupt 20  memory 0xb4a00000-b4a20000    
 
-enp0s25:3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
-        inet 192.168.0.71  netmask 255.255.255.0  broadcast 192.168.0.255
-        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)
-        device interrupt 20  memory 0xb4a00000-b4a20000  
+*enp0s25:3*: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500  
+        *inet 192.168.0.71*  netmask 255.255.255.0  broadcast 192.168.0.255  
+        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)  
+        device interrupt 20  memory 0xb4a00000-b4a20000    
 
-2. Instalación de 1 DC
-* - creamos directorios para nuestro ambiente en la ruta /opt/EAP-Ansible-POC
+2. Instalación de 1 DC  
+* creamos directorios para nuestro ambiente en la ruta /opt/EAP-Ansible-POC
 
-`$ mkdir /opt/EAP-Ansible-POC`
-`$ mkdir /opt/EAP-Ansible-POC/domainController`
+`$ mkdir /opt/EAP-Ansible-POC`  
+`$ mkdir /opt/EAP-Ansible-POC/domainController`  
 
-* - instalamos nuestro EAP 6.4 sobre /opt/EAP-Ansible-POC/domainController
-* - copiamos nuestra instalación para generar nuestros hosts controllers
+* Instalamos nuestro EAP 6.4 sobre /opt/EAP-Ansible-POC/domainController
+* Copiamos nuestra instalación para generar nuestros hosts controllers
 
-# cp -R /opt/EAP-Ansible-POC/domainController /opt/EAP-Ansible-POC/hostController1
-# cp -R /opt/EAP-Ansible-POC/domainController /opt/EAP-Ansible-POC/hostController2
+`$ cp -R /opt/EAP-Ansible-POC/domainController /opt/EAP-Ansible-POC/hostController1`  
+`$ cp -R /opt/EAP-Ansible-POC/domainController /opt/EAP-Ansible-POC/hostController2`  
 
-- configuramos nuestro DomainController para utilizar binding sobre enp0s25:1
-# cp /opt/EAP-Ansible-POC/domainController/domain/configuration/host-master.xml /opt/EAP-Ansible-POC/domainController/domain/configuration/host.xml
-# sed -i "s/127.0.0.1/192.168.0.69/g" /opt/EAP-Ansible-POC/domainController/domain/configuration/host.xml
+* Configuramos nuestro DomainController para utilizar binding sobre enp0s25:1
+`$ cp /opt/EAP-Ansible-POC/domainController/domain/configuration/host-master.xml /opt/EAP-Ansible-POC/domainController/domain/configuration/host.xml`  
+`$ sed -i "s/127.0.0.1/192.168.0.69/g" /opt/EAP-Ansible-POC/domainController/domain/configuration/host.xml`
 
-- iniciamos nuestro Domain Controller
-# sh /opt/EAP-Ansible-POC/domainController/bin/domain.sh &
+* Iniciamos nuestro Domain Controller
+`$sh /opt/EAP-Ansible-POC/domainController/bin/domain.sh &`  
 
-- generamos usuario de administración:
-  name=poc
-  pass=poc.Redhat123
-----------------------------------------------
-  <secret value="cG9jLlJlZGhhdDEyMw==" />
-----------------------------------------------
-
-
-- configuración cluster hornetQ para profile full-ha
-# sh /opt/EAP-Ansible-POC/domainController/bin/jboss-cli.sh --connect controller=192.168.0.69:9999 -c "/profile=full-ha/subsystem=messaging/hornetq-server=default:write-attribute(name=cluster-user,value=poc)"
-# sh /opt/EAP-Ansible-POC/domainController/bin/jboss-cli.sh --connect controller=192.168.0.69:9999 -c "/profile=full-ha/subsystem=messaging/hornetq-server=default:write-attribute(name=cluster-password,value=\"cG9jLlJlZGhhdDEyMw==\")"
+* Generamos usuario de administración:  
+  name=poc  
+  pass=poc.Redhat123  
+----------------------------------------------  
+  <secret value="cG9jLlJlZGhhdDEyMw==" />  
+----------------------------------------------  
 
 
-3.- Instalación de 2 Hosts Controllers
-# cp /opt/EAP-Ansible-POC/hostController1/domain/configuration/host-slave.xml /opt/EAP-Ansible-POC/hostController1/domain/configuration/host.xml
-# cp /opt/EAP-Ansible-POC/hostController2/domain/configuration/host-slave.xml /opt/EAP-Ansible-POC/hostController2/domain/configuration/host.xml
+* Configuración cluster hornetQ para profile full-ha  
+`$ sh /opt/EAP-Ansible-POC/domainController/bin/jboss-cli.sh --connect controller=192.168.0.69:9999 -c "/profile=full-ha/subsystem=messaging/hornetq-server=default:write-attribute(name=cluster-user,value=poc)"`  
+`$ sh /opt/EAP-Ansible-POC/domainController/bin/jboss-cli.sh --connect controller=192.168.0.69:9999 -c "/profile=full-ha/subsystem=messaging/hornetq-server=default:write-attribute(name=cluster-password,value=\"cG9jLlJlZGhhdDEyMw==\")`  
 
-- configuramos nuestros Hosts Controllers para utilizar binding sobre enp0s25:2 y enp0s25:3 respectivamente
-# sed -i "s/127.0.0.1/192.168.0.70/g" /opt/EAP-Ansible-POC/hostController1/domain/configuration/host.xml
-# sed -i "s/127.0.0.1/192.168.0.71/g" /opt/EAP-Ansible-POC/hostController2/domain/configuration/host.xml
+3. Instalación de 2 Hosts Controllers  
+`$ cp /opt/EAP-Ansible-POC/hostController1/domain/configuration/host-slave.xml /opt/EAP-Ansible-POC/hostController1/domain/configuration/host.xml`  
+`$ cp /opt/EAP-Ansible-POC/hostController2/domain/configuration/host-slave.xml /opt/EAP-Ansible-POC/hostController2/domain/configuration/host.xml`
 
-- configuramos nustro jboss.domain.master.address
-# sed -i "48i JAVA_OPTS=\"\$JAVA_OPTS -Djboss.domain.master.address=192.168.0.69\"" \/opt/EAP-Ansible-POC/hostController1/bin/domain.conf
-# sed -i "48i JAVA_OPTS=\"\$JAVA_OPTS -Djboss.domain.master.address=192.168.0.69\"" \/opt/EAP-Ansible-POC/hostController2/bin/domain.conf        
+* Configuramos nuestros Hosts Controllers para utilizar binding sobre enp0s25:2 y enp0s25:3 respectivamente  
+`$ sed -i "s/127.0.0.1/192.168.0.70/g" /opt/EAP-Ansible-POC/hostController1/domain/configuration/host.xml`  
+`$ sed -i "s/127.0.0.1/192.168.0.71/g" /opt/EAP-Ansible-POC/hostController2/domain/configuration/host.xml`
 
-- iniciamos los hosts controllers
+* Configuramos nustro jboss.domain.master.address  
+`$ sed -i "48i JAVA_OPTS=\"\$JAVA_OPTS -Djboss.domain.master.address=192.168.0.69\"" \/opt/EAP-Ansible-POC/hostController1/bin/domain.conf`  
+`$ sed -i "48i JAVA_OPTS=\"\$JAVA_OPTS -Djboss.domain.master.address=192.168.0.69\"" \/opt/EAP-Ansible-POC/hostController2/bin/domain.conf`  
 
-# sh /opt/EAP-Ansible-POC/hostController1/bin/domain.sh &
-# sh /opt/EAP-Ansible-POC/hostController2/bin/domain.sh &
+* Iiciamos los hosts controllers
+`$ sh /opt/EAP-Ansible-POC/hostController1/bin/domain.sh &` 
+`$ sh /opt/EAP-Ansible-POC/hostController2/bin/domain.sh &` 
 
+* Seteamos el nombre del host
 
-- seteamos el nombre del host
+`$ sh /opt/EAP-Ansible-POC/hostController1/bin/jboss-cli.sh --connect controller=192.168.0.70:9999 -c "/host=$HOSTNAME:write-attribute(name=name,value=hostController1)"`  
+`$ sh /opt/EAP-Ansible-POC/hostController2/bin/jboss-cli.sh --connect controller=192.168.0.71:9999 -c "/host=$HOSTNAME:write-attribute(name=name,value=hostController2)"`  
 
-# sh /opt/EAP-Ansible-POC/hostController1/bin/jboss-cli.sh --connect controller=192.168.0.70:9999 -c "/host=$HOSTNAME:write-attribute(name=name,value=hostController1)"
-# sh /opt/EAP-Ansible-POC/hostController2/bin/jboss-cli.sh --connect controller=192.168.0.71:9999 -c "/host=$HOSTNAME:write-attribute(name=name,value=hostController2)"
+* Configuración autenticación sobre DomainController
+`$ sh /opt/EAP-Ansible-POC/hostController1/bin/jboss-cli.sh --connect controller=192.168.0.70:9999 -c "/host=$HOSTNAME/core-service=management/security-realm=ManagementRealm/server-identity=secret:write-attribute(name=value, value=\"cG9jLlJlZGhhdDEyMw==\")"`  
+`$ sh /opt/EAP-Ansible-POC/hostController2/bin/jboss-cli.sh --connect controller=192.168.0.71:9999 -c "/host=$HOSTNAME/core-service=management/security-realm=ManagementRealm/server-identity=secret:write-attribute(name=value, value=\"cG9jLlJlZGhhdDEyMw==\")"`   
 
+`$ sh /opt/EAP-Ansible-POC/hostController1/bin/jboss-cli.sh --connect controller=192.168.0.70:9999 -c "/host=$HOSTNAME:write-remote-domain-controller(host="${jboss.domain.master.address}", port="${jboss.domain.master.port:9999}", security-realm="ManagementRealm", username=poc)"`  
+`$ sh /opt/EAP-Ansible-POC/hostController2/bin/jboss-cli.sh --connect controller=192.168.0.71:9999 -c "/host=$HOSTNAME:write-remote-domain-controller(host="${jboss.domain.master.address}", port="${jboss.domain.master.port:9999}", security-realm="ManagementRealm", username=poc)"`  
 
-- Configuración autenticación sobre DomainController
-
-# sh /opt/EAP-Ansible-POC/hostController1/bin/jboss-cli.sh --connect controller=192.168.0.70:9999 -c "/host=$HOSTNAME/core-service=management/security-realm=ManagementRealm/server-identity=secret:write-attribute(name=value, value=\"cG9jLlJlZGhhdDEyMw==\")"
-# sh /opt/EAP-Ansible-POC/hostController2/bin/jboss-cli.sh --connect controller=192.168.0.71:9999 -c "/host=$HOSTNAME/core-service=management/security-realm=ManagementRealm/server-identity=secret:write-attribute(name=value, value=\"cG9jLlJlZGhhdDEyMw==\")"
-
-# sh /opt/EAP-Ansible-POC/hostController1/bin/jboss-cli.sh --connect controller=192.168.0.70:9999 -c "/host=$HOSTNAME:write-remote-domain-controller(host="${jboss.domain.master.address}", port="${jboss.domain.master.port:9999}", security-realm="ManagementRealm", username=poc)"
-# sh /opt/EAP-Ansible-POC/hostController2/bin/jboss-cli.sh --connect controller=192.168.0.71:9999 -c "/host=$HOSTNAME:write-remote-domain-controller(host="${jboss.domain.master.address}", port="${jboss.domain.master.port:9999}", security-realm="ManagementRealm", username=poc)"
-
-- reload de la configuración
-# sh /opt/EAP-Ansible-POC/hostController1/bin/jboss-cli.sh --connect controller=192.168.0.70:9999 -c "/host=$HOSTNAME:reload"
-# sh /opt/EAP-Ansible-POC/hostController2/bin/jboss-cli.sh --connect controller=192.168.0.71:9999 -c "/host=$HOSTNAME:reload"
+* Reload de la configuración
+`$ sh /opt/EAP-Ansible-POC/hostController1/bin/jboss-cli.sh --connect controller=192.168.0.70:9999 -c "/host=$HOSTNAME:reload"`  
+`$ sh /opt/EAP-Ansible-POC/hostController2/bin/jboss-cli.sh --connect controller=192.168.0.71:9999 -c "/host=$HOSTNAME:reload"`  
 
 
 
-***************************************************
-Ejecución HealthCheck Domain
+# Ejecución HealthCheck Domain
 
-1.- Seteamos el listado de HostsControllers sobre fichero inventory/hostControllerList de la siguiente forma:
+1. Seteamos el listado de HostsControllers sobre fichero inventory/hostControllerList de la siguiente forma:  
 
-192.168.0.70 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=poc
-192.168.0.71 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=poc
+192.168.0.70 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=poc  
+192.168.0.71 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=poc  
 
-NOTA: reemplazar "poc" por la password del usuario root.
+*NOTA:* reemplazar "poc" por la password del usuario root.
 
-2.- Seteamos la ip del domain Controller en inventory/domainController de la siguiente forma:
+2. Seteamos la ip del domain Controller en inventory/domainController de la siguiente forma:
 
 192.168.0.69 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=poc
 
-NOTA: reemplazar "poc" por la password del usuario root.
+*NOTA:* reemplazar "poc" por la password del usuario root.
 
-3.- Archivos importantes a tener en cuenta
+## Archivos importantes a tener en cuenta
 
-3.1.- SCRIPTS
+* SCRIPTS
 
-NOTA: Para todos los script se debe modificarel path e ip del domain controlle
+*NOTA:* Para todos los script se debe modificarel path e ip del domain controlle
 
-TODO: Utilizar variables para scripts
-
-
-datasources_list.sh --> Entrega el listado completo de datasources del dominio
-
-datasources_test_connection.sh --> Realiza test connection de los datasources de todos los profiles del dominio, o bien sobre los profiles que se deseen revisar.
-
-server_status --> Revisa el estado de todos los servidores de dominio
+* TODO: Utilizar variables para scripts
 
 
-3.2.- healthcheck-eap-middleware.yml
+*datasources_list.sh* --> Entrega el listado completo de datasources del dominio
+
+*datasources_test_connection.sh* --> Realiza test connection de los datasources de todos los profiles del dominio, o bien sobre los profiles que se deseen revisar.
+
+*server_status* --> Revisa el estado de todos los servidores de dominio
+
+
+* healthcheck-eap-middleware.yml
 En este fichero se definen las tareas que se ejecutarán sobre el domain controller y el órden de las mismas
 
-NOTA: Reemplazar {{ansible_enp0s25_1.ipv4.address}} por la interfaz de red que corresponda
+*NOTA:* Reemplazar {{ansible_enp0s25_1.ipv4.address}} por la interfaz de red que corresponda
 
-3.3.- healthcheck-eap-middleware.yml
+* healthcheck-eap-middleware.yml
 En este fichero se definen las tareas que se ejecutarán sobre el listado de host controllers, principalmente son tareas de infraestructura
 
-3.4.- callback_plugins/json-custom.py
+* callback_plugins/json-custom.py
 script python que define la ejecución de instrucciones, tareas y result para documentación.
 
-3.5.- documentation/healthcheck.adoc
+* documentation/healthcheck.adoc
 define los capítulos que se agregarán al documento de informe
 
-3.5.- documentation/variables.txt
+* documentation/variables.txt
 define las variables del documento
 
-3.6.- documentation/chapters/*
+* documentation/chapters/*
 capítulos del documento. 
-NOTA: estos capítulos deben ser editados antes de la generación del documento.
+*NOTA:* estos capítulos deben ser editados antes de la generación del documento.
 
-4.- Ejecución de health check y documentación
+## Ejecución de health check y documentación
 
-4.1.- ejecución Healthcheck
+1. ejecución Healthcheck
 
-# cd Ansible EAP HealthCheck/DomainMode
+`$ cd Ansible EAP HealthCheck/DomainMode`  
+`$ ANSIBLE_COW_SELECTION=tux  ansible-playbook -i inventory/domaincontroller healthcheck-eap-middleware.yml`  
+`$# ANSIBLE_COW_SELECTION=tux  ansible-playbook -i inventory/hostControllerList healthcheck-eap-rhel.yml`  
 
-# ANSIBLE_COW_SELECTION=tux  ansible-playbook -i inventory/domaincontroller healthcheck-eap-middleware.yml 
+*NOTA:* la ejecuión de estos archivos generará como salida los ficheros ubicados en results/data
 
-# ANSIBLE_COW_SELECTION=tux  ansible-playbook -i inventory/hostControllerList healthcheck-eap-rhel.yml 
-
-NOTA: la ejecuión de estos archivos generará como salida los ficheros ubicados en results/data
-
-4.2.- Ejecución Documentación
+2. Ejecución Documentación
  
-# cd Ansible EAP HealthCheck/DomainMode/documentation
-
-# asciidoctor-pdf -b pdf healthcheck.adoc
-
+`$ cd Ansible EAP HealthCheck/DomainMode/documentation`  
+`$ asciidoctor-pdf -b pdf healthcheck.adoc`
 
 
  
