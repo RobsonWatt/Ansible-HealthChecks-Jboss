@@ -12,13 +12,14 @@ sudo ifconfig enp0s25:3 192.168.0.71 netmask 255.255.255.0
 El resultado debe ser del tipo:
 
 $ ifconfig
-enp0s25: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+`enp0s25: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)
         RX packets 0  bytes 0 (0.0 B)
         RX errors 0  dropped 0  overruns 0  frame 0
         TX packets 0  bytes 0 (0.0 B)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
         device interrupt 20  memory 0xb4a00000-b4a20000  
+`
 
 enp0s25:1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         inet 192.168.0.69  netmask 255.255.255.0  broadcast 192.168.0.255
@@ -36,14 +37,13 @@ enp0s25:3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         device interrupt 20  memory 0xb4a00000-b4a20000  
 
 2. Instalación de 1 DC
-* creamos directorios para nuestro ambiente en la ruta /opt/EAP-Ansible-POC *
-`
-$ mkdir /opt/EAP-Ansible-POC
-$ mkdir /opt/EAP-Ansible-POC/domainController
-`
+* - creamos directorios para nuestro ambiente en la ruta /opt/EAP-Ansible-POC
 
-* instalamos nuestro EAP 6.4 sobre /opt/EAP-Ansible-POC/domainController *
-- copiamos nuestra instalación para generar nuestros hosts controllers
+`$ mkdir /opt/EAP-Ansible-POC`
+`$ mkdir /opt/EAP-Ansible-POC/domainController`
+
+* - instalamos nuestro EAP 6.4 sobre /opt/EAP-Ansible-POC/domainController
+* - copiamos nuestra instalación para generar nuestros hosts controllers
 
 # cp -R /opt/EAP-Ansible-POC/domainController /opt/EAP-Ansible-POC/hostController1
 # cp -R /opt/EAP-Ansible-POC/domainController /opt/EAP-Ansible-POC/hostController2
