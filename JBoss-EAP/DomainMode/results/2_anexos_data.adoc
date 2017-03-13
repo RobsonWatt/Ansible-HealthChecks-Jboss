@@ -1,7 +1,7 @@
 == Anexo: Datos obtenidos 
 
 
-include::data/infraestructura-70db12cb-82c2-47c2-8d0e-e2b19d52b0e7.adoc[]
+include::data/infraestructura-bc85e66e-21d6-434f-a79d-54b9096a481a.adoc[]
 
 
-include::data/domaincontroller-8ed0ac2f-deb5-4151-b5f4-82c7325daeed.adoc[]
+include::data/domaincontroller-1ad0f74e-af9f-44e3-b5ab-43396d28829e.adoc[]

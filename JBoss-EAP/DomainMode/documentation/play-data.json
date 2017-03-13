@@ -2,13 +2,13 @@
     "plays": [
         {
             "play": {
-                "id": "8ed0ac2f-deb5-4151-b5f4-82c7325daeed", 
-                "name": "domaincontroller"
+                "id": "bc85e66e-21d6-434f-a79d-54b9096a481a", 
+                "name": "infraestructura"
             }, 
             "tasks": [
                 {
                     "hosts": {
-                        "192.168.0.69": {
+                        "192.168.0.70": {
                             "_ansible_no_log": false, 
                             "_ansible_verbose_override": true, 
                             "ansible_facts": {
@@ -40,16 +40,16 @@
                                 "ansible_date_time": {
                                     "date": "2017-03-13", 
                                     "day": "13", 
-                                    "epoch": "1489415617", 
-                                    "hour": "11", 
-                                    "iso8601": "2017-03-13T14:33:37Z", 
-                                    "iso8601_basic": "20170313T113337221852", 
-                                    "iso8601_basic_short": "20170313T113337", 
-                                    "iso8601_micro": "2017-03-13T14:33:37.222038Z", 
-                                    "minute": "33", 
+                                    "epoch": "1489421036", 
+                                    "hour": "13", 
+                                    "iso8601": "2017-03-13T16:03:56Z", 
+                                    "iso8601_basic": "20170313T130356245384", 
+                                    "iso8601_basic_short": "20170313T130356", 
+                                    "iso8601_micro": "2017-03-13T16:03:56.245729Z", 
+                                    "minute": "03", 
                                     "month": "03", 
-                                    "second": "37", 
-                                    "time": "11:33:37", 
+                                    "second": "56", 
+                                    "time": "13:03:56", 
                                     "tz": "CLST", 
                                     "tz_offset": "-0300", 
                                     "weekday": "Monday", 
@@ -210,13 +210,13 @@
                                     "SHELL": "/bin/bash", 
                                     "SHLVL": "2", 
                                     "SSH_ASKPASS": "/usr/libexec/openssh/gnome-ssh-askpass", 
-                                    "SSH_CLIENT": "192.168.0.69 38194 22", 
-                                    "SSH_CONNECTION": "192.168.0.69 38194 192.168.0.69 22", 
-                                    "SSH_TTY": "/dev/pts/6", 
+                                    "SSH_CLIENT": "192.168.0.69 58230 22", 
+                                    "SSH_CONNECTION": "192.168.0.69 58230 192.168.0.70 22", 
+                                    "SSH_TTY": "/dev/pts/7", 
                                     "TERM": "xterm-256color", 
                                     "USER": "root", 
                                     "XDG_RUNTIME_DIR": "/run/user/0", 
-                                    "XDG_SESSION_ID": "17", 
+                                    "XDG_SESSION_ID": "19", 
                                     "_": "/usr/bin/python"
                                 }, 
                                 "ansible_fips": false, 
@@ -297,16 +297,16 @@
                                 }, 
                                 "ansible_machine": "x86_64", 
                                 "ansible_machine_id": "2e7762c023ec40fab31f200f8b02d7d6", 
-                                "ansible_memfree_mb": 1022, 
+                                "ansible_memfree_mb": 160, 
                                 "ansible_memory_mb": {
                                     "nocache": {
-                                        "free": 6378, 
-                                        "used": 9299
+                                        "free": 5459, 
+                                        "used": 10218
                                     }, 
                                     "real": {
-                                        "free": 1022, 
+                                        "free": 160, 
                                         "total": 15677, 
-                                        "used": 14655
+                                        "used": 15517
                                     }, 
                                     "swap": {
                                         "cached": 0, 
@@ -322,7 +322,7 @@
                                         "fstype": "ext4", 
                                         "mount": "/", 
                                         "options": "rw,relatime,data=ordered", 
-                                        "size_available": 41814945792, 
+                                        "size_available": 41814867968, 
                                         "size_total": 52710469632, 
                                         "uuid": "b296b54c-4665-4c66-b191-3ec637180e8c"
                                     }, 
@@ -340,7 +340,7 @@
                                         "fstype": "ext4", 
                                         "mount": "/var", 
                                         "options": "rw,relatime,data=ordered", 
-                                        "size_available": 9610977280, 
+                                        "size_available": 9602256896, 
                                         "size_total": 21003628544, 
                                         "uuid": "a76b6d80-dd0d-45da-9923-5b1b75bf41c2"
                                     }, 
@@ -349,7 +349,7 @@
                                         "fstype": "ext4", 
                                         "mount": "/home", 
                                         "options": "rw,relatime,data=ordered", 
-                                        "size_available": 286294646784, 
+                                        "size_available": 286289145856, 
                                         "size_total": 528312885248, 
                                         "uuid": "883c59eb-fc66-4993-8efd-f6b264b10c3d"
                                     }
@@ -467,7 +467,541 @@
                                     "mtu": 1360, 
                                     "promisc": false
                                 }, 
-                                "ansible_uptime_seconds": 267010, 
+                                "ansible_uptime_seconds": 272429, 
+                                "ansible_user_dir": "/root", 
+                                "ansible_user_gecos": "root", 
+                                "ansible_user_gid": 0, 
+                                "ansible_user_id": "root", 
+                                "ansible_user_shell": "/bin/bash", 
+                                "ansible_user_uid": 0, 
+                                "ansible_userspace_architecture": "x86_64", 
+                                "ansible_userspace_bits": "64", 
+                                "ansible_virbr0": {
+                                    "active": false, 
+                                    "device": "virbr0", 
+                                    "id": "8000.52540057af8a", 
+                                    "interfaces": [
+                                        "virbr0-nic"
+                                    ], 
+                                    "ipv4": {
+                                        "address": "192.168.122.1", 
+                                        "broadcast": "192.168.122.255", 
+                                        "netmask": "255.255.255.0", 
+                                        "network": "192.168.122.0"
+                                    }, 
+                                    "macaddress": "52:54:00:57:af:8a", 
+                                    "mtu": 1500, 
+                                    "promisc": false, 
+                                    "stp": true, 
+                                    "type": "bridge"
+                                }, 
+                                "ansible_virbr0_nic": {
+                                    "active": false, 
+                                    "device": "virbr0-nic", 
+                                    "macaddress": "52:54:00:57:af:8a", 
+                                    "mtu": 1500, 
+                                    "promisc": true, 
+                                    "type": "ether"
+                                }, 
+                                "ansible_virtualization_role": "host", 
+                                "ansible_virtualization_type": "kvm", 
+                                "ansible_wlp3s0": {
+                                    "active": true, 
+                                    "device": "wlp3s0", 
+                                    "ipv4": {
+                                        "address": "10.216.33.64", 
+                                        "broadcast": "10.216.33.255", 
+                                        "netmask": "255.255.255.0", 
+                                        "network": "10.216.33.0"
+                                    }, 
+                                    "ipv6": [
+                                        {
+                                            "address": "fe80::ce3d:82ff:fee9:2c85", 
+                                            "prefix": "64", 
+                                            "scope": "link"
+                                        }
+                                    ], 
+                                    "macaddress": "cc:3d:82:e9:2c:85", 
+                                    "module": "iwlwifi", 
+                                    "mtu": 1500, 
+                                    "pciid": "0000:03:00.0", 
+                                    "promisc": false, 
+                                    "type": "ether"
+                                }, 
+                                "module_setup": true
+                            }, 
+                            "changed": false, 
+                            "invocation": {
+                                "module_args": {
+                                    "fact_path": "/etc/ansible/facts.d", 
+                                    "filter": "*", 
+                                    "gather_subset": [
+                                        "all"
+                                    ]
+                                }, 
+                                "module_name": "setup"
+                            }
+                        }, 
+                        "192.168.0.71": {
+                            "_ansible_no_log": false, 
+                            "_ansible_verbose_override": true, 
+                            "ansible_facts": {
+                                "ansible_all_ipv4_addresses": [
+                                    "10.97.116.13", 
+                                    "192.168.0.69", 
+                                    "192.168.0.70", 
+                                    "192.168.0.71", 
+                                    "192.168.122.1", 
+                                    "10.216.33.64"
+                                ], 
+                                "ansible_all_ipv6_addresses": [
+                                    "fe80::ce3d:82ff:fee9:2c85"
+                                ], 
+                                "ansible_architecture": "x86_64", 
+                                "ansible_bios_date": "02/26/2015", 
+                                "ansible_bios_version": "GNET72WW (2.20 )", 
+                                "ansible_cmdline": {
+                                    "BOOT_IMAGE": "/vmlinuz-4.4.14-200.fc22.x86_64", 
+                                    "LANG": "en_US.UTF-8", 
+                                    "nouveau.blacklist": "1", 
+                                    "nouveau.modeset": "0", 
+                                    "rd.driver.blacklist": "nouveau", 
+                                    "rd.luks.uuid": "luks-a1d3fe02-c86e-45d5-9ee4-c7d7c7dd6d56", 
+                                    "rd.lvm.lv": "fedora_bandurria/root", 
+                                    "ro": true, 
+                                    "root": "/dev/mapper/fedora_bandurria-root"
+                                }, 
+                                "ansible_date_time": {
+                                    "date": "2017-03-13", 
+                                    "day": "13", 
+                                    "epoch": "1489421036", 
+                                    "hour": "13", 
+                                    "iso8601": "2017-03-13T16:03:56Z", 
+                                    "iso8601_basic": "20170313T130356436229", 
+                                    "iso8601_basic_short": "20170313T130356", 
+                                    "iso8601_micro": "2017-03-13T16:03:56.436394Z", 
+                                    "minute": "03", 
+                                    "month": "03", 
+                                    "second": "56", 
+                                    "time": "13:03:56", 
+                                    "tz": "CLST", 
+                                    "tz_offset": "-0300", 
+                                    "weekday": "Monday", 
+                                    "weekday_number": "1", 
+                                    "weeknumber": "11", 
+                                    "year": "2017"
+                                }, 
+                                "ansible_default_ipv4": {
+                                    "address": "10.216.33.64", 
+                                    "alias": "wlp3s0", 
+                                    "broadcast": "10.216.33.255", 
+                                    "gateway": "10.216.33.254", 
+                                    "interface": "wlp3s0", 
+                                    "macaddress": "cc:3d:82:e9:2c:85", 
+                                    "mtu": 1500, 
+                                    "netmask": "255.255.255.0", 
+                                    "network": "10.216.33.0", 
+                                    "type": "ether"
+                                }, 
+                                "ansible_default_ipv6": {}, 
+                                "ansible_devices": {
+                                    "sda": {
+                                        "holders": [], 
+                                        "host": "SATA controller: Intel Corporation 8 Series/C220 Series Chipset Family 6-port SATA Controller 1 [AHCI mode] (rev 04)", 
+                                        "model": "WDC WD10JPVX-08J", 
+                                        "partitions": {
+                                            "sda1": {
+                                                "sectors": "1024000", 
+                                                "sectorsize": 512, 
+                                                "size": "500.00 MB", 
+                                                "start": "2048"
+                                            }, 
+                                            "sda2": {
+                                                "sectors": "1203777536", 
+                                                "sectorsize": 512, 
+                                                "size": "574.01 GB", 
+                                                "start": "1026048"
+                                            }
+                                        }, 
+                                        "removable": "0", 
+                                        "rotational": "1", 
+                                        "sas_address": null, 
+                                        "sas_device_handle": null, 
+                                        "scheduler_mode": "cfq", 
+                                        "sectors": "1953525168", 
+                                        "sectorsize": "512", 
+                                        "size": "931.51 GB", 
+                                        "support_discard": "0", 
+                                        "vendor": "ATA"
+                                    }, 
+                                    "sr0": {
+                                        "holders": [], 
+                                        "host": "SATA controller: Intel Corporation 8 Series/C220 Series Chipset Family 6-port SATA Controller 1 [AHCI mode] (rev 04)", 
+                                        "model": "DVDRAM GUB0N", 
+                                        "partitions": {}, 
+                                        "removable": "1", 
+                                        "rotational": "1", 
+                                        "sas_address": null, 
+                                        "sas_device_handle": null, 
+                                        "scheduler_mode": "cfq", 
+                                        "sectors": "2097151", 
+                                        "sectorsize": "512", 
+                                        "size": "1024.00 MB", 
+                                        "support_discard": "0", 
+                                        "vendor": "HL-DT-ST"
+                                    }
+                                }, 
+                                "ansible_distribution": "Fedora", 
+                                "ansible_distribution_major_version": "22", 
+                                "ansible_distribution_release": "Twenty Two", 
+                                "ansible_distribution_version": "22", 
+                                "ansible_dns": {
+                                    "nameservers": [
+                                        "10.97.120.27", 
+                                        "10.11.5.19", 
+                                        "10.192.20.245", 
+                                        "10.192.206.245"
+                                    ], 
+                                    "search": [
+                                        "redhat.com"
+                                    ]
+                                }, 
+                                "ansible_domain": "", 
+                                "ansible_enp0s25": {
+                                    "active": false, 
+                                    "device": "enp0s25", 
+                                    "ipv4_secondaries": [
+                                        {
+                                            "address": "192.168.0.70", 
+                                            "broadcast": "192.168.0.255", 
+                                            "netmask": "255.255.255.0", 
+                                            "network": "192.168.0.0"
+                                        }, 
+                                        {
+                                            "address": "192.168.0.71", 
+                                            "broadcast": "192.168.0.255", 
+                                            "netmask": "255.255.255.0", 
+                                            "network": "192.168.0.0"
+                                        }
+                                    ], 
+                                    "macaddress": "54:ee:75:52:b2:04", 
+                                    "module": "e1000e", 
+                                    "mtu": 1500, 
+                                    "pciid": "0000:00:19.0", 
+                                    "promisc": false, 
+                                    "type": "ether"
+                                }, 
+                                "ansible_enp0s25_1": {
+                                    "ipv4": {
+                                        "address": "192.168.0.69", 
+                                        "broadcast": "192.168.0.255", 
+                                        "netmask": "255.255.255.0", 
+                                        "network": "192.168.0.0"
+                                    }
+                                }, 
+                                "ansible_enp0s25_2": {
+                                    "ipv4_secondaries": [
+                                        {
+                                            "address": "192.168.0.70", 
+                                            "broadcast": "192.168.0.255", 
+                                            "netmask": "255.255.255.0", 
+                                            "network": "192.168.0.0"
+                                        }
+                                    ]
+                                }, 
+                                "ansible_enp0s25_3": {
+                                    "ipv4_secondaries": [
+                                        {
+                                            "address": "192.168.0.71", 
+                                            "broadcast": "192.168.0.255", 
+                                            "netmask": "255.255.255.0", 
+                                            "network": "192.168.0.0"
+                                        }
+                                    ]
+                                }, 
+                                "ansible_env": {
+                                    "BASH_FUNC_module()": "() {  eval `/usr/bin/modulecmd bash $*`\n}", 
+                                    "BASH_FUNC_scl()": "() {  local CMD=$1;\n if [ \"$CMD\" = \"load\" -o \"$CMD\" = \"unload\" ]; then\n eval \"module $@\";\n else\n /usr/bin/scl \"$@\";\n fi\n}", 
+                                    "HOME": "/root", 
+                                    "LANG": "en_US.UTF-8", 
+                                    "LC_ALL": "en_US.UTF-8", 
+                                    "LC_MESSAGES": "en_US.UTF-8", 
+                                    "LESSOPEN": "|/usr/bin/lesspipe.sh %s", 
+                                    "LOADEDMODULES": "", 
+                                    "LOGNAME": "root", 
+                                    "MAIL": "/var/mail/root", 
+                                    "MODULEPATH": "/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles", 
+                                    "MODULESHOME": "/usr/share/Modules", 
+                                    "NODE_HOME": "/opt/node-v0.10.30-linux-x86", 
+                                    "PATH": "/opt/node-v0.10.30-linux-x86/bin:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin", 
+                                    "PROMPT_COMMAND": "RETRN_VAL=$?;logger -p local6.debug \"$(whoami) [$$]: $(history 1 | sed \"s/^[ ]*[0-9]\\+[ ]*//\" ) [$RETRN_VAL]\"", 
+                                    "PWD": "/root", 
+                                    "PYTHONPATH": "", 
+                                    "QTDIR": "/usr/lib64/qt-3.3", 
+                                    "QTINC": "/usr/lib64/qt-3.3/include", 
+                                    "QTLIB": "/usr/lib64/qt-3.3/lib", 
+                                    "QT_GRAPHICSSYSTEM_CHECKED": "1", 
+                                    "SHELL": "/bin/bash", 
+                                    "SHLVL": "2", 
+                                    "SSH_ASKPASS": "/usr/libexec/openssh/gnome-ssh-askpass", 
+                                    "SSH_CLIENT": "192.168.0.69 55470 22", 
+                                    "SSH_CONNECTION": "192.168.0.69 55470 192.168.0.71 22", 
+                                    "SSH_TTY": "/dev/pts/9", 
+                                    "TERM": "xterm-256color", 
+                                    "USER": "root", 
+                                    "XDG_RUNTIME_DIR": "/run/user/0", 
+                                    "XDG_SESSION_ID": "20", 
+                                    "_": "/usr/bin/python"
+                                }, 
+                                "ansible_fips": false, 
+                                "ansible_form_factor": "Notebook", 
+                                "ansible_fqdn": "bandurria", 
+                                "ansible_gather_subset": [
+                                    "hardware", 
+                                    "network", 
+                                    "virtual"
+                                ], 
+                                "ansible_hostname": "bandurria", 
+                                "ansible_interfaces": [
+                                    "enp0s25_3", 
+                                    "enp0s25_2", 
+                                    "enp0s25_1", 
+                                    "lo", 
+                                    "tun0", 
+                                    "enp0s25", 
+                                    "wlp3s0", 
+                                    "virbr0-nic", 
+                                    "virbr0"
+                                ], 
+                                "ansible_kernel": "4.4.14-200.fc22.x86_64", 
+                                "ansible_lo": {
+                                    "active": true, 
+                                    "device": "lo", 
+                                    "ipv4": {
+                                        "address": "127.0.0.1", 
+                                        "broadcast": "host", 
+                                        "netmask": "255.0.0.0", 
+                                        "network": "127.0.0.0"
+                                    }, 
+                                    "ipv6": [
+                                        {
+                                            "address": "::1", 
+                                            "prefix": "128", 
+                                            "scope": "host"
+                                        }
+                                    ], 
+                                    "mtu": 65536, 
+                                    "promisc": false, 
+                                    "type": "loopback"
+                                }, 
+                                "ansible_lsb": {
+                                    "codename": "TwentyTwo", 
+                                    "description": "Fedora release 22 (Twenty Two)", 
+                                    "id": "Fedora", 
+                                    "major_release": "22", 
+                                    "release": "22"
+                                }, 
+                                "ansible_lvm": {
+                                    "lvs": {
+                                        "home": {
+                                            "size_g": "500.00", 
+                                            "vg": "fedora_bandurria"
+                                        }, 
+                                        "root": {
+                                            "size_g": "50.00", 
+                                            "vg": "fedora_bandurria"
+                                        }, 
+                                        "swap": {
+                                            "size_g": "4.00", 
+                                            "vg": "fedora_bandurria"
+                                        }, 
+                                        "var": {
+                                            "size_g": "20.00", 
+                                            "vg": "fedora_bandurria"
+                                        }
+                                    }, 
+                                    "vgs": {
+                                        "fedora_bandurria": {
+                                            "free_g": "0.00", 
+                                            "num_lvs": "4", 
+                                            "num_pvs": "1", 
+                                            "size_g": "574.00"
+                                        }
+                                    }
+                                }, 
+                                "ansible_machine": "x86_64", 
+                                "ansible_machine_id": "2e7762c023ec40fab31f200f8b02d7d6", 
+                                "ansible_memfree_mb": 159, 
+                                "ansible_memory_mb": {
+                                    "nocache": {
+                                        "free": 5460, 
+                                        "used": 10217
+                                    }, 
+                                    "real": {
+                                        "free": 159, 
+                                        "total": 15677, 
+                                        "used": 15518
+                                    }, 
+                                    "swap": {
+                                        "cached": 0, 
+                                        "free": 4091, 
+                                        "total": 4091, 
+                                        "used": 0
+                                    }
+                                }, 
+                                "ansible_memtotal_mb": 15677, 
+                                "ansible_mounts": [
+                                    {
+                                        "device": "/dev/mapper/fedora_bandurria-root", 
+                                        "fstype": "ext4", 
+                                        "mount": "/", 
+                                        "options": "rw,relatime,data=ordered", 
+                                        "size_available": 41814867968, 
+                                        "size_total": 52710469632, 
+                                        "uuid": "b296b54c-4665-4c66-b191-3ec637180e8c"
+                                    }, 
+                                    {
+                                        "device": "/dev/sda1", 
+                                        "fstype": "ext4", 
+                                        "mount": "/boot", 
+                                        "options": "rw,relatime,stripe=4,data=ordered", 
+                                        "size_available": 296519680, 
+                                        "size_total": 499355648, 
+                                        "uuid": "10dcc421-c380-4506-8477-d9761c3fa776"
+                                    }, 
+                                    {
+                                        "device": "/dev/mapper/fedora_bandurria-var", 
+                                        "fstype": "ext4", 
+                                        "mount": "/var", 
+                                        "options": "rw,relatime,data=ordered", 
+                                        "size_available": 9602256896, 
+                                        "size_total": 21003628544, 
+                                        "uuid": "a76b6d80-dd0d-45da-9923-5b1b75bf41c2"
+                                    }, 
+                                    {
+                                        "device": "/dev/mapper/fedora_bandurria-home", 
+                                        "fstype": "ext4", 
+                                        "mount": "/home", 
+                                        "options": "rw,relatime,data=ordered", 
+                                        "size_available": 286289145856, 
+                                        "size_total": 528312885248, 
+                                        "uuid": "883c59eb-fc66-4993-8efd-f6b264b10c3d"
+                                    }
+                                ], 
+                                "ansible_nodename": "bandurria", 
+                                "ansible_os_family": "RedHat", 
+                                "ansible_pkg_mgr": "pacman", 
+                                "ansible_processor": [
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                    "GenuineIntel", 
+                                    "Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz"
+                                ], 
+                                "ansible_processor_cores": 4, 
+                                "ansible_processor_count": 1, 
+                                "ansible_processor_threads_per_core": 2, 
+                                "ansible_processor_vcpus": 8, 
+                                "ansible_product_name": "20BHA0YJCL", 
+                                "ansible_product_serial": "R90G3SX8", 
+                                "ansible_product_uuid": "7BAF9081-543E-11CB-AFA5-F69CF3D22643", 
+                                "ansible_product_version": "ThinkPad W540", 
+                                "ansible_python": {
+                                    "executable": "/usr/bin/python", 
+                                    "has_sslcontext": true, 
+                                    "type": "CPython", 
+                                    "version": {
+                                        "major": 2, 
+                                        "micro": 10, 
+                                        "minor": 7, 
+                                        "releaselevel": "final", 
+                                        "serial": 0
+                                    }, 
+                                    "version_info": [
+                                        2, 
+                                        7, 
+                                        10, 
+                                        "final", 
+                                        0
+                                    ]
+                                }, 
+                                "ansible_python_version": "2.7.10", 
+                                "ansible_selinux": {
+                                    "status": "disabled"
+                                }, 
+                                "ansible_service_mgr": "systemd", 
+                                "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEtrx1TY4KoLaR6dprToiaLIW9Uo8LyCUxGkRVqYabhPXYwCqDGthFOS6AQSR/4HERwR8nqja41f/iB/pIuiTHg=", 
+                                "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIJ8jIM2sozWBt68+fqz6UPBMkxFqo+2xfFq55wfr/GYB", 
+                                "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDI5cNLym1lQM2Li/fGA9UPjmNX1o8ixThirLupAiAZ0zSKt3CXpVyk7hmvOfhDQmRphx7b1LLps6FstkKJp6Bsk4QUFkNTHEDKWAi66it3g4S8Qv7pBNq0WyGOvMqwbDBoPEAhj21jwBqynP0XYlg4NBCalr3BN4tPDN+B6WVNNrFB7xURdUIILyEB5P25IX/1JCB8cNXUcIPklGOWYS33Q6p65pduE0vodT6Zv+PpnjAnyZ1omwq49I92ZKw9HHMYpDWRdpFMtYmt02Z8epdEug6xfufma9tN7Bq2+qyGt+Uio3IOzWTzgN5M+D1nil7RyOkpK2Yq4SvOMjbu09j5", 
+                                "ansible_swapfree_mb": 4091, 
+                                "ansible_swaptotal_mb": 4091, 
+                                "ansible_system": "Linux", 
+                                "ansible_system_capabilities": [
+                                    "cap_chown", 
+                                    "cap_dac_override", 
+                                    "cap_dac_read_search", 
+                                    "cap_fowner", 
+                                    "cap_fsetid", 
+                                    "cap_kill", 
+                                    "cap_setgid", 
+                                    "cap_setuid", 
+                                    "cap_setpcap", 
+                                    "cap_linux_immutable", 
+                                    "cap_net_bind_service", 
+                                    "cap_net_broadcast", 
+                                    "cap_net_admin", 
+                                    "cap_net_raw", 
+                                    "cap_ipc_lock", 
+                                    "cap_ipc_owner", 
+                                    "cap_sys_module", 
+                                    "cap_sys_rawio", 
+                                    "cap_sys_chroot", 
+                                    "cap_sys_ptrace", 
+                                    "cap_sys_pacct", 
+                                    "cap_sys_admin", 
+                                    "cap_sys_boot", 
+                                    "cap_sys_nice", 
+                                    "cap_sys_resource", 
+                                    "cap_sys_time", 
+                                    "cap_sys_tty_config", 
+                                    "cap_mknod", 
+                                    "cap_lease", 
+                                    "cap_audit_write", 
+                                    "cap_audit_control", 
+                                    "cap_setfcap", 
+                                    "cap_mac_override", 
+                                    "cap_mac_admin", 
+                                    "cap_syslog", 
+                                    "cap_wake_alarm", 
+                                    "cap_block_suspend", 
+                                    "37+ep"
+                                ], 
+                                "ansible_system_capabilities_enforced": "True", 
+                                "ansible_system_vendor": "LENOVO", 
+                                "ansible_tun0": {
+                                    "active": true, 
+                                    "device": "tun0", 
+                                    "ipv4": {
+                                        "address": "10.97.116.13", 
+                                        "broadcast": "10.97.119.255", 
+                                        "netmask": "255.255.252.0", 
+                                        "network": "10.97.116.0"
+                                    }, 
+                                    "mtu": 1360, 
+                                    "promisc": false
+                                }, 
+                                "ansible_uptime_seconds": 272429, 
                                 "ansible_user_dir": "/root", 
                                 "ansible_user_gecos": "root", 
                                 "ansible_user_gid": 0, 
@@ -544,28 +1078,26 @@
                         }
                     }, 
                     "task": {
-                        "id": "1f2e5171-7f9c-4b27-a3f5-644f4f37ac4a", 
+                        "id": "dcd764bc-b01d-41eb-97a9-1da3f629d031", 
                         "name": ""
                     }
                 }, 
                 {
                     "hosts": {
-                        "192.168.0.69": {
+                        "192.168.0.70": {
                             "_ansible_no_log": false, 
                             "changed": true, 
                             "cmd": [
-                                "././jboss-cli.sh", 
-                                "--controller=192.168.0.69:9999", 
-                                "-c", 
-                                "--command=/server-group=main-server-group/jvm=default:read-resource"
+                                "df", 
+                                "-h"
                             ], 
-                            "delta": "0:00:02.529447", 
-                            "end": "2017-03-13 11:33:40.783379", 
+                            "delta": "0:00:00.067614", 
+                            "end": "2017-03-13 13:03:57.581082", 
                             "invocation": {
                                 "module_args": {
-                                    "_raw_params": "././jboss-cli.sh --controller=192.168.0.69:9999 -c --command=\"/server-group=main-server-group/jvm=default:read-resource\"", 
+                                    "_raw_params": "df -h", 
                                     "_uses_shell": false, 
-                                    "chdir": "/opt/EAP-Ansible-POC/domainController/bin/", 
+                                    "chdir": null, 
                                     "creates": null, 
                                     "executable": null, 
                                     "removes": null, 
@@ -574,26 +1106,882 @@
                                 "module_name": "command"
                             }, 
                             "rc": 0, 
-                            "start": "2017-03-13 11:33:38.253932", 
+                            "start": "2017-03-13 13:03:57.513468", 
                             "stderr": "", 
-                            "stdout": "{\n    \"outcome\" => \"success\",\n    \"result\" => {\n        \"agent-lib\" => undefined,\n        \"agent-path\" => undefined,\n        \"env-classpath-ignored\" => undefined,\n        \"environment-variables\" => undefined,\n        \"heap-size\" => \"1000m\",\n        \"java-agent\" => undefined,\n        \"java-home\" => undefined,\n        \"jvm-options\" => undefined,\n        \"max-heap-size\" => \"1000m\",\n        \"max-permgen-size\" => \"256m\",\n        \"permgen-size\" => undefined,\n        \"stack-size\" => undefined,\n        \"type\" => undefined\n    }\n}", 
+                            "stdout": "Filesystem                         Size  Used Avail Use% Mounted on\ndevtmpfs                           7.7G     0  7.7G   0% /dev\ntmpfs                              7.7G  257M  7.5G   4% /dev/shm\ntmpfs                              7.7G  1.7M  7.7G   1% /run\ntmpfs                              7.7G     0  7.7G   0% /sys/fs/cgroup\n/dev/mapper/fedora_bandurria-root   50G  7.7G   39G  17% /\ntmpfs                              7.7G   46M  7.7G   1% /tmp\n/dev/sda1                          477M  165M  283M  37% /boot\n/dev/mapper/fedora_bandurria-var    20G  9.7G  9.0G  52% /var\n/dev/mapper/fedora_bandurria-home  493G  201G  267G  43% /home\ntmpfs                              1.6G   12K  1.6G   1% /run/user/42\ntmpfs                              1.6G   60K  1.6G   1% /run/user/1000\ntmpfs                              1.6G     0  1.6G   0% /run/user/0", 
+                            "stdout_lines": [
+                                "Filesystem                         Size  Used Avail Use% Mounted on", 
+                                "devtmpfs                           7.7G     0  7.7G   0% /dev", 
+                                "tmpfs                              7.7G  257M  7.5G   4% /dev/shm", 
+                                "tmpfs                              7.7G  1.7M  7.7G   1% /run", 
+                                "tmpfs                              7.7G     0  7.7G   0% /sys/fs/cgroup", 
+                                "/dev/mapper/fedora_bandurria-root   50G  7.7G   39G  17% /", 
+                                "tmpfs                              7.7G   46M  7.7G   1% /tmp", 
+                                "/dev/sda1                          477M  165M  283M  37% /boot", 
+                                "/dev/mapper/fedora_bandurria-var    20G  9.7G  9.0G  52% /var", 
+                                "/dev/mapper/fedora_bandurria-home  493G  201G  267G  43% /home", 
+                                "tmpfs                              1.6G   12K  1.6G   1% /run/user/42", 
+                                "tmpfs                              1.6G   60K  1.6G   1% /run/user/1000", 
+                                "tmpfs                              1.6G     0  1.6G   0% /run/user/0"
+                            ], 
+                            "warnings": []
+                        }, 
+                        "192.168.0.71": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "df", 
+                                "-h"
+                            ], 
+                            "delta": "0:00:00.053580", 
+                            "end": "2017-03-13 13:03:57.596072", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "df -h", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 13:03:57.542492", 
+                            "stderr": "", 
+                            "stdout": "Filesystem                         Size  Used Avail Use% Mounted on\ndevtmpfs                           7.7G     0  7.7G   0% /dev\ntmpfs                              7.7G  257M  7.5G   4% /dev/shm\ntmpfs                              7.7G  1.7M  7.7G   1% /run\ntmpfs                              7.7G     0  7.7G   0% /sys/fs/cgroup\n/dev/mapper/fedora_bandurria-root   50G  7.7G   39G  17% /\ntmpfs                              7.7G   46M  7.7G   1% /tmp\n/dev/sda1                          477M  165M  283M  37% /boot\n/dev/mapper/fedora_bandurria-var    20G  9.7G  9.0G  52% /var\n/dev/mapper/fedora_bandurria-home  493G  201G  267G  43% /home\ntmpfs                              1.6G   12K  1.6G   1% /run/user/42\ntmpfs                              1.6G   60K  1.6G   1% /run/user/1000\ntmpfs                              1.6G     0  1.6G   0% /run/user/0", 
+                            "stdout_lines": [
+                                "Filesystem                         Size  Used Avail Use% Mounted on", 
+                                "devtmpfs                           7.7G     0  7.7G   0% /dev", 
+                                "tmpfs                              7.7G  257M  7.5G   4% /dev/shm", 
+                                "tmpfs                              7.7G  1.7M  7.7G   1% /run", 
+                                "tmpfs                              7.7G     0  7.7G   0% /sys/fs/cgroup", 
+                                "/dev/mapper/fedora_bandurria-root   50G  7.7G   39G  17% /", 
+                                "tmpfs                              7.7G   46M  7.7G   1% /tmp", 
+                                "/dev/sda1                          477M  165M  283M  37% /boot", 
+                                "/dev/mapper/fedora_bandurria-var    20G  9.7G  9.0G  52% /var", 
+                                "/dev/mapper/fedora_bandurria-home  493G  201G  267G  43% /home", 
+                                "tmpfs                              1.6G   12K  1.6G   1% /run/user/42", 
+                                "tmpfs                              1.6G   60K  1.6G   1% /run/user/1000", 
+                                "tmpfs                              1.6G     0  1.6G   0% /run/user/0"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "fbf2db32-2a44-415d-b03a-420b19de05ed", 
+                        "name": "Particionamiento de discos"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.70": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "lscpu"
+                            ], 
+                            "delta": "0:00:00.051844", 
+                            "end": "2017-03-13 13:03:58.569622", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "lscpu", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 13:03:58.517778", 
+                            "stderr": "", 
+                            "stdout": "Architecture:          x86_64\nCPU op-mode(s):        32-bit, 64-bit\nByte Order:            Little Endian\nCPU(s):                8\nOn-line CPU(s) list:   0-7\nThread(s) per core:    2\nCore(s) per socket:    4\nSocket(s):             1\nNUMA node(s):          1\nVendor ID:             GenuineIntel\nCPU family:            6\nModel:                 60\nModel name:            Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz\nStepping:              3\nCPU MHz:               1351.671\nCPU max MHz:           3900.0000\nCPU min MHz:           800.0000\nBogoMIPS:              5786.69\nVirtualization:        VT-x\nL1d cache:             32K\nL1i cache:             32K\nL2 cache:              256K\nL3 cache:              8192K\nNUMA node0 CPU(s):     0-7", 
+                            "stdout_lines": [
+                                "Architecture:          x86_64", 
+                                "CPU op-mode(s):        32-bit, 64-bit", 
+                                "Byte Order:            Little Endian", 
+                                "CPU(s):                8", 
+                                "On-line CPU(s) list:   0-7", 
+                                "Thread(s) per core:    2", 
+                                "Core(s) per socket:    4", 
+                                "Socket(s):             1", 
+                                "NUMA node(s):          1", 
+                                "Vendor ID:             GenuineIntel", 
+                                "CPU family:            6", 
+                                "Model:                 60", 
+                                "Model name:            Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                "Stepping:              3", 
+                                "CPU MHz:               1351.671", 
+                                "CPU max MHz:           3900.0000", 
+                                "CPU min MHz:           800.0000", 
+                                "BogoMIPS:              5786.69", 
+                                "Virtualization:        VT-x", 
+                                "L1d cache:             32K", 
+                                "L1i cache:             32K", 
+                                "L2 cache:              256K", 
+                                "L3 cache:              8192K", 
+                                "NUMA node0 CPU(s):     0-7"
+                            ], 
+                            "warnings": []
+                        }, 
+                        "192.168.0.71": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "lscpu"
+                            ], 
+                            "delta": "0:00:00.083650", 
+                            "end": "2017-03-13 13:03:58.586653", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "lscpu", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 13:03:58.503003", 
+                            "stderr": "", 
+                            "stdout": "Architecture:          x86_64\nCPU op-mode(s):        32-bit, 64-bit\nByte Order:            Little Endian\nCPU(s):                8\nOn-line CPU(s) list:   0-7\nThread(s) per core:    2\nCore(s) per socket:    4\nSocket(s):             1\nNUMA node(s):          1\nVendor ID:             GenuineIntel\nCPU family:            6\nModel:                 60\nModel name:            Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz\nStepping:              3\nCPU MHz:               1299.902\nCPU max MHz:           3900.0000\nCPU min MHz:           800.0000\nBogoMIPS:              5786.69\nVirtualization:        VT-x\nL1d cache:             32K\nL1i cache:             32K\nL2 cache:              256K\nL3 cache:              8192K\nNUMA node0 CPU(s):     0-7", 
+                            "stdout_lines": [
+                                "Architecture:          x86_64", 
+                                "CPU op-mode(s):        32-bit, 64-bit", 
+                                "Byte Order:            Little Endian", 
+                                "CPU(s):                8", 
+                                "On-line CPU(s) list:   0-7", 
+                                "Thread(s) per core:    2", 
+                                "Core(s) per socket:    4", 
+                                "Socket(s):             1", 
+                                "NUMA node(s):          1", 
+                                "Vendor ID:             GenuineIntel", 
+                                "CPU family:            6", 
+                                "Model:                 60", 
+                                "Model name:            Intel(R) Core(TM) i7-4910MQ CPU @ 2.90GHz", 
+                                "Stepping:              3", 
+                                "CPU MHz:               1299.902", 
+                                "CPU max MHz:           3900.0000", 
+                                "CPU min MHz:           800.0000", 
+                                "BogoMIPS:              5786.69", 
+                                "Virtualization:        VT-x", 
+                                "L1d cache:             32K", 
+                                "L1i cache:             32K", 
+                                "L2 cache:              256K", 
+                                "L3 cache:              8192K", 
+                                "NUMA node0 CPU(s):     0-7"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "2f6dfb1f-e212-43dc-b23b-7e54c562885f", 
+                        "name": "Cores del Servidor"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.70": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "free", 
+                                "-m"
+                            ], 
+                            "delta": "0:00:00.114964", 
+                            "end": "2017-03-13 13:03:59.629782", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "free -m", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 13:03:59.514818", 
+                            "stderr": "", 
+                            "stdout": "              total        used        free      shared  buff/cache   available\nMem:          15677        9420         175         747        6081        5183\nSwap:          4091           0        4091", 
+                            "stdout_lines": [
+                                "              total        used        free      shared  buff/cache   available", 
+                                "Mem:          15677        9420         175         747        6081        5183", 
+                                "Swap:          4091           0        4091"
+                            ], 
+                            "warnings": []
+                        }, 
+                        "192.168.0.71": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "free", 
+                                "-m"
+                            ], 
+                            "delta": "0:00:00.101500", 
+                            "end": "2017-03-13 13:03:59.616185", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "free -m", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 13:03:59.514685", 
+                            "stderr": "", 
+                            "stdout": "              total        used        free      shared  buff/cache   available\nMem:          15677        9420         176         747        6081        5183\nSwap:          4091           0        4091", 
+                            "stdout_lines": [
+                                "              total        used        free      shared  buff/cache   available", 
+                                "Mem:          15677        9420         176         747        6081        5183", 
+                                "Swap:          4091           0        4091"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "8fbf7ebf-89a0-44b8-8547-8f686e98cb8f", 
+                        "name": "RAM del Servidor"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.70": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "ulimit -aHS"
+                            ], 
+                            "delta": "0:00:00.009235", 
+                            "end": "2017-03-13 13:04:00.511914", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'ulimit -aHS'", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 13:04:00.502679", 
+                            "stderr": "", 
+                            "stdout": "core file size          (blocks, -c) 0\ndata seg size           (kbytes, -d) unlimited\nscheduling priority             (-e) 0\nfile size               (blocks, -f) unlimited\npending signals                 (-i) 62622\nmax locked memory       (kbytes, -l) 64\nmax memory size         (kbytes, -m) unlimited\nopen files                      (-n) 1024\npipe size            (512 bytes, -p) 8\nPOSIX message queues     (bytes, -q) 819200\nreal-time priority              (-r) 0\nstack size              (kbytes, -s) 8192\ncpu time               (seconds, -t) unlimited\nmax user processes              (-u) 62622\nvirtual memory          (kbytes, -v) unlimited\nfile locks                      (-x) unlimited", 
+                            "stdout_lines": [
+                                "core file size          (blocks, -c) 0", 
+                                "data seg size           (kbytes, -d) unlimited", 
+                                "scheduling priority             (-e) 0", 
+                                "file size               (blocks, -f) unlimited", 
+                                "pending signals                 (-i) 62622", 
+                                "max locked memory       (kbytes, -l) 64", 
+                                "max memory size         (kbytes, -m) unlimited", 
+                                "open files                      (-n) 1024", 
+                                "pipe size            (512 bytes, -p) 8", 
+                                "POSIX message queues     (bytes, -q) 819200", 
+                                "real-time priority              (-r) 0", 
+                                "stack size              (kbytes, -s) 8192", 
+                                "cpu time               (seconds, -t) unlimited", 
+                                "max user processes              (-u) 62622", 
+                                "virtual memory          (kbytes, -v) unlimited", 
+                                "file locks                      (-x) unlimited"
+                            ], 
+                            "warnings": []
+                        }, 
+                        "192.168.0.71": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "ulimit -aHS"
+                            ], 
+                            "delta": "0:00:00.003842", 
+                            "end": "2017-03-13 13:04:00.569880", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'ulimit -aHS'", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 13:04:00.566038", 
+                            "stderr": "", 
+                            "stdout": "core file size          (blocks, -c) 0\ndata seg size           (kbytes, -d) unlimited\nscheduling priority             (-e) 0\nfile size               (blocks, -f) unlimited\npending signals                 (-i) 62622\nmax locked memory       (kbytes, -l) 64\nmax memory size         (kbytes, -m) unlimited\nopen files                      (-n) 1024\npipe size            (512 bytes, -p) 8\nPOSIX message queues     (bytes, -q) 819200\nreal-time priority              (-r) 0\nstack size              (kbytes, -s) 8192\ncpu time               (seconds, -t) unlimited\nmax user processes              (-u) 62622\nvirtual memory          (kbytes, -v) unlimited\nfile locks                      (-x) unlimited", 
+                            "stdout_lines": [
+                                "core file size          (blocks, -c) 0", 
+                                "data seg size           (kbytes, -d) unlimited", 
+                                "scheduling priority             (-e) 0", 
+                                "file size               (blocks, -f) unlimited", 
+                                "pending signals                 (-i) 62622", 
+                                "max locked memory       (kbytes, -l) 64", 
+                                "max memory size         (kbytes, -m) unlimited", 
+                                "open files                      (-n) 1024", 
+                                "pipe size            (512 bytes, -p) 8", 
+                                "POSIX message queues     (bytes, -q) 819200", 
+                                "real-time priority              (-r) 0", 
+                                "stack size              (kbytes, -s) 8192", 
+                                "cpu time               (seconds, -t) unlimited", 
+                                "max user processes              (-u) 62622", 
+                                "virtual memory          (kbytes, -v) unlimited", 
+                                "file locks                      (-x) unlimited"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "31d32989-ea9e-4e7e-9ee0-968e61c169d0", 
+                        "name": "Ulimits"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.70": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "iptables -S"
+                            ], 
+                            "delta": "0:00:00.094584", 
+                            "end": "2017-03-13 13:04:01.541262", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'iptables -S'", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 13:04:01.446678", 
+                            "stderr": "", 
+                            "stdout": "-P INPUT ACCEPT\n-P FORWARD ACCEPT\n-P OUTPUT ACCEPT\n-N FORWARD_IN_ZONES\n-N FORWARD_IN_ZONES_SOURCE\n-N FORWARD_OUT_ZONES\n-N FORWARD_OUT_ZONES_SOURCE\n-N FORWARD_direct\n-N FWDI_FedoraWorkstation\n-N FWDI_FedoraWorkstation_allow\n-N FWDI_FedoraWorkstation_deny\n-N FWDI_FedoraWorkstation_log\n-N FWDO_FedoraWorkstation\n-N FWDO_FedoraWorkstation_allow\n-N FWDO_FedoraWorkstation_deny\n-N FWDO_FedoraWorkstation_log\n-N INPUT_ZONES\n-N INPUT_ZONES_SOURCE\n-N INPUT_direct\n-N IN_FedoraWorkstation\n-N IN_FedoraWorkstation_allow\n-N IN_FedoraWorkstation_deny\n-N IN_FedoraWorkstation_log\n-N OUTPUT_direct\n-A INPUT -i virbr0 -p udp -m udp --dport 53 -j ACCEPT\n-A INPUT -i virbr0 -p tcp -m tcp --dport 53 -j ACCEPT\n-A INPUT -i virbr0 -p udp -m udp --dport 67 -j ACCEPT\n-A INPUT -i virbr0 -p tcp -m tcp --dport 67 -j ACCEPT\n-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT\n-A INPUT -i lo -j ACCEPT\n-A INPUT -j INPUT_direct\n-A INPUT -j INPUT_ZONES_SOURCE\n-A INPUT -j INPUT_ZONES\n-A INPUT -p icmp -j ACCEPT\n-A INPUT -m conntrack --ctstate INVALID -j DROP\n-A INPUT -j REJECT --reject-with icmp-host-prohibited\n-A FORWARD -d 192.168.122.0/24 -o virbr0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT\n-A FORWARD -s 192.168.122.0/24 -i virbr0 -j ACCEPT\n-A FORWARD -i virbr0 -o virbr0 -j ACCEPT\n-A FORWARD -o virbr0 -j REJECT --reject-with icmp-port-unreachable\n-A FORWARD -i virbr0 -j REJECT --reject-with icmp-port-unreachable\n-A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT\n-A FORWARD -i lo -j ACCEPT\n-A FORWARD -j FORWARD_direct\n-A FORWARD -j FORWARD_IN_ZONES_SOURCE\n-A FORWARD -j FORWARD_IN_ZONES\n-A FORWARD -j FORWARD_OUT_ZONES_SOURCE\n-A FORWARD -j FORWARD_OUT_ZONES\n-A FORWARD -p icmp -j ACCEPT\n-A FORWARD -m conntrack --ctstate INVALID -j DROP\n-A FORWARD -j REJECT --reject-with icmp-host-prohibited\n-A OUTPUT -o virbr0 -p udp -m udp --dport 68 -j ACCEPT\n-A OUTPUT -j OUTPUT_direct\n-A FORWARD_IN_ZONES -i tun0 -g FWDI_FedoraWorkstation\n-A FORWARD_IN_ZONES -i wlp3s0 -g FWDI_FedoraWorkstation\n-A FORWARD_IN_ZONES -g FWDI_FedoraWorkstation\n-A FORWARD_OUT_ZONES -o tun0 -g FWDO_FedoraWorkstation\n-A FORWARD_OUT_ZONES -o wlp3s0 -g FWDO_FedoraWorkstation\n-A FORWARD_OUT_ZONES -g FWDO_FedoraWorkstation\n-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_log\n-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_deny\n-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_allow\n-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_log\n-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_deny\n-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_allow\n-A INPUT_ZONES -i tun0 -g IN_FedoraWorkstation\n-A INPUT_ZONES -i wlp3s0 -g IN_FedoraWorkstation\n-A INPUT_ZONES -g IN_FedoraWorkstation\n-A IN_FedoraWorkstation -j IN_FedoraWorkstation_log\n-A IN_FedoraWorkstation -j IN_FedoraWorkstation_deny\n-A IN_FedoraWorkstation -j IN_FedoraWorkstation_allow\n-A IN_FedoraWorkstation_allow -d 224.0.0.251/32 -p udp -m udp --dport 5353 -m conntrack --ctstate NEW -j ACCEPT\n-A IN_FedoraWorkstation_allow -p udp -m udp --dport 137 -m conntrack --ctstate NEW -j ACCEPT\n-A IN_FedoraWorkstation_allow -p udp -m udp --dport 138 -m conntrack --ctstate NEW -j ACCEPT\n-A IN_FedoraWorkstation_allow -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT\n-A IN_FedoraWorkstation_allow -p udp -m udp --dport 1025:65535 -m conntrack --ctstate NEW -j ACCEPT\n-A IN_FedoraWorkstation_allow -p tcp -m tcp --dport 1025:65535 -m conntrack --ctstate NEW -j ACCEPT", 
+                            "stdout_lines": [
+                                "-P INPUT ACCEPT", 
+                                "-P FORWARD ACCEPT", 
+                                "-P OUTPUT ACCEPT", 
+                                "-N FORWARD_IN_ZONES", 
+                                "-N FORWARD_IN_ZONES_SOURCE", 
+                                "-N FORWARD_OUT_ZONES", 
+                                "-N FORWARD_OUT_ZONES_SOURCE", 
+                                "-N FORWARD_direct", 
+                                "-N FWDI_FedoraWorkstation", 
+                                "-N FWDI_FedoraWorkstation_allow", 
+                                "-N FWDI_FedoraWorkstation_deny", 
+                                "-N FWDI_FedoraWorkstation_log", 
+                                "-N FWDO_FedoraWorkstation", 
+                                "-N FWDO_FedoraWorkstation_allow", 
+                                "-N FWDO_FedoraWorkstation_deny", 
+                                "-N FWDO_FedoraWorkstation_log", 
+                                "-N INPUT_ZONES", 
+                                "-N INPUT_ZONES_SOURCE", 
+                                "-N INPUT_direct", 
+                                "-N IN_FedoraWorkstation", 
+                                "-N IN_FedoraWorkstation_allow", 
+                                "-N IN_FedoraWorkstation_deny", 
+                                "-N IN_FedoraWorkstation_log", 
+                                "-N OUTPUT_direct", 
+                                "-A INPUT -i virbr0 -p udp -m udp --dport 53 -j ACCEPT", 
+                                "-A INPUT -i virbr0 -p tcp -m tcp --dport 53 -j ACCEPT", 
+                                "-A INPUT -i virbr0 -p udp -m udp --dport 67 -j ACCEPT", 
+                                "-A INPUT -i virbr0 -p tcp -m tcp --dport 67 -j ACCEPT", 
+                                "-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT", 
+                                "-A INPUT -i lo -j ACCEPT", 
+                                "-A INPUT -j INPUT_direct", 
+                                "-A INPUT -j INPUT_ZONES_SOURCE", 
+                                "-A INPUT -j INPUT_ZONES", 
+                                "-A INPUT -p icmp -j ACCEPT", 
+                                "-A INPUT -m conntrack --ctstate INVALID -j DROP", 
+                                "-A INPUT -j REJECT --reject-with icmp-host-prohibited", 
+                                "-A FORWARD -d 192.168.122.0/24 -o virbr0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT", 
+                                "-A FORWARD -s 192.168.122.0/24 -i virbr0 -j ACCEPT", 
+                                "-A FORWARD -i virbr0 -o virbr0 -j ACCEPT", 
+                                "-A FORWARD -o virbr0 -j REJECT --reject-with icmp-port-unreachable", 
+                                "-A FORWARD -i virbr0 -j REJECT --reject-with icmp-port-unreachable", 
+                                "-A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT", 
+                                "-A FORWARD -i lo -j ACCEPT", 
+                                "-A FORWARD -j FORWARD_direct", 
+                                "-A FORWARD -j FORWARD_IN_ZONES_SOURCE", 
+                                "-A FORWARD -j FORWARD_IN_ZONES", 
+                                "-A FORWARD -j FORWARD_OUT_ZONES_SOURCE", 
+                                "-A FORWARD -j FORWARD_OUT_ZONES", 
+                                "-A FORWARD -p icmp -j ACCEPT", 
+                                "-A FORWARD -m conntrack --ctstate INVALID -j DROP", 
+                                "-A FORWARD -j REJECT --reject-with icmp-host-prohibited", 
+                                "-A OUTPUT -o virbr0 -p udp -m udp --dport 68 -j ACCEPT", 
+                                "-A OUTPUT -j OUTPUT_direct", 
+                                "-A FORWARD_IN_ZONES -i tun0 -g FWDI_FedoraWorkstation", 
+                                "-A FORWARD_IN_ZONES -i wlp3s0 -g FWDI_FedoraWorkstation", 
+                                "-A FORWARD_IN_ZONES -g FWDI_FedoraWorkstation", 
+                                "-A FORWARD_OUT_ZONES -o tun0 -g FWDO_FedoraWorkstation", 
+                                "-A FORWARD_OUT_ZONES -o wlp3s0 -g FWDO_FedoraWorkstation", 
+                                "-A FORWARD_OUT_ZONES -g FWDO_FedoraWorkstation", 
+                                "-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_log", 
+                                "-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_deny", 
+                                "-A FWDI_FedoraWorkstation -j FWDI_FedoraWorkstation_allow", 
+                                "-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_log", 
+                                "-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_deny", 
+                                "-A FWDO_FedoraWorkstation -j FWDO_FedoraWorkstation_allow", 
+                                "-A INPUT_ZONES -i tun0 -g IN_FedoraWorkstation", 
+                                "-A INPUT_ZONES -i wlp3s0 -g IN_FedoraWorkstation", 
+                                "-A INPUT_ZONES -g IN_FedoraWorkstation", 
+                                "-A IN_FedoraWorkstation -j IN_FedoraWorkstation_log", 
+                                "-A IN_FedoraWorkstation -j IN_FedoraWorkstation_deny", 
+                                "-A IN_FedoraWorkstation -j IN_FedoraWorkstation_allow", 
+                                "-A IN_FedoraWorkstation_allow -d 224.0.0.251/32 -p udp -m udp --dport 5353 -m conntrack --ctstate NEW -j ACCEPT", 
+                                "-A IN_FedoraWorkstation_allow -p udp -m udp --dport 137 -m conntrack --ctstate NEW -j ACCEPT", 
+                                "-A IN_FedoraWorkstation_allow -p udp -m udp --dport 138 -m conntrack --ctstate NEW -j ACCEPT", 
+                                "-A IN_FedoraWorkstation_allow -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW -j ACCEPT", 
+                                "-A IN_FedoraWorkstation_allow -p udp -m udp --dport 1025:65535 -m conntrack --ctstate NEW -j ACCEPT", 
+                                "-A IN_FedoraWorkstation_allow -p tcp -m tcp --dport 1025:65535 -m conntrack --ctstate NEW -j ACCEPT"
+                            ], 
+                            "warnings": []
+                        }, 
+                        "192.168.0.71": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "iptables -S"
+                            ], 
+                            "delta": "0:00:00.077176", 
+                            "end": "2017-03-13 13:04:01.516459", 
+                            "failed": true, 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'iptables -S'", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 4, 
+                            "start": "2017-03-13 13:04:01.439283", 
+                            "stderr": "Another app is currently holding the xtables lock. Perhaps you want to use the -w option?", 
+                            "stdout": "", 
+                            "stdout_lines": [], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "226c7917-cc91-4018-a91f-b77860b797ae", 
+                        "name": "Reglas IPTABLES"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.70": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "ifconfig"
+                            ], 
+                            "delta": "0:00:00.009379", 
+                            "end": "2017-03-13 13:04:02.430807", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'ifconfig'", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 13:04:02.421428", 
+                            "stderr": "", 
+                            "stdout": "enp0s25: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500\n        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)\n        RX packets 0  bytes 0 (0.0 B)\n        RX errors 0  dropped 0  overruns 0  frame 0\n        TX packets 0  bytes 0 (0.0 B)\n        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0\n        device interrupt 20  memory 0xb4a00000-b4a20000  \n\nenp0s25:1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500\n        inet 192.168.0.69  netmask 255.255.255.0  broadcast 192.168.0.255\n        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)\n        device interrupt 20  memory 0xb4a00000-b4a20000  \n\nenp0s25:2: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500\n        inet 192.168.0.70  netmask 255.255.255.0  broadcast 192.168.0.255\n        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)\n        device interrupt 20  memory 0xb4a00000-b4a20000  \n\nenp0s25:3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500\n        inet 192.168.0.71  netmask 255.255.255.0  broadcast 192.168.0.255\n        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)\n        device interrupt 20  memory 0xb4a00000-b4a20000  \n\nlo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536\n        inet 127.0.0.1  netmask 255.0.0.0\n        inet6 ::1  prefixlen 128  scopeid 0x10<host>\n        loop  txqueuelen 1  (Local Loopback)\n        RX packets 124660  bytes 16900119 (16.1 MiB)\n        RX errors 0  dropped 0  overruns 0  frame 0\n        TX packets 124660  bytes 16900119 (16.1 MiB)\n        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0\n\ntun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1360\n        inet 10.97.116.13  netmask 255.255.252.0  destination 10.97.116.13\n        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 100  (UNSPEC)\n        RX packets 12902  bytes 6345403 (6.0 MiB)\n        RX errors 0  dropped 0  overruns 0  frame 0\n        TX packets 13110  bytes 1142652 (1.0 MiB)\n        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0\n\nvirbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500\n        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255\n        ether 52:54:00:57:af:8a  txqueuelen 1000  (Ethernet)\n        RX packets 0  bytes 0 (0.0 B)\n        RX errors 0  dropped 0  overruns 0  frame 0\n        TX packets 0  bytes 0 (0.0 B)\n        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0\n\nwlp3s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500\n        inet 10.216.33.64  netmask 255.255.255.0  broadcast 10.216.33.255\n        inet6 fe80::ce3d:82ff:fee9:2c85  prefixlen 64  scopeid 0x20<link>\n        ether cc:3d:82:e9:2c:85  txqueuelen 1000  (Ethernet)\n        RX packets 1634377  bytes 1535500840 (1.4 GiB)\n        RX errors 0  dropped 0  overruns 0  frame 0\n        TX packets 747573  bytes 121269360 (115.6 MiB)\n        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0", 
+                            "stdout_lines": [
+                                "enp0s25: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500", 
+                                "        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)", 
+                                "        RX packets 0  bytes 0 (0.0 B)", 
+                                "        RX errors 0  dropped 0  overruns 0  frame 0", 
+                                "        TX packets 0  bytes 0 (0.0 B)", 
+                                "        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0", 
+                                "        device interrupt 20  memory 0xb4a00000-b4a20000  ", 
+                                "", 
+                                "enp0s25:1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500", 
+                                "        inet 192.168.0.69  netmask 255.255.255.0  broadcast 192.168.0.255", 
+                                "        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)", 
+                                "        device interrupt 20  memory 0xb4a00000-b4a20000  ", 
+                                "", 
+                                "enp0s25:2: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500", 
+                                "        inet 192.168.0.70  netmask 255.255.255.0  broadcast 192.168.0.255", 
+                                "        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)", 
+                                "        device interrupt 20  memory 0xb4a00000-b4a20000  ", 
+                                "", 
+                                "enp0s25:3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500", 
+                                "        inet 192.168.0.71  netmask 255.255.255.0  broadcast 192.168.0.255", 
+                                "        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)", 
+                                "        device interrupt 20  memory 0xb4a00000-b4a20000  ", 
+                                "", 
+                                "lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536", 
+                                "        inet 127.0.0.1  netmask 255.0.0.0", 
+                                "        inet6 ::1  prefixlen 128  scopeid 0x10<host>", 
+                                "        loop  txqueuelen 1  (Local Loopback)", 
+                                "        RX packets 124660  bytes 16900119 (16.1 MiB)", 
+                                "        RX errors 0  dropped 0  overruns 0  frame 0", 
+                                "        TX packets 124660  bytes 16900119 (16.1 MiB)", 
+                                "        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0", 
+                                "", 
+                                "tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1360", 
+                                "        inet 10.97.116.13  netmask 255.255.252.0  destination 10.97.116.13", 
+                                "        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 100  (UNSPEC)", 
+                                "        RX packets 12902  bytes 6345403 (6.0 MiB)", 
+                                "        RX errors 0  dropped 0  overruns 0  frame 0", 
+                                "        TX packets 13110  bytes 1142652 (1.0 MiB)", 
+                                "        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0", 
+                                "", 
+                                "virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500", 
+                                "        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255", 
+                                "        ether 52:54:00:57:af:8a  txqueuelen 1000  (Ethernet)", 
+                                "        RX packets 0  bytes 0 (0.0 B)", 
+                                "        RX errors 0  dropped 0  overruns 0  frame 0", 
+                                "        TX packets 0  bytes 0 (0.0 B)", 
+                                "        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0", 
+                                "", 
+                                "wlp3s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500", 
+                                "        inet 10.216.33.64  netmask 255.255.255.0  broadcast 10.216.33.255", 
+                                "        inet6 fe80::ce3d:82ff:fee9:2c85  prefixlen 64  scopeid 0x20<link>", 
+                                "        ether cc:3d:82:e9:2c:85  txqueuelen 1000  (Ethernet)", 
+                                "        RX packets 1634377  bytes 1535500840 (1.4 GiB)", 
+                                "        RX errors 0  dropped 0  overruns 0  frame 0", 
+                                "        TX packets 747573  bytes 121269360 (115.6 MiB)", 
+                                "        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0"
+                            ], 
+                            "warnings": []
+                        }, 
+                        "192.168.0.71": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "bash", 
+                                "-c", 
+                                "ifconfig"
+                            ], 
+                            "delta": "0:00:00.013311", 
+                            "end": "2017-03-13 13:04:02.454845", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "bash -c 'ifconfig'", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 13:04:02.441534", 
+                            "stderr": "", 
+                            "stdout": "enp0s25: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500\n        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)\n        RX packets 0  bytes 0 (0.0 B)\n        RX errors 0  dropped 0  overruns 0  frame 0\n        TX packets 0  bytes 0 (0.0 B)\n        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0\n        device interrupt 20  memory 0xb4a00000-b4a20000  \n\nenp0s25:1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500\n        inet 192.168.0.69  netmask 255.255.255.0  broadcast 192.168.0.255\n        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)\n        device interrupt 20  memory 0xb4a00000-b4a20000  \n\nenp0s25:2: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500\n        inet 192.168.0.70  netmask 255.255.255.0  broadcast 192.168.0.255\n        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)\n        device interrupt 20  memory 0xb4a00000-b4a20000  \n\nenp0s25:3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500\n        inet 192.168.0.71  netmask 255.255.255.0  broadcast 192.168.0.255\n        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)\n        device interrupt 20  memory 0xb4a00000-b4a20000  \n\nlo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536\n        inet 127.0.0.1  netmask 255.0.0.0\n        inet6 ::1  prefixlen 128  scopeid 0x10<host>\n        loop  txqueuelen 1  (Local Loopback)\n        RX packets 124660  bytes 16900119 (16.1 MiB)\n        RX errors 0  dropped 0  overruns 0  frame 0\n        TX packets 124660  bytes 16900119 (16.1 MiB)\n        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0\n\ntun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1360\n        inet 10.97.116.13  netmask 255.255.252.0  destination 10.97.116.13\n        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 100  (UNSPEC)\n        RX packets 12902  bytes 6345403 (6.0 MiB)\n        RX errors 0  dropped 0  overruns 0  frame 0\n        TX packets 13110  bytes 1142652 (1.0 MiB)\n        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0\n\nvirbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500\n        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255\n        ether 52:54:00:57:af:8a  txqueuelen 1000  (Ethernet)\n        RX packets 0  bytes 0 (0.0 B)\n        RX errors 0  dropped 0  overruns 0  frame 0\n        TX packets 0  bytes 0 (0.0 B)\n        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0\n\nwlp3s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500\n        inet 10.216.33.64  netmask 255.255.255.0  broadcast 10.216.33.255\n        inet6 fe80::ce3d:82ff:fee9:2c85  prefixlen 64  scopeid 0x20<link>\n        ether cc:3d:82:e9:2c:85  txqueuelen 1000  (Ethernet)\n        RX packets 1634377  bytes 1535500840 (1.4 GiB)\n        RX errors 0  dropped 0  overruns 0  frame 0\n        TX packets 747573  bytes 121269360 (115.6 MiB)\n        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0", 
+                            "stdout_lines": [
+                                "enp0s25: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500", 
+                                "        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)", 
+                                "        RX packets 0  bytes 0 (0.0 B)", 
+                                "        RX errors 0  dropped 0  overruns 0  frame 0", 
+                                "        TX packets 0  bytes 0 (0.0 B)", 
+                                "        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0", 
+                                "        device interrupt 20  memory 0xb4a00000-b4a20000  ", 
+                                "", 
+                                "enp0s25:1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500", 
+                                "        inet 192.168.0.69  netmask 255.255.255.0  broadcast 192.168.0.255", 
+                                "        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)", 
+                                "        device interrupt 20  memory 0xb4a00000-b4a20000  ", 
+                                "", 
+                                "enp0s25:2: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500", 
+                                "        inet 192.168.0.70  netmask 255.255.255.0  broadcast 192.168.0.255", 
+                                "        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)", 
+                                "        device interrupt 20  memory 0xb4a00000-b4a20000  ", 
+                                "", 
+                                "enp0s25:3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500", 
+                                "        inet 192.168.0.71  netmask 255.255.255.0  broadcast 192.168.0.255", 
+                                "        ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)", 
+                                "        device interrupt 20  memory 0xb4a00000-b4a20000  ", 
+                                "", 
+                                "lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536", 
+                                "        inet 127.0.0.1  netmask 255.0.0.0", 
+                                "        inet6 ::1  prefixlen 128  scopeid 0x10<host>", 
+                                "        loop  txqueuelen 1  (Local Loopback)", 
+                                "        RX packets 124660  bytes 16900119 (16.1 MiB)", 
+                                "        RX errors 0  dropped 0  overruns 0  frame 0", 
+                                "        TX packets 124660  bytes 16900119 (16.1 MiB)", 
+                                "        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0", 
+                                "", 
+                                "tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1360", 
+                                "        inet 10.97.116.13  netmask 255.255.252.0  destination 10.97.116.13", 
+                                "        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 100  (UNSPEC)", 
+                                "        RX packets 12902  bytes 6345403 (6.0 MiB)", 
+                                "        RX errors 0  dropped 0  overruns 0  frame 0", 
+                                "        TX packets 13110  bytes 1142652 (1.0 MiB)", 
+                                "        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0", 
+                                "", 
+                                "virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500", 
+                                "        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255", 
+                                "        ether 52:54:00:57:af:8a  txqueuelen 1000  (Ethernet)", 
+                                "        RX packets 0  bytes 0 (0.0 B)", 
+                                "        RX errors 0  dropped 0  overruns 0  frame 0", 
+                                "        TX packets 0  bytes 0 (0.0 B)", 
+                                "        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0", 
+                                "", 
+                                "wlp3s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500", 
+                                "        inet 10.216.33.64  netmask 255.255.255.0  broadcast 10.216.33.255", 
+                                "        inet6 fe80::ce3d:82ff:fee9:2c85  prefixlen 64  scopeid 0x20<link>", 
+                                "        ether cc:3d:82:e9:2c:85  txqueuelen 1000  (Ethernet)", 
+                                "        RX packets 1634377  bytes 1535500840 (1.4 GiB)", 
+                                "        RX errors 0  dropped 0  overruns 0  frame 0", 
+                                "        TX packets 747573  bytes 121269360 (115.6 MiB)", 
+                                "        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0"
+                            ], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "f80ccd64-f401-472b-930a-facec19367ea", 
+                        "name": "Interfaces de red: ifconfig"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.70": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "java", 
+                                "-version"
+                            ], 
+                            "delta": "0:00:00.161119", 
+                            "end": "2017-03-13 13:04:03.520776", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "java -version", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 13:04:03.359657", 
+                            "stderr": "openjdk version \"1.8.0_91\"\nOpenJDK Runtime Environment (build 1.8.0_91-b14)\nOpenJDK 64-Bit Server VM (build 25.91-b14, mixed mode)", 
+                            "stdout": "", 
+                            "stdout_lines": [], 
+                            "warnings": []
+                        }, 
+                        "192.168.0.71": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "java", 
+                                "-version"
+                            ], 
+                            "delta": "0:00:00.180746", 
+                            "end": "2017-03-13 13:04:03.503713", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "java -version", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 13:04:03.322967", 
+                            "stderr": "openjdk version \"1.8.0_91\"\nOpenJDK Runtime Environment (build 1.8.0_91-b14)\nOpenJDK 64-Bit Server VM (build 25.91-b14, mixed mode)", 
+                            "stdout": "", 
+                            "stdout_lines": [], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "fe0c218a-0c6a-4d71-8324-d6cf3be77d41", 
+                        "name": "Java Version"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.70": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "id", 
+                                "jboss"
+                            ], 
+                            "delta": "0:00:00.003264", 
+                            "end": "2017-03-13 13:04:04.441088", 
+                            "failed": true, 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "id jboss", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 1, 
+                            "start": "2017-03-13 13:04:04.437824", 
+                            "stderr": "id: jboss: no such user", 
+                            "stdout": "", 
+                            "stdout_lines": [], 
+                            "warnings": []
+                        }, 
+                        "192.168.0.71": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "id", 
+                                "jboss"
+                            ], 
+                            "delta": "0:00:00.003596", 
+                            "end": "2017-03-13 13:04:04.445918", 
+                            "failed": true, 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "id jboss", 
+                                    "_uses_shell": false, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 1, 
+                            "start": "2017-03-13 13:04:04.442322", 
+                            "stderr": "id: jboss: no such user", 
+                            "stdout": "", 
+                            "stdout_lines": [], 
+                            "warnings": []
+                        }
+                    }, 
+                    "task": {
+                        "id": "5dc2ce5d-e0b7-4162-9fb7-fc2bd1280298", 
+                        "name": "Existencia Usuario Jboss"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "192.168.0.70": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "./jboss-cli.sh", 
+                                "--command=patch info"
+                            ], 
+                            "delta": "0:00:02.006769", 
+                            "end": "2017-03-13 13:04:07.342785", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "./jboss-cli.sh --command=\"patch info\"", 
+                                    "_uses_shell": false, 
+                                    "chdir": "/opt/EAP-Ansible-POC/hostController1/bin/", 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 13:04:05.336016", 
+                            "stderr": "", 
+                            "stdout": "{\n    \"outcome\" : \"success\",\n    \"result\" : {\n        \"cumulative-patch-id\" : \"base\",\n        \"patches\" : []\n    }\n}", 
                             "stdout_lines": [
                                 "{", 
-                                "    \"outcome\" => \"success\",", 
-                                "    \"result\" => {", 
-                                "        \"agent-lib\" => undefined,", 
-                                "        \"agent-path\" => undefined,", 
-                                "        \"env-classpath-ignored\" => undefined,", 
-                                "        \"environment-variables\" => undefined,", 
-                                "        \"heap-size\" => \"1000m\",", 
-                                "        \"java-agent\" => undefined,", 
-                                "        \"java-home\" => undefined,", 
-                                "        \"jvm-options\" => undefined,", 
-                                "        \"max-heap-size\" => \"1000m\",", 
-                                "        \"max-permgen-size\" => \"256m\",", 
-                                "        \"permgen-size\" => undefined,", 
-                                "        \"stack-size\" => undefined,", 
-                                "        \"type\" => undefined", 
+                                "    \"outcome\" : \"success\",", 
+                                "    \"result\" : {", 
+                                "        \"cumulative-patch-id\" : \"base\",", 
+                                "        \"patches\" : []", 
+                                "    }", 
+                                "}"
+                            ], 
+                            "warnings": []
+                        }, 
+                        "192.168.0.71": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": [
+                                "./jboss-cli.sh", 
+                                "--command=patch info"
+                            ], 
+                            "delta": "0:00:01.910872", 
+                            "end": "2017-03-13 13:04:07.272607", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "./jboss-cli.sh --command=\"patch info\"", 
+                                    "_uses_shell": false, 
+                                    "chdir": "/opt/EAP-Ansible-POC/hostController1/bin/", 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 13:04:05.361735", 
+                            "stderr": "", 
+                            "stdout": "{\n    \"outcome\" : \"success\",\n    \"result\" : {\n        \"cumulative-patch-id\" : \"base\",\n        \"patches\" : []\n    }\n}", 
+                            "stdout_lines": [
+                                "{", 
+                                "    \"outcome\" : \"success\",", 
+                                "    \"result\" : {", 
+                                "        \"cumulative-patch-id\" : \"base\",", 
+                                "        \"patches\" : []", 
                                 "    }", 
                                 "}"
                             ], 
@@ -601,433 +1989,173 @@
                         }
                     }, 
                     "task": {
-                        "id": "bd02f5a7-9157-4fd7-8d2a-c089841f50ee", 
-                        "name": "JVM ServerGroup main-server-group"
+                        "id": "bf81c10b-7e95-40a9-ba88-72f7af5b967e", 
+                        "name": "Parche Jboss EAP existente Host1"
                     }
                 }, 
                 {
                     "hosts": {
-                        "192.168.0.69": {
+                        "192.168.0.70": {
                             "_ansible_no_log": false, 
                             "changed": true, 
+                            "cmd": [
+                                "./jboss-cli.sh", 
+                                "--command=patch info"
+                            ], 
+                            "delta": "0:00:01.707690", 
+                            "end": "2017-03-13 13:04:10.063893", 
                             "invocation": {
                                 "module_args": {
-                                    "_raw_params": "datasources_list.sh"
+                                    "_raw_params": "./jboss-cli.sh --command=\"patch info\"", 
+                                    "_uses_shell": false, 
+                                    "chdir": "/opt/EAP-Ansible-POC/hostController2/bin/", 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
                                 }, 
-                                "module_name": "script"
+                                "module_name": "command"
                             }, 
                             "rc": 0, 
+                            "start": "2017-03-13 13:04:08.356203", 
                             "stderr": "", 
-                            "stdout": "Profiles a revisar:  default\r\nObteniendo datasources para Profile  default\r\norg.jboss.as.cli.CliInitializationException: Failed to connect to the controller\r\n\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:299)\r\n\tat org.jboss.as.cli.impl.CliLauncher.main(CliLauncher.java:265)\r\n\tat org.jboss.as.cli.CommandLineMain.main(CommandLineMain.java:45)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.jboss.modules.Module.run(Module.java:312)\r\n\tat org.jboss.modules.Main.main(Main.java:473)\r\nCaused by: org.jboss.as.cli.CommandLineException: The controller is not available at 192.168.0.69:9999\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1057)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:887)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:863)\r\n\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:297)\r\n\t... 8 more\r\nCaused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1035)\r\n\t... 11 more\r\nCaused by: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out\r\n\tat org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:135)\r\n\tat org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)\r\n\tat org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)\r\n\tat org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:208)\r\n\tat org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:169)\r\n\tat org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:129)\r\n\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:123)\r\n\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)\r\n\t... 13 more\r\nExampleDS\r\n", 
+                            "stdout": "{\n    \"outcome\" : \"success\",\n    \"result\" : {\n        \"cumulative-patch-id\" : \"base\",\n        \"patches\" : []\n    }\n}", 
                             "stdout_lines": [
-                                "Profiles a revisar:  default", 
-                                "Obteniendo datasources para Profile  default", 
-                                "org.jboss.as.cli.CliInitializationException: Failed to connect to the controller", 
-                                "\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:299)", 
-                                "\tat org.jboss.as.cli.impl.CliLauncher.main(CliLauncher.java:265)", 
-                                "\tat org.jboss.as.cli.CommandLineMain.main(CommandLineMain.java:45)", 
-                                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
-                                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)", 
-                                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
-                                "\tat java.lang.reflect.Method.invoke(Method.java:498)", 
-                                "\tat org.jboss.modules.Module.run(Module.java:312)", 
-                                "\tat org.jboss.modules.Main.main(Main.java:473)", 
-                                "Caused by: org.jboss.as.cli.CommandLineException: The controller is not available at 192.168.0.69:9999", 
-                                "\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1057)", 
-                                "\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:887)", 
-                                "\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:863)", 
-                                "\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:297)", 
-                                "\t... 8 more", 
-                                "Caused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)", 
-                                "\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1035)", 
-                                "\t... 11 more", 
-                                "Caused by: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out", 
-                                "\tat org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:135)", 
-                                "\tat org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)", 
-                                "\tat org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)", 
-                                "\tat org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:208)", 
-                                "\tat org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:169)", 
-                                "\tat org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:129)", 
-                                "\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:123)", 
-                                "\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)", 
-                                "\t... 13 more", 
-                                "ExampleDS"
-                            ]
-                        }
-                    }, 
-                    "task": {
-                        "id": "a8ac1172-6cee-4519-8acc-7c46618b7509", 
-                        "name": "DataSources Existentes"
-                    }
-                }, 
-                {
-                    "hosts": {
-                        "192.168.0.69": {
-                            "_ansible_no_log": false, 
-                            "_ansible_verbose_always": true, 
-                            "output.stdout_lines": [
-                                "Profiles a revisar:  default", 
-                                "Obteniendo datasources para Profile  default", 
-                                "org.jboss.as.cli.CliInitializationException: Failed to connect to the controller", 
-                                "\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:299)", 
-                                "\tat org.jboss.as.cli.impl.CliLauncher.main(CliLauncher.java:265)", 
-                                "\tat org.jboss.as.cli.CommandLineMain.main(CommandLineMain.java:45)", 
-                                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
-                                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)", 
-                                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
-                                "\tat java.lang.reflect.Method.invoke(Method.java:498)", 
-                                "\tat org.jboss.modules.Module.run(Module.java:312)", 
-                                "\tat org.jboss.modules.Main.main(Main.java:473)", 
-                                "Caused by: org.jboss.as.cli.CommandLineException: The controller is not available at 192.168.0.69:9999", 
-                                "\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1057)", 
-                                "\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:887)", 
-                                "\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:863)", 
-                                "\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:297)", 
-                                "\t... 8 more", 
-                                "Caused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)", 
-                                "\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1035)", 
-                                "\t... 11 more", 
-                                "Caused by: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out", 
-                                "\tat org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:135)", 
-                                "\tat org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)", 
-                                "\tat org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)", 
-                                "\tat org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:208)", 
-                                "\tat org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:169)", 
-                                "\tat org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:129)", 
-                                "\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:123)", 
-                                "\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)", 
-                                "\t... 13 more", 
-                                "ExampleDS"
-                            ]
-                        }
-                    }, 
-                    "task": {
-                        "id": "7b44bb20-b706-4e54-9028-28d843541975", 
-                        "name": ""
-                    }
-                }, 
-                {
-                    "hosts": {
-                        "192.168.0.69": {
-                            "_ansible_no_log": false, 
-                            "_ansible_verbose_always": true, 
-                            "output.stdout": "Profiles a revisar:  default\r\nObteniendo datasources para Profile  default\r\norg.jboss.as.cli.CliInitializationException: Failed to connect to the controller\r\n\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:299)\r\n\tat org.jboss.as.cli.impl.CliLauncher.main(CliLauncher.java:265)\r\n\tat org.jboss.as.cli.CommandLineMain.main(CommandLineMain.java:45)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.jboss.modules.Module.run(Module.java:312)\r\n\tat org.jboss.modules.Main.main(Main.java:473)\r\nCaused by: org.jboss.as.cli.CommandLineException: The controller is not available at 192.168.0.69:9999\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1057)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:887)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:863)\r\n\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:297)\r\n\t... 8 more\r\nCaused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1035)\r\n\t... 11 more\r\nCaused by: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out\r\n\tat org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:135)\r\n\tat org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)\r\n\tat org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)\r\n\tat org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:208)\r\n\tat org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:169)\r\n\tat org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:129)\r\n\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:123)\r\n\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)\r\n\t... 13 more\r\nExampleDS\r\n"
-                        }
-                    }, 
-                    "task": {
-                        "id": "074e5a1b-8a44-4ffc-8eae-ec4eeb921f47", 
-                        "name": ""
-                    }
-                }, 
-                {
-                    "hosts": {
-                        "192.168.0.69": {
-                            "_ansible_no_log": false, 
-                            "_ansible_verbose_always": true, 
-                            "output.stderr": ""
-                        }
-                    }, 
-                    "task": {
-                        "id": "8c43d717-669e-465e-bc73-347722da30c9", 
-                        "name": ""
-                    }
-                }, 
-                {
-                    "hosts": {
-                        "192.168.0.69": {
-                            "_ansible_no_log": false, 
-                            "changed": true, 
-                            "invocation": {
-                                "module_args": {
-                                    "_raw_params": "datasources_test_connection.sh"
-                                }, 
-                                "module_name": "script"
-                            }, 
-                            "rc": 0, 
-                            "stderr": "", 
-                            "stdout": "Profiles a revisar:  default\r\nObteniendo datasources para Profile  default\r\nTest Connection Host hostController1, Servidor server-one, Datasource ExampleDS\r\n/host=hostController1/server=server-one/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\norg.jboss.as.cli.CliInitializationException: Failed to connect to the controller\r\n\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:299)\r\n\tat org.jboss.as.cli.impl.CliLauncher.main(CliLauncher.java:265)\r\n\tat org.jboss.as.cli.CommandLineMain.main(CommandLineMain.java:45)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.jboss.modules.Module.run(Module.java:312)\r\n\tat org.jboss.modules.Main.main(Main.java:473)\r\nCaused by: org.jboss.as.cli.CommandLineException: The controller is not available at 192.168.0.69:9999\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1057)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:887)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:863)\r\n\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:297)\r\n\t... 8 more\r\nCaused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1035)\r\n\t... 11 more\r\nCaused by: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out\r\n\tat org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:135)\r\n\tat org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)\r\n\tat org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)\r\n\tat org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:208)\r\n\tat org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:169)\r\n\tat org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:129)\r\n\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:123)\r\n\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)\r\n\t... 13 more\r\n\r\nTest Connection Host hostController1, Servidor server-two, Datasource ExampleDS\r\n/host=hostController1/server=server-two/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\n{\r\n    \"outcome\" => \"success\",\r\n    \"result\" => [true]\r\n}\r\nTest Connection Host hostController2, Servidor server-one, Datasource ExampleDS\r\n/host=hostController2/server=server-one/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\n{\r\n    \"outcome\" => \"success\",\r\n    \"result\" => [true]\r\n}\r\nTest Connection Host hostController2, Servidor server-two, Datasource ExampleDS\r\n/host=hostController2/server=server-two/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\n{\r\n    \"outcome\" => \"success\",\r\n    \"result\" => [true]\r\n}\r\nTest Connection Host master, Servidor , Datasource ExampleDS\r\n/host=master/server=/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\n{\r\n    \"outcome\" => \"failed\",\r\n    \"failure-description\" => \"JBAS014883: No resource definition is registered for address [\r\n    (\\\"subsystem\\\" => \\\"datasources\\\"),\r\n    (\\\"data-source\\\" => \\\"ExampleDS\\\")\r\n]\",\r\n    \"rolled-back\" => true\r\n}\r\n", 
-                            "stdout_lines": [
-                                "Profiles a revisar:  default", 
-                                "Obteniendo datasources para Profile  default", 
-                                "Test Connection Host hostController1, Servidor server-one, Datasource ExampleDS", 
-                                "/host=hostController1/server=server-one/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
-                                "org.jboss.as.cli.CliInitializationException: Failed to connect to the controller", 
-                                "\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:299)", 
-                                "\tat org.jboss.as.cli.impl.CliLauncher.main(CliLauncher.java:265)", 
-                                "\tat org.jboss.as.cli.CommandLineMain.main(CommandLineMain.java:45)", 
-                                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
-                                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)", 
-                                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
-                                "\tat java.lang.reflect.Method.invoke(Method.java:498)", 
-                                "\tat org.jboss.modules.Module.run(Module.java:312)", 
-                                "\tat org.jboss.modules.Main.main(Main.java:473)", 
-                                "Caused by: org.jboss.as.cli.CommandLineException: The controller is not available at 192.168.0.69:9999", 
-                                "\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1057)", 
-                                "\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:887)", 
-                                "\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:863)", 
-                                "\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:297)", 
-                                "\t... 8 more", 
-                                "Caused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)", 
-                                "\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1035)", 
-                                "\t... 11 more", 
-                                "Caused by: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out", 
-                                "\tat org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:135)", 
-                                "\tat org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)", 
-                                "\tat org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)", 
-                                "\tat org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:208)", 
-                                "\tat org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:169)", 
-                                "\tat org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:129)", 
-                                "\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:123)", 
-                                "\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)", 
-                                "\t... 13 more", 
-                                "", 
-                                "Test Connection Host hostController1, Servidor server-two, Datasource ExampleDS", 
-                                "/host=hostController1/server=server-two/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
                                 "{", 
-                                "    \"outcome\" => \"success\",", 
-                                "    \"result\" => [true]", 
-                                "}", 
-                                "Test Connection Host hostController2, Servidor server-one, Datasource ExampleDS", 
-                                "/host=hostController2/server=server-one/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
-                                "{", 
-                                "    \"outcome\" => \"success\",", 
-                                "    \"result\" => [true]", 
-                                "}", 
-                                "Test Connection Host hostController2, Servidor server-two, Datasource ExampleDS", 
-                                "/host=hostController2/server=server-two/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
-                                "{", 
-                                "    \"outcome\" => \"success\",", 
-                                "    \"result\" => [true]", 
-                                "}", 
-                                "Test Connection Host master, Servidor , Datasource ExampleDS", 
-                                "/host=master/server=/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
-                                "{", 
-                                "    \"outcome\" => \"failed\",", 
-                                "    \"failure-description\" => \"JBAS014883: No resource definition is registered for address [", 
-                                "    (\\\"subsystem\\\" => \\\"datasources\\\"),", 
-                                "    (\\\"data-source\\\" => \\\"ExampleDS\\\")", 
-                                "]\",", 
-                                "    \"rolled-back\" => true", 
+                                "    \"outcome\" : \"success\",", 
+                                "    \"result\" : {", 
+                                "        \"cumulative-patch-id\" : \"base\",", 
+                                "        \"patches\" : []", 
+                                "    }", 
                                 "}"
-                            ]
-                        }
-                    }, 
-                    "task": {
-                        "id": "a0f2291f-4b9d-45ff-8ea2-100ef1807f1c", 
-                        "name": "DataSources Test Connection"
-                    }
-                }, 
-                {
-                    "hosts": {
-                        "192.168.0.69": {
-                            "_ansible_no_log": false, 
-                            "_ansible_verbose_always": true, 
-                            "output.stdout_lines": [
-                                "Profiles a revisar:  default", 
-                                "Obteniendo datasources para Profile  default", 
-                                "Test Connection Host hostController1, Servidor server-one, Datasource ExampleDS", 
-                                "/host=hostController1/server=server-one/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
-                                "org.jboss.as.cli.CliInitializationException: Failed to connect to the controller", 
-                                "\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:299)", 
-                                "\tat org.jboss.as.cli.impl.CliLauncher.main(CliLauncher.java:265)", 
-                                "\tat org.jboss.as.cli.CommandLineMain.main(CommandLineMain.java:45)", 
-                                "\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)", 
-                                "\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)", 
-                                "\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)", 
-                                "\tat java.lang.reflect.Method.invoke(Method.java:498)", 
-                                "\tat org.jboss.modules.Module.run(Module.java:312)", 
-                                "\tat org.jboss.modules.Main.main(Main.java:473)", 
-                                "Caused by: org.jboss.as.cli.CommandLineException: The controller is not available at 192.168.0.69:9999", 
-                                "\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1057)", 
-                                "\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:887)", 
-                                "\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:863)", 
-                                "\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:297)", 
-                                "\t... 8 more", 
-                                "Caused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)", 
-                                "\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1035)", 
-                                "\t... 11 more", 
-                                "Caused by: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out", 
-                                "\tat org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:135)", 
-                                "\tat org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)", 
-                                "\tat org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)", 
-                                "\tat org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:208)", 
-                                "\tat org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:169)", 
-                                "\tat org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:129)", 
-                                "\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:123)", 
-                                "\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)", 
-                                "\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)", 
-                                "\t... 13 more", 
-                                "", 
-                                "Test Connection Host hostController1, Servidor server-two, Datasource ExampleDS", 
-                                "/host=hostController1/server=server-two/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
-                                "{", 
-                                "    \"outcome\" => \"success\",", 
-                                "    \"result\" => [true]", 
-                                "}", 
-                                "Test Connection Host hostController2, Servidor server-one, Datasource ExampleDS", 
-                                "/host=hostController2/server=server-one/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
-                                "{", 
-                                "    \"outcome\" => \"success\",", 
-                                "    \"result\" => [true]", 
-                                "}", 
-                                "Test Connection Host hostController2, Servidor server-two, Datasource ExampleDS", 
-                                "/host=hostController2/server=server-two/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
-                                "{", 
-                                "    \"outcome\" => \"success\",", 
-                                "    \"result\" => [true]", 
-                                "}", 
-                                "Test Connection Host master, Servidor , Datasource ExampleDS", 
-                                "/host=master/server=/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool", 
-                                "{", 
-                                "    \"outcome\" => \"failed\",", 
-                                "    \"failure-description\" => \"JBAS014883: No resource definition is registered for address [", 
-                                "    (\\\"subsystem\\\" => \\\"datasources\\\"),", 
-                                "    (\\\"data-source\\\" => \\\"ExampleDS\\\")", 
-                                "]\",", 
-                                "    \"rolled-back\" => true", 
-                                "}"
-                            ]
-                        }
-                    }, 
-                    "task": {
-                        "id": "a329b00a-9b45-44ab-b8f2-52da867612b4", 
-                        "name": ""
-                    }
-                }, 
-                {
-                    "hosts": {
-                        "192.168.0.69": {
-                            "_ansible_no_log": false, 
-                            "_ansible_verbose_always": true, 
-                            "output.stdout": "Profiles a revisar:  default\r\nObteniendo datasources para Profile  default\r\nTest Connection Host hostController1, Servidor server-one, Datasource ExampleDS\r\n/host=hostController1/server=server-one/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\norg.jboss.as.cli.CliInitializationException: Failed to connect to the controller\r\n\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:299)\r\n\tat org.jboss.as.cli.impl.CliLauncher.main(CliLauncher.java:265)\r\n\tat org.jboss.as.cli.CommandLineMain.main(CommandLineMain.java:45)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.jboss.modules.Module.run(Module.java:312)\r\n\tat org.jboss.modules.Main.main(Main.java:473)\r\nCaused by: org.jboss.as.cli.CommandLineException: The controller is not available at 192.168.0.69:9999\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1057)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:887)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.connectController(CommandContextImpl.java:863)\r\n\tat org.jboss.as.cli.impl.CliLauncher.initCommandContext(CliLauncher.java:297)\r\n\t... 8 more\r\nCaused by: java.io.IOException: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)\r\n\tat org.jboss.as.cli.impl.CommandContextImpl.tryConnection(CommandContextImpl.java:1035)\r\n\t... 11 more\r\nCaused by: java.net.ConnectException: JBAS012144: Could not connect to remote://192.168.0.69:9999. The connection timed out\r\n\tat org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:135)\r\n\tat org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)\r\n\tat org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)\r\n\tat org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:208)\r\n\tat org.jboss.as.cli.impl.CLIModelControllerClient.getOrCreateChannel(CLIModelControllerClient.java:169)\r\n\tat org.jboss.as.cli.impl.CLIModelControllerClient$2.getChannel(CLIModelControllerClient.java:129)\r\n\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:123)\r\n\tat org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:98)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)\r\n\tat org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)\r\n\t... 13 more\r\n\r\nTest Connection Host hostController1, Servidor server-two, Datasource ExampleDS\r\n/host=hostController1/server=server-two/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\n{\r\n    \"outcome\" => \"success\",\r\n    \"result\" => [true]\r\n}\r\nTest Connection Host hostController2, Servidor server-one, Datasource ExampleDS\r\n/host=hostController2/server=server-one/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\n{\r\n    \"outcome\" => \"success\",\r\n    \"result\" => [true]\r\n}\r\nTest Connection Host hostController2, Servidor server-two, Datasource ExampleDS\r\n/host=hostController2/server=server-two/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\n{\r\n    \"outcome\" => \"success\",\r\n    \"result\" => [true]\r\n}\r\nTest Connection Host master, Servidor , Datasource ExampleDS\r\n/host=master/server=/subsystem=datasources/data-source=ExampleDS:test-connection-in-pool\r\n{\r\n    \"outcome\" => \"failed\",\r\n    \"failure-description\" => \"JBAS014883: No resource definition is registered for address [\r\n    (\\\"subsystem\\\" => \\\"datasources\\\"),\r\n    (\\\"data-source\\\" => \\\"ExampleDS\\\")\r\n]\",\r\n    \"rolled-back\" => true\r\n}\r\n"
-                        }
-                    }, 
-                    "task": {
-                        "id": "9098da7f-8a9d-4356-a285-76b512832797", 
-                        "name": ""
-                    }
-                }, 
-                {
-                    "hosts": {
-                        "192.168.0.69": {
-                            "_ansible_no_log": false, 
-                            "_ansible_verbose_always": true, 
-                            "output.stderr": ""
-                        }
-                    }, 
-                    "task": {
-                        "id": "7ccb3a99-e6f7-4157-a2fe-aa1a569798b0", 
-                        "name": ""
-                    }
-                }, 
-                {
-                    "hosts": {
-                        "192.168.0.69": {
+                            ], 
+                            "warnings": []
+                        }, 
+                        "192.168.0.71": {
                             "_ansible_no_log": false, 
                             "changed": true, 
+                            "cmd": [
+                                "./jboss-cli.sh", 
+                                "--command=patch info"
+                            ], 
+                            "delta": "0:00:01.679812", 
+                            "end": "2017-03-13 13:04:10.052069", 
                             "invocation": {
                                 "module_args": {
-                                    "_raw_params": "server_status.sh"
+                                    "_raw_params": "./jboss-cli.sh --command=\"patch info\"", 
+                                    "_uses_shell": false, 
+                                    "chdir": "/opt/EAP-Ansible-POC/hostController2/bin/", 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
                                 }, 
-                                "module_name": "script"
+                                "module_name": "command"
                             }, 
                             "rc": 0, 
+                            "start": "2017-03-13 13:04:08.372257", 
                             "stderr": "", 
-                            "stdout": "HOSTS a revisar:  hostController1 hostController2 master\r\nServidor server-one - Host hostController1\r\n{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }\r\nServidor server-two - Host hostController1\r\n{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }\r\nServidor server-one - Host hostController2\r\n{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }\r\nServidor server-two - Host hostController2\r\n{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }\r\n", 
+                            "stdout": "{\n    \"outcome\" : \"success\",\n    \"result\" : {\n        \"cumulative-patch-id\" : \"base\",\n        \"patches\" : []\n    }\n}", 
                             "stdout_lines": [
-                                "HOSTS a revisar:  hostController1 hostController2 master", 
-                                "Servidor server-one - Host hostController1", 
-                                "{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }", 
-                                "Servidor server-two - Host hostController1", 
-                                "{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }", 
-                                "Servidor server-one - Host hostController2", 
-                                "{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }", 
-                                "Servidor server-two - Host hostController2", 
-                                "{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }"
-                            ]
+                                "{", 
+                                "    \"outcome\" : \"success\",", 
+                                "    \"result\" : {", 
+                                "        \"cumulative-patch-id\" : \"base\",", 
+                                "        \"patches\" : []", 
+                                "    }", 
+                                "}"
+                            ], 
+                            "warnings": []
                         }
                     }, 
                     "task": {
-                        "id": "7a46de7c-2b8f-41ed-a7bf-4e6bd319bdef", 
-                        "name": "Verificacion Estado de Servidores"
+                        "id": "ea194206-b7f3-446a-968d-6cdfaeee7dcc", 
+                        "name": "Parche Jboss EAP existente Host2"
                     }
                 }, 
                 {
                     "hosts": {
-                        "192.168.0.69": {
+                        "192.168.0.70": {
                             "_ansible_no_log": false, 
-                            "_ansible_verbose_always": true, 
-                            "output.stdout_lines": [
-                                "HOSTS a revisar:  hostController1 hostController2 master", 
-                                "Servidor server-one - Host hostController1", 
-                                "{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }", 
-                                "Servidor server-two - Host hostController1", 
-                                "{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }", 
-                                "Servidor server-one - Host hostController2", 
-                                "{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }", 
-                                "Servidor server-two - Host hostController2", 
-                                "{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }"
-                            ]
+                            "changed": true, 
+                            "cmd": "ps -fea | grep \"Server:\" | grep -v grep | awk -F \" \" '{print $2 \" \"  $9}'", 
+                            "delta": "0:00:00.080716", 
+                            "end": "2017-03-13 13:04:10.976278", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "ps -fea | grep \"Server:\" | grep -v grep | awk -F \" \" '{print $2 \" \"  $9}'", 
+                                    "_uses_shell": true, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 13:04:10.895562", 
+                            "stderr": "", 
+                            "stdout": "7946 -D[Server:server-one]\n8004 -D[Server:server-two]\n9328 -D[Server:server-one]\n9385 -D[Server:server-two]", 
+                            "stdout_lines": [
+                                "7946 -D[Server:server-one]", 
+                                "8004 -D[Server:server-two]", 
+                                "9328 -D[Server:server-one]", 
+                                "9385 -D[Server:server-two]"
+                            ], 
+                            "warnings": []
+                        }, 
+                        "192.168.0.71": {
+                            "_ansible_no_log": false, 
+                            "changed": true, 
+                            "cmd": "ps -fea | grep \"Server:\" | grep -v grep | awk -F \" \" '{print $2 \" \"  $9}'", 
+                            "delta": "0:00:00.039898", 
+                            "end": "2017-03-13 13:04:11.005357", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "ps -fea | grep \"Server:\" | grep -v grep | awk -F \" \" '{print $2 \" \"  $9}'", 
+                                    "_uses_shell": true, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "warn": true
+                                }, 
+                                "module_name": "command"
+                            }, 
+                            "rc": 0, 
+                            "start": "2017-03-13 13:04:10.965459", 
+                            "stderr": "", 
+                            "stdout": "7946 -D[Server:server-one]\n8004 -D[Server:server-two]\n9328 -D[Server:server-one]\n9385 -D[Server:server-two]", 
+                            "stdout_lines": [
+                                "7946 -D[Server:server-one]", 
+                                "8004 -D[Server:server-two]", 
+                                "9328 -D[Server:server-one]", 
+                                "9385 -D[Server:server-two]"
+                            ], 
+                            "warnings": []
                         }
                     }, 
                     "task": {
-                        "id": "542d6b4a-f1f7-4f1b-a10b-921956dbce03", 
-                        "name": ""
-                    }
-                }, 
-                {
-                    "hosts": {
-                        "192.168.0.69": {
-                            "_ansible_no_log": false, 
-                            "_ansible_verbose_always": true, 
-                            "output.stdout": "HOSTS a revisar:  hostController1 hostController2 master\r\nServidor server-one - Host hostController1\r\n{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }\r\nServidor server-two - Host hostController1\r\n{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }\r\nServidor server-one - Host hostController2\r\n{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }\r\nServidor server-two - Host hostController2\r\n{ \"outcome\" => \"success\", \"result\" => \"STARTED\" }\r\n"
-                        }
-                    }, 
-                    "task": {
-                        "id": "2731f895-af5c-4308-a585-7011456e4e01", 
-                        "name": ""
-                    }
-                }, 
-                {
-                    "hosts": {
-                        "192.168.0.69": {
-                            "_ansible_no_log": false, 
-                            "_ansible_verbose_always": true, 
-                            "output.stderr": ""
-                        }
-                    }, 
-                    "task": {
-                        "id": "5791ada2-f461-4f7c-a4b9-93ba932c95b4", 
-                        "name": ""
+                        "id": "e697d304-b1d8-4577-b0a9-b8e8f313fb9c", 
+                        "name": "Verificacion funcionamiento servicio JBoss"
                     }
                 }
             ]
         }
     ], 
     "stats": {
-        "192.168.0.69": {
-            "changed": 4, 
+        "192.168.0.70": {
+            "changed": 10, 
             "failures": 0, 
-            "ok": 14, 
+            "ok": 12, 
+            "skipped": 0, 
+            "unreachable": 0
+        }, 
+        "192.168.0.71": {
+            "changed": 9, 
+            "failures": 0, 
+            "ok": 12, 
             "skipped": 0, 
             "unreachable": 0
         }

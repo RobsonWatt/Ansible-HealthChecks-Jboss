@@ -1,4 +1,4 @@
-:subject: HealthCheck Dominio Personas - BCI
+:subject: HealthCheck Jboss EAP Domain Mode
 :consultant:  Robson Watt
 :email:  robson@redhat.com
 :description:  Ambiente Productivo
