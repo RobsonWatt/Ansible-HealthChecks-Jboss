@@ -1,9 +1,9 @@
 # Health Check JBoss EAP Domain mode
 
 
-Preparar el ambiente de laboratorio, instalaremos 1 DC con 2 HC.
+## Preparar el ambiente de laboratorio, instalaremos 1 DC con 2 HC.
 
-1.- Crear 3 interfaces de red locales (reemplazar enp0s25 por eth0 o el nombre que corresponda a vuestro ambiente)
+1. Crear 3 interfaces de red locales (reemplazar enp0s25 por eth0 o el nombre que corresponda a vuestro ambiente)
 
 sudo ifconfig enp0s25:1 192.168.0.69 netmask 255.255.255.0
 sudo ifconfig enp0s25:2 192.168.0.70 netmask 255.255.255.0
@@ -35,12 +35,14 @@ enp0s25:3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         ether 54:ee:75:52:b2:04  txqueuelen 1000  (Ethernet)
         device interrupt 20  memory 0xb4a00000-b4a20000  
 
-2.- Instalación de 1 DC
-- creamos directorios para nuestro ambiente en la ruta /opt/EAP-Ansible-POC
-# mkdir /opt/EAP-Ansible-POC
-# mkdir /opt/EAP-Ansible-POC/domainController
+2. Instalación de 1 DC
+* creamos directorios para nuestro ambiente en la ruta /opt/EAP-Ansible-POC *
+`
+$ mkdir /opt/EAP-Ansible-POC
+$ mkdir /opt/EAP-Ansible-POC/domainController
+`
 
-- instalamos nuestro EAP 6.4 sobre /opt/EAP-Ansible-POC/domainController
+* instalamos nuestro EAP 6.4 sobre /opt/EAP-Ansible-POC/domainController *
 - copiamos nuestra instalación para generar nuestros hosts controllers
 
 # cp -R /opt/EAP-Ansible-POC/domainController /opt/EAP-Ansible-POC/hostController1
