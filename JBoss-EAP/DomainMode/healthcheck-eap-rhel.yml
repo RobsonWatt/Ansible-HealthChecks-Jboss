@@ -32,6 +32,11 @@
       command: bash -c 'ulimit -aHS'
       register: output
 
+    - name: Verificacion Kernel
+      ignore_errors: "{{only_check}}"
+      command: uname -a
+      register: output
+
     - name: Reglas IPTABLES
       ignore_errors: "{{only_check}}"
       command: bash -c 'iptables -S'
