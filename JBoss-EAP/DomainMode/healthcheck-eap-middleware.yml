@@ -21,21 +21,21 @@
 
 
     - name: "DataSources Existentes"
-      script: datasources_list.sh {{jboss_eap_dc_home_path}} {{ip_domain_controller}}
+      script: datasources_list.sh {{jboss_eap_dc_home_path}} {{ansible_enp0s25_1.ipv4.address}}
       register: output
     - debug: var=output.stdout_lines
     - debug: var=output.stdout
     - debug: var=output.stderr
 
     - name: "DataSources Test Connection"
-      script: datasources_test_connection.sh {{jboss_eap_dc_home_path}} {{ip_domain_controller}}
+      script: datasources_test_connection.sh {{jboss_eap_dc_home_path}} {{ansible_enp0s25_1.ipv4.address}}
       register: output
     - debug: var=output.stdout_lines
     - debug: var=output.stdout
     - debug: var=output.stderr
 
     - name: "Verificacion Estado de Servidores"
-      script: server_status.sh {{jboss_eap_dc_home_path}} {{ip_domain_controller}}
+      script: server_status.sh {{jboss_eap_dc_home_path}} {{ansible_enp0s25_1.ipv4.address}}
       register: output
     - debug: var=output.stdout_lines
     - debug: var=output.stdout
