@@ -21,21 +21,21 @@
 
 
     - name: "DataSources Existentes"
-      script: datasources_list.sh
+      script: datasources_list.sh {{jboss_eap_dc_home_path}} {{ip_domain_controller}}
       register: output
     - debug: var=output.stdout_lines
     - debug: var=output.stdout
     - debug: var=output.stderr
 
     - name: "DataSources Test Connection"
-      script: datasources_test_connection.sh
+      script: datasources_test_connection.sh {{jboss_eap_dc_home_path}} {{ip_domain_controller}}
       register: output
     - debug: var=output.stdout_lines
     - debug: var=output.stdout
     - debug: var=output.stderr
 
     - name: "Verificacion Estado de Servidores"
-      script: server_status.sh
+      script: server_status.sh {{jboss_eap_dc_home_path}} {{ip_domain_controller}}
       register: output
     - debug: var=output.stdout_lines
     - debug: var=output.stdout
